@@ -35,12 +35,12 @@ require(__DIR__.'/content/disablemobile.php'); ?>
             <h2>Geoff: Our lord and saviour; owner of sploder.com
             </h2>
             <hr>
-            <h2>Saptarshi (<span class="at-symbol">@</span>malware8148): Lead developer; asset management; programming</h2>
+            <h2>Grant Lanham (<span class="at-symbol">@</span>declared7772): Lead developer; programming; code review</h2>
+            <h2>Saptarshi (<span class="at-symbol">@</span>crease.1): Ex-lead-developer; asset management; programming; reverse engineering</h2>
             <h2>Finlay Metcalfe (<span class="at-symbol">@</span>ofthemaasses): Programming; code review</h2>
-            <h2>Grant Lanham (<span class="at-symbol">@</span>declared7772): Programming; code review</h2>
             <h2>SmilerRyan (<span class="at-symbol">@</span>smilerryan): Code review</h2>
             <h2>EVEN_STEEL (<span class="at-symbol">@</span>even_steel): Domain provider</h2>
-            <h2>NeoTheb (<span class="at-symbol">@</span>neotheb): ex-developer; programming</h2>
+            <h2>NeoTheb (<span class="at-symbol">@</span>neotheb): Ex-developer; programming</h2>
             <h2>dmn (<span class="at-symbol">@</span>dmn01): Logo designer</h2>
             <br><br><br><br><br><br><br>
             Names in parentheses are Discord usernames.
