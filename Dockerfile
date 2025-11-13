@@ -1,6 +1,6 @@
 FROM php:8.4-apache
 
-WORKDIR /var/www/html
+WORKDIR /var/www
 
 RUN apt-get update \
   && apt-get install --no-install-recommends -y \
@@ -63,7 +63,8 @@ RUN composer install \
     --no-dev \
     --prefer-dist
 
-COPY ./src /var/www/html/
+COPY ./public /var/www/html/
+COPY ./app ./app/
 
 # Set up cron job
 RUN echo '0 0 * * * . /etc/environment; /usr/local/bin/php /var/www/html/cronjobs/contest.php >> /dev/null 2>&1' > /etc/cron.d/contest-cron \
