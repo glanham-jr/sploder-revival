@@ -10,7 +10,8 @@ services:
     depends_on:
      - "db"
     volumes:
-      - ./src:/var/www/html # DEV-ONLY: No need to rebuild source for modifying code
+      - ./app:/var/www/html/app # DEV-ONLY: No need to rebuild source for modifying code
+      - ./public:/var/www/html # DEV-ONLY: No need to rebuild source for modifying code
       - ./vendor:/var/www/html/vendor # DEV-ONLY: No need to rebuild source for modifying code
     environment:
       PHP_ENVIRONMENT: development
