@@ -1,3 +1,16 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# BEGIN GZIP
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</ifmodule>
+# END GZIP
+#
+
+# PREVIOUS SPLODER_REVIVAL PAGES
 ErrorDocument 404 /error_pages/err404.php
 ErrorDocument 403 /error_pages/err404.php
 # Redirect all 50x pages

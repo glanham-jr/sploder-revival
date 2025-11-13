@@ -15,7 +15,7 @@ DEV_SITE_CONTAINER = sploder_revival
 PROD_SITE_CONTAINER = sploder_revival_prod
 DEV_DB_CONTAINER = sploder_postgres
 PROD_DB_CONTAINER = sploder_postgres_prod
-CONTAINER_CMD = docker
+CONTAINER_CMD = podman
 
 # Helper functions
 define compose_up
