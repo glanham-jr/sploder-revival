@@ -1,10 +1,10 @@
 <?php
 require_once '../content/initialize.php';
 session_start();
-require('../repositories/repositorymanager.php');
+require('../../repositories/repositorymanager.php');
 $userRepository = RepositoryManager::get()->getUserRepository();
 $a = $_GET['a'];
-require_once('../database/connect.php');
+require_once('../../database/connect.php');
 $db = getDatabase();
 $creator_name = $_SESSION['username'] ?? null;
 function extracted(IDatabase $db): string

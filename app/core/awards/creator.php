@@ -3,7 +3,7 @@ require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 require_once('../content/logincheck.php');
-require_once('../database/connect.php');
+require_once('../../database/connect.php');
 $membername = $_GET['membername'];
 // If membername is username, send header and die
 if ($membername == $_SESSION['username']) {
@@ -11,7 +11,7 @@ if ($membername == $_SESSION['username']) {
     die();
 }
 include('php/functions.php');
-require_once('../repositories/repositorymanager.php');
+require_once('../../repositories/repositorymanager.php');
 
 $userRepository = RepositoryManager::get()->getUserRepository();
 $level = $userRepository->getLevelByUserId($_SESSION['userid']);
@@ -89,7 +89,7 @@ if (count($result) > 0) {
 
     <div id="page">
         <?php
-        require_once('../services/DashboardSubnavService.php');
+        require_once('../../services/DashboardSubnavService.php');
         $subnavService = new DashboardSubnavService();
         echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
         ?>

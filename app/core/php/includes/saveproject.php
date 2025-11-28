@@ -47,7 +47,7 @@ function saveProject(int $g_swf): int
             // Set xml2 "id" attribute to the new game id
             $xml2->attributes()['id'] = $id;
         } else {
-            require_once('../repositories/repositorymanager.php');
+            require_once('../../../repositories/repositorymanager.php');
             $gameRepository = RepositoryManager::get()->getGameRepository();
 
 

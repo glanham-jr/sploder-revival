@@ -34,7 +34,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 
     <div id="page">
         <?php
-        require_once('../services/DashboardSubnavService.php');
+        require_once('../../services/DashboardSubnavService.php');
         $subnavService = new DashboardSubnavService();
         echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
         ?>

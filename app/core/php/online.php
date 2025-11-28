@@ -8,7 +8,7 @@ if (isset($_SESSION['username'])) {
     if (!isset($status)) {
         $status = "online";
     }
-    require_once('../database/connect.php');
+    require_once('../../database/connect.php');
     $db = getDatabase();
     $db->execute("UPDATE members
         SET lastlogin=:t, status=:status

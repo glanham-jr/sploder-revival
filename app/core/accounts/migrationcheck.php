@@ -5,7 +5,7 @@ session_start();
 session_destroy();
 session_start();
 
-require_once("../database/connect.php");
+require_once("../../database/connect.php");
 
 $u = mb_strtolower($_POST['username']);
 

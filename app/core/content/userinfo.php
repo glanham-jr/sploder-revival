@@ -2,16 +2,16 @@
 
 function display_user_info($username)
 {
-    require_once('../repositories/repositorymanager.php');
-    require_once('../services/AwardsListRenderService.php');
+    require_once('../../repositories/repositorymanager.php');
+    require_once('../../services/AwardsListRenderService.php');
     $userRepository = RepositoryManager::get()->getUserRepository();
     $awardsRepository = RepositoryManager::get()->getAwardsRepository();
     $awardsListRenderService = new AwardsListRenderService($awardsRepository);
 
-    require_once('../services/GraphicListRenderService.php');
+    require_once('../../services/GraphicListRenderService.php');
     $graphicsRepository = RepositoryManager::get()->getGraphicsRepository();
     $graphicListRenderService = new GraphicListRenderService($graphicsRepository);
-    include_once('../database/connect.php');
+    include_once('../../database/connect.php');
     $db = getDatabase();
 
     // TODO:: just inline this when migrating to the repository

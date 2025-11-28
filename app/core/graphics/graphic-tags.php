@@ -4,8 +4,8 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 $t = $_GET['t']; // Tag by user input
 session_start();
-require_once('../services/GraphicListRenderService.php');
-require_once('../repositories/repositorymanager.php');
+require_once('../../services/GraphicListRenderService.php');
+require_once('../../repositories/repositorymanager.php');
 $perPage = 12;
 $offset = $_GET['o'] ?? 0;
 $graphicsRepository = RepositoryManager::get()->getGraphicsRepository();

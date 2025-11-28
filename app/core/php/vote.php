@@ -1,7 +1,7 @@
 <?php
 require_once '../content/initialize.php';
 
-include('../database/connect.php');
+include('../../database/connect.php');
 include('includes/votes.php');
 $g_id = $_GET['ssid'];
 $score = $_GET['score'];

@@ -23,7 +23,7 @@ if (isset($_SESSION['PHPSESSID'])) { // session ID is valid and exists
     } else {
         $newFormat = false;
     }
-    require_once('../database/connect.php');
+    require_once('../../database/connect.php');
     $db = getDatabase();
     $queryString = 'SELECT * FROM games WHERE author = :author AND g_swf = :g_swf AND isdeleted = :isdeleted ORDER BY g_id DESC';
     $params = [

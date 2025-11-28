@@ -2,7 +2,7 @@
 require_once (__DIR__.'/../content/initialize.php');
 
 echo "Service  Running!\n";
-require_once(__DIR__.'/../database/connect.php');
+require_once(__DIR__.'/../../database/connect.php');
 
 // Hacky! But works without having to load the entire environment in cron
 // It never needs to be accessed anyway so it doesn't matter

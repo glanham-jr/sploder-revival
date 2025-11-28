@@ -5,7 +5,7 @@ include(__DIR__ . '/../../../content/logincheck.php');
 // Check whether the user is actually a moderator and not haxxor
 $username = $_SESSION['username'];
 // Use dir to include database
-include(__DIR__ . '/../../../database/connect.php');
+include(__DIR__ . '/../../../../database/connect.php');
 $db = getDatabase();
 $qs = "SELECT perms FROM members WHERE username=:username";
 $perms = $db->queryFirstColumn($qs, 0, [

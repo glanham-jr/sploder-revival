@@ -3,7 +3,7 @@ require_once '../content/initialize.php';
 
 include('../content/logincheck.php');
 
-require_once(__DIR__ . '/../repositories/repositorymanager.php');
+require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 
 $graphicsRepository = RepositoryManager::get()->getGraphicsRepository();
 

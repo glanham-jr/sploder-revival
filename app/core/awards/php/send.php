@@ -2,7 +2,7 @@
 require_once '../../content/initialize.php';
 
 require_once(__DIR__ . '/../../content/logincheck.php');
-require_once(__DIR__ . '/../../database/connect.php');
+require_once(__DIR__ . '/../../../database/connect.php');
 
 // Get award data
 
@@ -43,7 +43,7 @@ if (strlen($message) > 40) {
 require_once('functions.php');
 
 // Start eligibility validation
-require_once('../../repositories/repositorymanager.php');
+require_once('../../../repositories/repositorymanager.php');
 
 $userRepository = RepositoryManager::get()->getUserRepository();
 $level = $userRepository->getLevelByUserId($_SESSION['userid']);

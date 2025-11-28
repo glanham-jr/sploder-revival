@@ -3,14 +3,14 @@ require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 session_start();
-require_once(__DIR__ . "/../repositories/repositorymanager.php");
+require_once(__DIR__ . "/../../repositories/repositorymanager.php");
 require_once(__DIR__ . "/../members/content/searchresult.php");
 $searchUserName = $_GET['u'] ?? '';
 $offset = $_GET['o'] ?? 0;
 $perPage = 30;
 $friendsRepository = RepositoryManager::get()->getFriendsRepository();
 $totalFriends = $friendsRepository->getTotalFriends($_SESSION['username']);
-require_once(__DIR__ . "/../services/FriendsListRenderService.php");
+require_once(__DIR__ . "/../../services/FriendsListRenderService.php");
 $friendsListRenderService = new FriendsListRenderService($friendsRepository);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
@@ -33,7 +33,7 @@ $friendsListRenderService = new FriendsListRenderService($friendsRepository);
     
     <div id="page">
         <?php
-        require_once('../services/DashboardSubnavService.php');
+        require_once('../../services/DashboardSubnavService.php');
         $subnavService = new DashboardSubnavService();
         echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
         ?>

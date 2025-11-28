@@ -7,7 +7,7 @@ if (!isset($_SESSION['loggedin'])) {
     die('Your session expired! Please log in again.');
 }
 
-require_once(__DIR__.'/../repositories/repositorymanager.php');
+require_once(__DIR__.'/../../repositories/repositorymanager.php');
 $userRepository = RepositoryManager::get()->getUserRepository();
 
 $data = explode("-", $_GET['c']);

@@ -3,7 +3,7 @@ require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php session_start(); ?>
 <?php
-require_once('../repositories/repositorymanager.php');
+require_once('../../repositories/repositorymanager.php');
 $gameRepository = RepositoryManager::get()->getGameRepository();
 if (isset($_GET['review'])) {
     // Direct access via review ID needs some work

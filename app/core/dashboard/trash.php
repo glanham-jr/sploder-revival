@@ -4,8 +4,8 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 include('../content/logincheck.php');
 $username = $_SESSION['username'];
-require_once('../services/GameListRenderService.php');
-require_once('../repositories/repositorymanager.php');
+require_once('../../services/GameListRenderService.php');
+require_once('../../repositories/repositorymanager.php');
 
 $gameRepository = RepositoryManager::get()->getGameRepository();
 $gameListRenderService = new GameListRenderService($gameRepository);
@@ -60,7 +60,7 @@ $totalgames = $gameRepository->getTotalDeletedGameCount($username);
     <?php include('../content/headernavigation.php'); ?>
     <div id="page">
         <?php
-        require_once('../services/DashboardSubnavService.php');
+        require_once('../../services/DashboardSubnavService.php');
         $subnavService = new DashboardSubnavService();
         echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
         ?>

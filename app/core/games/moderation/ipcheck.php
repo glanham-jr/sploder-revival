@@ -4,7 +4,7 @@ require_once '../../content/initialize.php';
 <?php include('php/verify.php'); ?>
 <?php
 
-require_once("../../database/connect.php");
+require_once("../../../database/connect.php");
 
 $db = getDatabase();
 ?>

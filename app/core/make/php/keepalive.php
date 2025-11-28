@@ -4,7 +4,7 @@ require_once '../../content/initialize.php';
 session_start();
 
 if (isset($_SESSION['username'])) {
-    require_once('../../database/connect.php');
+    require_once('../../../database/connect.php');
 
     $t = time();
     $db = getDatabase();

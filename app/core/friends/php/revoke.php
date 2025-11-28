@@ -2,7 +2,7 @@
 require_once '../../content/initialize.php';
 
 session_start();
-include('../../database/connect.php');
+include('../../../database/connect.php');
 $db = getDatabase();
 
 $db->execute("DELETE FROM friend_requests

@@ -3,10 +3,10 @@ require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 include('../content/logincheck.php');
-require_once('../database/connect.php');
+require_once('../../database/connect.php');
 $db = getDatabase();
-require_once('../repositories/repositorymanager.php');
-require_once('../services/FriendsListRenderService.php');
+require_once('../../repositories/repositorymanager.php');
+require_once('../../services/FriendsListRenderService.php');
 $friendsRepository = RepositoryManager::get()->getFriendsRepository();
 $friendsRepository->setAllFriendsAsViewed($_SESSION['userid']);
 $userRepository = RepositoryManager::get()->getUserRepository();
@@ -43,7 +43,7 @@ $friendsService = new FriendsListRenderService($friendsRepository);
     <?php include('../content/headernavigation.php'); ?>
     <div id="page">
         <?php
-        require_once('../services/DashboardSubnavService.php');
+        require_once('../../services/DashboardSubnavService.php');
         $subnavService = new DashboardSubnavService();
         echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
         ?>

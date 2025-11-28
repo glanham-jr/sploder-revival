@@ -1,7 +1,7 @@
 <?php
 require_once '../content/initialize.php';
 
-require_once("../database/connect.php");
+require_once("../../database/connect.php");
 
 $originalMembersDb = getOriginalMembersDatabase();
 

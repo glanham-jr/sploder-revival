@@ -2,7 +2,7 @@
 function logModeration($action, $on, $level)
 {
     if (!isset($db)) {
-        include_once(__DIR__ . '/../../../database/connect.php');
+        include_once(__DIR__ . '/../../../../database/connect.php');
         $db = getDatabase();
     }
 

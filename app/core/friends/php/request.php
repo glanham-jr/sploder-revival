@@ -2,8 +2,8 @@
 require_once '../../content/initialize.php';
 
 include('../../content/logincheck.php');
-include('../../database/connect.php');
-require_once('../../repositories/repositorymanager.php');
+include('../../../database/connect.php');
+require_once('../../../repositories/repositorymanager.php');
 
 $friendsRepository = RepositoryManager::get()->getFriendsRepository();
 $userRepository = RepositoryManager::get()->getUserRepository();

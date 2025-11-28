@@ -5,7 +5,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
     session_start();
 }
 
-require_once(__DIR__ . "/../repositories/repositorymanager.php");
+require_once(__DIR__ . "/../../repositories/repositorymanager.php");
 require_once(__DIR__ . "/../accounts/getip.php");
 
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");

@@ -68,7 +68,7 @@ if (intval($responseKeys["success"]) !== 1) {
     }
     $t = time();
     if ($tostest == "on") {
-        require('../database/connect.php');
+        require('../../database/connect.php');
 
         $originalMembersDb = getOriginalMembersDatabase();
         $result2 = $originalMembersDb->query("SELECT username FROM members WHERE username=:user LIMIT 1", [

@@ -1,7 +1,7 @@
 <?php
 require_once '../content/initialize.php';
 
-include('../database/connect.php');
+include('../../database/connect.php');
 $db = getDatabase();
 
 $time = time();

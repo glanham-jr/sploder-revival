@@ -3,7 +3,7 @@ require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php include('../content/logincheck.php'); ?>
 <?php
-require_once('../repositories/repositorymanager.php');
+require_once('../../repositories/repositorymanager.php');
 $userRepository = RepositoryManager::get()->getUserRepository();
 $isolated = $userRepository->isIsolated($_SESSION['username']) || $userRepository->isIsolated($_GET['u'] ?? '');
 $userInfo = $userRepository->getUserInfo($_SESSION['username']);
@@ -56,7 +56,7 @@ $userInfo = $userRepository->getUserInfo($_SESSION['username']);
     <?php include('../content/headernavigation.php'); ?>
     <div id="page">
         <?php
-        require_once('../services/DashboardSubnavService.php');
+        require_once('../../services/DashboardSubnavService.php');
         $subnavService = new DashboardSubnavService();
         echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
         ?>

@@ -6,7 +6,7 @@ if (!isset($_SESSION['username'])) {
     die();
 }
 
-require_once('../repositories/repositorymanager.php');
+require_once('../../repositories/repositorymanager.php');
 
 $userRepository = RepositoryManager::get()->getUserRepository();
 
