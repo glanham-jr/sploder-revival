@@ -10,8 +10,8 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 require_once('../content/getgameid.php');
 require('../content/playgame.php');
 require_once('../content/taglister.php');
-require_once('../repositories/repositorymanager.php');
-require_once('../services/ChallengesService.php');
+require_once('../../repositories/repositorymanager.php');
+require_once('../../services/ChallengesService.php');
 
 $gameRepository = RepositoryManager::get()->getGameRepository();
 $userRepository = RepositoryManager::get()->getUserRepository();

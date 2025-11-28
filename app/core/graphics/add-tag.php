@@ -4,7 +4,7 @@ require_once '../content/initialize.php';
 include('../content/logincheck.php');
 require_once('verify.php');
 require_once('../content/censor.php');
-require_once(__DIR__ . '/../repositories/repositorymanager.php');
+require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 
 $id = (int)$_POST['id'];
 $verified = verifyIfGraphicOwner((int)$id, $_SESSION['userid']);

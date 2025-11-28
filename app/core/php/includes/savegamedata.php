@@ -20,10 +20,10 @@ if (isset($_SESSION['loggedin'])) {
     $private = $_GET['private'];
     $id = (int)filter_var($_GET['projid'], FILTER_SANITIZE_NUMBER_INT);
 
-    require_once('../database/connect.php');
+    require_once('../../../database/connect.php');
     $db = getDatabase();
 
-    require_once('../repositories/repositorymanager.php');
+    require_once('../../../repositories/repositorymanager.php');
     $gameRepository = RepositoryManager::get()->getGameRepository();
     $challengeRepository = RepositoryManager::get()->getChallengesRepository();
 

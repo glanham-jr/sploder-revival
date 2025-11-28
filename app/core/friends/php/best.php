@@ -3,7 +3,7 @@ require_once '../../content/initialize.php';
 
 session_start();
 
-require_once('../../database/connect.php');
+require_once('../../../database/connect.php');
 
 $db = getDatabase();
 $db->execute("UPDATE friends SET bested=true WHERE (user1=:sender_id AND user2=:receiver_id)", [

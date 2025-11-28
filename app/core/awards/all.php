@@ -3,10 +3,10 @@ require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 require_once('../content/logincheck.php');
-require_once('../database/connect.php');
+require_once('../../database/connect.php');
 require_once('php/functions.php');
-require_once('../repositories/repositorymanager.php');
-require_once('../services/AwardsListRenderService.php');
+require_once('../../repositories/repositorymanager.php');
+require_once('../../services/AwardsListRenderService.php');
 require_once('../content/pages.php');
 
 $userRepository = RepositoryManager::get()->getUserRepository();
@@ -113,7 +113,7 @@ if ($level < 10) {
     <?php include('../content/headernavigation.php'); ?>
     <div id="page">
         <?php
-        require_once('../services/DashboardSubnavService.php');
+        require_once('../../services/DashboardSubnavService.php');
         $subnavService = new DashboardSubnavService();
         echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
         ?>

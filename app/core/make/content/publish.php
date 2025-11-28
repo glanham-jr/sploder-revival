@@ -12,7 +12,7 @@ function br2nl($string)
 // Get required data...
 session_start();
 require_once('../content/getgameid.php');
-require_once('../database/connect.php');
+require_once('../../../database/connect.php');
 $db = getDatabase();
 $id = get_game_id($_GET['s'])['id'];
 $qs = "SELECT author,title,description,g_id,user_id,g_swf,ispublished,isprivate FROM games WHERE g_id = :id";

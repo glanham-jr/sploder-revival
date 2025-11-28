@@ -3,8 +3,8 @@ require_once '../../content/initialize.php';
  require(__DIR__.'/../../content/disablemobile.php'); ?>
 <?php
 require_once('php/verify.php');
-require_once('../../services/GameListRenderService.php');
-require_once('../../repositories/repositorymanager.php');
+require_once('../../../services/GameListRenderService.php');
+require_once('../../../repositories/repositorymanager.php');
 
 $gameListRenderService = new GameListRenderService(RepositoryManager::get()->getGameRepository());
 

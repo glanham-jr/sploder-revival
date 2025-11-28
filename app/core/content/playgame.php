@@ -70,7 +70,7 @@ function to_creator_type($g_swf): ICreatorType
 
 function get_game_info($game_id)
 {
-    require_once('../database/connect.php');
+    require_once('../../database/connect.php');
     $db = getDatabase();
     $qs = "SELECT * FROM games WHERE g_id=:game_id";
     $game = $db->queryFirst($qs, [':game_id' => $game_id]);

@@ -31,8 +31,8 @@ if ($isolated === "on") {
 }
 
 // Connect to the PostgreSQL database
-include('../database/connect.php');
-require_once('../repositories/repositorymanager.php');
+include('../../database/connect.php');
+require_once('../../repositories/repositorymanager.php');
 $userRepository = RepositoryManager::get()->getUserRepository();
 $db = getDatabase();
 

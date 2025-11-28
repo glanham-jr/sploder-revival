@@ -1,7 +1,7 @@
 <?php
 require_once '../content/initialize.php';
 
-require_once('../repositories/repositorymanager.php');
+require_once('../../repositories/repositorymanager.php');
 session_start();
 $userRepository = RepositoryManager::get()->getUserRepository();
 $perms = $userRepository->getUserPerms($_SESSION['username']);

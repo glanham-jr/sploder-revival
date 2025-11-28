@@ -2,9 +2,9 @@
 require_once '../../content/initialize.php';
 
 session_start();
-include('../../database/connect.php');
+include('../../../database/connect.php');
 include('../../content/logincheck.php');
-require_once('../../repositories/repositorymanager.php');
+require_once('../../../repositories/repositorymanager.php');
 
 $friendsRepository = RepositoryManager::get()->getFriendsRepository();
 

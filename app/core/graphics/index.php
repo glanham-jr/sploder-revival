@@ -3,12 +3,12 @@ require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 session_start();
-require_once('../repositories/repositorymanager.php');
+require_once('../../repositories/repositorymanager.php');
 $graphicsRepository = RepositoryManager::get()->getGraphicsRepository();
 $stats = $graphicsRepository->getTotal();
 
 $perPage = 36;
-require_once('../services/GraphicListRenderService.php');
+require_once('../../services/GraphicListRenderService.php');
 $graphicListRenderService = new GraphicListRenderService($graphicsRepository);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN">

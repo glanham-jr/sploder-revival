@@ -4,7 +4,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 include('../content/logincheck.php');
 require_once('../graphics/verify.php');
-require_once('../repositories/repositorymanager.php');
+require_once('../../repositories/repositorymanager.php');
 $id = $_GET['id'];
 $verified = verifyIfGraphicOwner((int)$id, $_SESSION['userid']);
 
@@ -41,7 +41,7 @@ if ($verified) {
     <?php include('../content/headernavigation.php'); ?>
     <div id="page">
         <?php
-        require_once('../services/DashboardSubnavService.php');
+        require_once('../../services/DashboardSubnavService.php');
         $subnavService = new DashboardSubnavService();
         echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
         ?>

@@ -9,7 +9,7 @@ if(!isAdmin($_SESSION['username'])) {
 }
 ?>
 <?php
-require_once('../../repositories/repositorymanager.php');
+require_once('../../../repositories/repositorymanager.php');
 $userRepository = RepositoryManager::get()->getUserRepository();
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">

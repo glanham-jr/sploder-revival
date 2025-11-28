@@ -1,8 +1,8 @@
 <?php
 require_once '../content/initialize.php';
 
-include_once('../database/connect.php');
-require_once('../repositories/repositorymanager.php');
+include_once('../../database/connect.php');
+require_once('../../repositories/repositorymanager.php');
 $time = time();
 $pagechange = $time - 900;
 $userRepository = RepositoryManager::get()->getUserRepository();

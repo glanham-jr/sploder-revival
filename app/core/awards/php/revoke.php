@@ -2,7 +2,7 @@
 require_once '../../content/initialize.php';
 
 require_once(__DIR__ . '/../../content/logincheck.php');
-require_once(__DIR__ . '/../../database/connect.php');
+require_once(__DIR__ . '/../../../database/connect.php');
 
 $db = getDatabase();
 $sql = "SELECT username FROM award_requests WHERE id = :id";

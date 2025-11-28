@@ -42,7 +42,7 @@ $exists = isset($result['userid']) ? 1 : 0;
 $user_id = $exists ? $result['userid'] : null;
 
 // Fetch user level
-require_once('../repositories/repositorymanager.php');
+require_once('../../../repositories/repositorymanager.php');
 
 $userRepository = RepositoryManager::get()->getUserRepository();
 $result['level'] = $userRepository->getLevelByUserId($user_id);

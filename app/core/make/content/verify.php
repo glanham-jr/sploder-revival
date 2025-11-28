@@ -2,7 +2,7 @@
 // Check whether user is logged in
 require(__DIR__.'/../../content/logincheck.php');
 // Check whether user owns the game
-require(__DIR__.'/../../database/connect.php');
+require(__DIR__.'/../../../database/connect.php');
 $db = getDatabase();
 
 $id = intval($_POST['id']);

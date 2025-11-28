@@ -4,8 +4,8 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 include('../content/logincheck.php');
 $username = $_SESSION['username'];
-require_once('../database/connect.php');
-require_once('../repositories/repositorymanager.php');
+require_once('../../database/connect.php');
+require_once('../../repositories/repositorymanager.php');
 
 $friendsRepository = RepositoryManager::get()->getFriendsRepository();
 $newFriends = $friendsRepository->getFriendRequestCount($_SESSION['userid'], false);
@@ -46,7 +46,7 @@ $isModerator = $perms !== null && $perms !== '' && str_contains($perms, 'M');
   <?php include('../content/headernavigation.php'); ?>
   <div id="page">
     <?php
-    require_once('../services/DashboardSubnavService.php');
+    require_once('../../services/DashboardSubnavService.php');
     $subnavService = new DashboardSubnavService();
     echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
     ?>

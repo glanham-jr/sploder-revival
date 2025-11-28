@@ -2,7 +2,7 @@
 require_once '../content/initialize.php';
 
 session_start();
-require_once('../repositories/repositorymanager.php');
+require_once('../../repositories/repositorymanager.php');
 
 $challengesRepository = RepositoryManager::get()->getChallengesRepository();
 $userRepository = RepositoryManager::get()->getUserRepository();

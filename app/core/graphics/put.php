@@ -8,7 +8,7 @@ $id = $_REQUEST['projid'];
 $type = $_GET['objtype'];
 $username = $_SESSION["username"];
 $userid = $_SESSION["userid"];
-require_once('../database/connect.php');
+require_once('../../database/connect.php');
 $db = getDatabase();
 
 if ($id == "0") {

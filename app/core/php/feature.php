@@ -5,7 +5,7 @@ session_start();
 if (!isset($_SESSION['loggedin'])) {
     die("Not logged in");
 }
-require_once('../repositories/repositorymanager.php');
+require_once('../../repositories/repositorymanager.php');
 $gameRepository = RepositoryManager::get()->getGameRepository();
 $userRepository = RepositoryManager::get()->getUserRepository();
 

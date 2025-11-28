@@ -4,7 +4,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 include('../content/logincheck.php');
 include('content/my-graphics.php');
-require('../repositories/repositorymanager.php');
+require('../../repositories/repositorymanager.php');
 $graphicRepository = RepositoryManager::get()->getGraphicsRepository();
 $total_likes = $graphicRepository->getTotalGraphicLikesByUserId($_SESSION['userid']);
 ?>
@@ -42,7 +42,7 @@ $total_likes = $graphicRepository->getTotalGraphicLikesByUserId($_SESSION['useri
     <?php include('../content/headernavigation.php'); ?>
     <div id="page">
         <?php
-        require_once('../services/DashboardSubnavService.php');
+        require_once('../../services/DashboardSubnavService.php');
         $subnavService = new DashboardSubnavService();
         echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
         ?>

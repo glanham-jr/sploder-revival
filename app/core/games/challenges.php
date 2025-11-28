@@ -3,8 +3,8 @@ require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 session_start();
-require_once('../repositories/repositorymanager.php');
-require('../services/ChallengesService.php');
+require_once('../../repositories/repositorymanager.php');
+require('../../services/ChallengesService.php');
 
 $gameRepository = RepositoryManager::get()->getGameRepository();
 $challengesRepository = RepositoryManager::get()->getChallengesRepository();

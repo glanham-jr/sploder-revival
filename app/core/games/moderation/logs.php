@@ -3,7 +3,7 @@ require_once '../../content/initialize.php';
  require(__DIR__.'/../../content/disablemobile.php'); ?>
 <?php
 include('php/verify.php');
-require_once("../../database/connect.php");
+require_once("../../../database/connect.php");
 ?>
 <?php
 $db = getDatabase();
