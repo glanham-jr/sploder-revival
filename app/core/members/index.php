@@ -32,7 +32,7 @@ $nocache = time();
 
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/member_profile3.css" />
-    <script type="text/javascript" src="js/friends.js"></script>
+    <script type="text/javascript" src="/js/members/js/friends.js"></script>
     <script type="text/javascript">window.rpcinfo = "Viewing Member";</script>
     <?php include('../content/onlinechecker.php'); ?>
 </head>
@@ -104,7 +104,7 @@ $nocache = time();
                 <div class="shown">
                     <div class="mprofgroup">
                         <div class="mprofchart mprofmain" title="Awesomeness (<?= $awesomeness ?>%) - computed using a secret recipe">
-                            <img src="/images/charts/awesomeness/chart_<?php echo $awesomeness ?>.png" width="230" height="116" />
+                            <img src="/img/images/charts/awesomeness/chart_<?php echo $awesomeness ?>.png" width="230" height="116" />
                             <p>Awesomeness</p>
                         </div>
                         <div class="mprofcount" title="total games/featured games">
@@ -120,11 +120,11 @@ $nocache = time();
                         </div>
 
                         <div class="mprofchart" title="Average difficulty, all games combined">
-                            <img src="/images/charts/difficulty/chart_<?= $difficulty ?>.png" width="160" height="70" />
+                            <img src="/img/images/charts/difficulty/chart_<?= $difficulty ?>.png" width="160" height="70" />
                             <p>Difficulty</p>
                         </div>
                         <div class="mprofchart mprofend" title="Average votes, from all players">
-                            <img src="/images/charts/feedback/chart_<?= $feedback ?>.png" width="160" height="70" />
+                            <img src="/img/images/charts/feedback/chart_<?= $feedback ?>.png" width="160" height="70" />
                             <p>Feedback</p>
                             <br>
                         </div>

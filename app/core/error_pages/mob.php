@@ -7,7 +7,7 @@
 require_once '../content/initialize.php';
  include('../content/head.php'); ?>
 
-    <link rel="stylesheet" type="text/css" href="../update/update.css" />
+    <link rel="stylesheet" type="text/css" href="/css/update/update.css" />
     <!-- Mobile device support -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 

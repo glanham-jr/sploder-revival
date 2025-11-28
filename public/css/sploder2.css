@@ -1357,7 +1357,7 @@ div#status img {
     background-color: black;
 }
 div#friends {
-    background: #000 url("/friends/chrome/element_bkgd.gif") repeat-x top;
+    background: #000 url("/img/friends/chrome/element_bkgd.gif") repeat-x top;
         margin-bottom: 10px;
         padding: 8px;
         border: 2px solid #444;

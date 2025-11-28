@@ -21,7 +21,7 @@ if ($os == 'win32') {
 <head>
     <?php include('../content/head.php'); ?>
 
-    <link rel="stylesheet" type="text/css" href="update.css" />
+    <link rel="stylesheet" type="text/css" href="/css/update/update.css" />
 
     <script type="text/javascript">
         const version = '<?= $version ?>';
@@ -30,7 +30,7 @@ if ($os == 'win32') {
         const method = '<?= $method ?? '' ?>';
         const repositoryUrl = '<?= getenv('LAUNCHER_REPOSITORY_URL') ?>';
     </script>
-    <script src="update.js"></script>
+    <script src="/js/update/update.js"></script>
 
 
 

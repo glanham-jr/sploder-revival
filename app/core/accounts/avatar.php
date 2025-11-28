@@ -7,20 +7,20 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 
 <head>
     <?php include('../content/head.php'); ?>
-    <link rel="stylesheet" type="text/css" href="../css/sploder_v2p22.min.css" />
-    <link rel="stylesheet" href="../css/friends2.css">
+    <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
+    <link rel="stylesheet" href="/css/friends2.css">
     <script type="text/javascript">
         var _sf_startpt = (new Date()).getTime()
     </script>
-    <script type="text/javascript" src="../common/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/common/jquery-3.7.1.min.js"></script>
 
     <script type="text/javascript">window.rpcinfo = "Editing Avatar";</script>
     <!--[if IE 6]>
-<link rel="stylesheet" type="text/css"  href="/awards/css/ie6.css" />
+<link rel="stylesheet" type="text/css"  href="/css/awards/css/ie6.css" />
 <![endif]-->
 
     <!--[if IE 7]>
-<link rel="stylesheet" type="text/css"  href="/awards/css/ie7.css" />
+<link rel="stylesheet" type="text/css"  href="/css/awards/css/ie7.css" />
 <![endif]-->
     <?php include('../content/onlinechecker.php'); ?>
 
@@ -68,70 +68,70 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
                 <div id="controls">
                     <div id="control_01" class="control">
                         <label>Skin Style</label>
-                        <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller"
+                        <input type="image" src="/img/avatar/avatar_controls_prev.gif" class="control_prev controller"
                             name="layer_01" value="up">
-                        <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller"
+                        <input type="image" src="/img/avatar/avatar_controls_next.gif" class="control_next controller"
                             name="layer_01" value="down">
                         <label>Skin Color</label>
-                        <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller"
+                        <input type="image" src="/img/avatar/avatar_controls_prev.gif" class="control_prev controller"
                             name="layer_01" value="prev">
-                        <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller"
+                        <input type="image" src="/img/avatar/avatar_controls_next.gif" class="control_next controller"
                             name="layer_01" value="next">
                     </div>
                     <div id="control_02" class="control">
                         <label>Mouth Style</label>
-                        <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller"
+                        <input type="image" src="/img/avatar/avatar_controls_prev.gif" class="control_prev controller"
                             name="layer_02" value="prev">
-                        <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller"
+                        <input type="image" src="/img/avatar/avatar_controls_next.gif" class="control_next controller"
                             name="layer_02" value="next">
                     </div>
                     <div id="control_03" class="control">
                         <label>Nose Style</label>
-                        <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller"
+                        <input type="image" src="/img/avatar/avatar_controls_prev.gif" class="control_prev controller"
                             name="layer_03" value="prev">
-                        <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller"
+                        <input type="image" src="/img/avatar/avatar_controls_next.gif" class="control_next controller"
                             name="layer_03" value="next">
                     </div>
                     <div id="control_04" class="control">
                         <label>Eye Style</label>
-                        <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller"
+                        <input type="image" src="/img/avatar/avatar_controls_prev.gif" class="control_prev controller"
                             name="layer_04" value="prev">
-                        <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller"
+                        <input type="image" src="/img/avatar/avatar_controls_next.gif" class="control_next controller"
                             name="layer_04" value="next">
                         <label>Eye Color</label>
-                        <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller"
+                        <input type="image" src="/img/avatar/avatar_controls_prev.gif" class="control_prev controller"
                             name="layer_04" value="up">
-                        <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller"
+                        <input type="image" src="/img/avatar/avatar_controls_next.gif" class="control_next controller"
                             name="layer_04" value="down">
                     </div>
                     <div id="control_05" class="control">
                         <label>Hair Style</label>
-                        <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller"
+                        <input type="image" src="/img/avatar/avatar_controls_prev.gif" class="control_prev controller"
                             name="layer_05" value="prev">
-                        <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller"
+                        <input type="image" src="/img/avatar/avatar_controls_next.gif" class="control_next controller"
                             name="layer_05" value="next">
                         <label>Hair Color</label>
-                        <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller"
+                        <input type="image" src="/img/avatar/avatar_controls_prev.gif" class="control_prev controller"
                             name="layer_05" value="up">
-                        <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller"
+                        <input type="image" src="/img/avatar/avatar_controls_next.gif" class="control_next controller"
                             name="layer_05" value="down">
                     </div>
                     <div id="control_06" class="control">
                         <label>Extras Choice</label>
-                        <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller"
+                        <input type="image" src="/img/avatar/avatar_controls_prev.gif" class="control_prev controller"
                             name="layer_06" value="prev">
-                        <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller"
+                        <input type="image" src="/img/avatar/avatar_controls_next.gif" class="control_next controller"
                             name="layer_06" value="next">
                         <label>Extras Color</label>
-                        <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller"
+                        <input type="image" src="/img/avatar/avatar_controls_prev.gif" class="control_prev controller"
                             name="layer_06" value="up">
-                        <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller"
+                        <input type="image" src="/img/avatar/avatar_controls_next.gif" class="control_next controller"
                             name="layer_06" value="down">
                     </div>
                     <div class="clear"></div>
                 </div>
-                <input type="image" src="/avatar/avatar_controls_save.gif" id="control_save" name="save" value="save">
-                <input type="image" src="/avatar/avatar_controls_reset.gif" id="control_reset" class="controller"
+                <input type="image" src="/img/avatar/avatar_controls_save.gif" id="control_save" name="save" value="save">
+                <input type="image" src="/img/avatar/avatar_controls_reset.gif" id="control_reset" class="controller"
                     name="reset" value="reset">
                 <div class="clear"></div>
             </div>

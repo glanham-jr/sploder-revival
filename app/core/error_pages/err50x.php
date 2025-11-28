@@ -12,7 +12,7 @@ $forums = getenv("FORUMS_URL");
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <meta http-equiv="expires" content="0" />
     <meta http-equiv="Pragma" content="no-cache" />
-    <link rel="stylesheet" href="../css/sploder.css" type="text/css" />
+    <link rel="stylesheet" href="/css/sploder.css" type="text/css" />
     <style type="text/css">
         h1 {
             display: none;

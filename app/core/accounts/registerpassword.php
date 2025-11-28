@@ -13,10 +13,10 @@ if (!isset($_SESSION['usermigrate'])) {
 <head>
     <?php include('../content/head.php'); ?>
 
-    <link rel="stylesheet" type="text/css" href="splodersimple.css" />
+    <link rel="stylesheet" type="text/css" href="/css/accounts/splodersimple.css" />
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-    <link rel="stylesheet" type="text/css" href="/slider/nivo-slider.css" />
-    <link rel="stylesheet" type="text/css" href="/slider/sploder/style_v2p10.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slider/nivo-slider.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slider/sploder/style_v2p10.css" />
     <?php include('../content/onlinechecker.php'); ?>
     <script type="text/javascript">window.rpcinfo = "Sighing up";</script>
     <script type="text/javascript" language="Javascript">
@@ -115,7 +115,7 @@ if (!isset($_SESSION['usermigrate'])) {
         <div id="header">
             <a>
                 <div id="title">
-                    <h1><a title="Sploder"><img style="margin-top:-20px; height: 130px" src="/chrome/logo.png"><span
+                    <h1><a title="Sploder"><img style="margin-top:-20px; height: 130px" src="/img/chrome/logo.png"><span
                                 class="hide">Games at Sploder</span></a></h1>
                 </div>
                 <div id="tools"></div>

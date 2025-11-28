@@ -16,8 +16,8 @@ if (isset($_SESSION['loggedin'])) {
 
 <head>
     <?php include('content/head.php'); ?>
-    <link rel="stylesheet" type="text/css" href="../css/sploder_v2p22.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/members.css" />
+    <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/members.css" />
     <style media="screen" type="text/css">
         #swfhttpobj {
             visibility: hidden

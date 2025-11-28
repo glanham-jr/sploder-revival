@@ -21,9 +21,9 @@ $material_list = $awardsListRenderService->getMaterialList();
 
 <head>
     <?php include('../content/head.php'); ?>
-    <link rel="stylesheet" type="text/css" href="../css/sploder_v2p22.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/friends2.css" />
-    <link rel="stylesheet" type="text/css" href="css/awards.css" />
+    <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/awards/css/friends2.css" />
+    <link rel="stylesheet" type="text/css" href="/css/awards/css/awards.css" />
     <style media="screen" type="text/css">
     #swfhttpobj {
         visibility: hidden

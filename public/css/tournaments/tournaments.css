@@ -6,7 +6,7 @@
 
 div.tournaments_intro {
     margin-top: -10px;
-    background: #000 url('../chrome/tournaments_intro_bkgd.png') no-repeat top;
+    background: #000 url('/img/chrome/tournaments_intro_bkgd.png') no-repeat top;
     padding: 80px 20px 40px 20px;
 }
 
@@ -32,7 +32,7 @@ div.tournament {
     clear: both;
     background: #123;
     border-radius: 6px;
-    background: #112233 url('../chrome/tournament_rd_bkgd.png') repeat-x;
+    background: #112233 url('/img/chrome/tournament_rd_bkgd.png') repeat-x;
 }
 
 div.tournament span.meta {
@@ -119,7 +119,7 @@ div#venue {
 
 
 div.tn_prompt {
-    background: #606 url('../chrome/tournament_icons.png') no-repeat 8px -480px;
+    background: #606 url('/img/chrome/tournament_icons.png') no-repeat 8px -480px;
     padding: 20px 16px 24px 96px;
     margin-bottom: 20px;
     min-height: 56px;
@@ -190,7 +190,7 @@ div.tn_prompt div.coinage {
 
 div.tournament_rounds,
 div.tournament_players {
-    background: black url('../chrome/tournament_bkgd.png') no-repeat bottom;
+    background: black url('/img/chrome/tournament_bkgd.png') no-repeat bottom;
     width: 590px;
         clear: both;
         padding: 0 !important;

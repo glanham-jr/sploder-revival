@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>Treemap Example</title>
-<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="/css/members/treemap/css/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>

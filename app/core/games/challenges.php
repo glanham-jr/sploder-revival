@@ -111,7 +111,7 @@ $offset = $_GET['o'] ?? 0;
             $boostPoints = $userRepository->getBoostPoints($_SESSION['userid']);
             ?>
             <script>const boostPoints = <?= $boostPoints ?>;</script>
-            <script type="text/javascript" src="challenges.js"></script>
+            <script type="text/javascript" src="/js/games/challenges.js"></script>
             <div style="border-radius:10px" class="challenge_form">
                 <br>
                 <h4>Make a Challenge for <i><?= $gameTitle ?></i></h4>
@@ -217,7 +217,7 @@ $offset = $_GET['o'] ?? 0;
                         <p class="winners"><?= ($totalWinners) ?>/<?= ($winners) ?> winners</p>
                         <p class="prize">Win and get <span><?= $prize ?></span></p>
                         <?php if($challenge['verified']) { ?>
-                            <img class="verified" src="/chrome/challenge_verified.png" width="24" height="24" alt="Challenge verified" title="This challenge was verified as possible by <?= $gameAuthor ?>" />
+                            <img class="verified" src="/img/chrome/challenge_verified.png" width="24" height="24" alt="Challenge verified" title="This challenge was verified as possible by <?= $gameAuthor ?>" />
                         <?php } ?>
                         <div class="spacer">&nbsp;</div>
 

@@ -9,8 +9,8 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <?php include('../content/head.php'); ?>
 
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
-    <link rel="stylesheet" type="text/css" href="/slider/nivo-slider.css" />
-    <link rel="stylesheet" type="text/css" href="/slider/sploder/style_v2p10.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slider/nivo-slider.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slider/sploder/style_v2p10.css" />
     <script type="text/javascript">window.rpcinfo = "Deciding on a Game Type";</script>
     <?php include('../content/onlinechecker.php'); ?>
 
@@ -31,19 +31,19 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 
             <div style="margin: 15px auto;">
 
-                <a href="/make/arcade.php" title="Create and edit arcade games"><img src="/chrome/creator4_arcade.jpg"
+                <a href="/make/arcade.php" title="Create and edit arcade games"><img src="/img/chrome/creator4_arcade.jpg"
                         width="180" height="280" hspace="0" border="0" alt="Make your own arcade game" /></a>
 
                 <a href="/make/plat.php" title="Create and edit platformer games"><img
-                        src="/chrome/creator4_platformer.jpg" width="180" height="280" hspace="0" border="0"
+                        src="/img/chrome/creator4_platformer.jpg" width="180" height="280" hspace="0" border="0"
                         alt="Make a platformer game" /></a>
 
                 <a href="/make/ppg.php" title="Create and edit physics puzzle games"><img
-                        src="/chrome/creator4_physics.jpg" width="180" height="280" hspace="0" border="0"
+                        src="/img/chrome/creator4_physics.jpg" width="180" height="280" hspace="0" border="0"
                         alt="Make a physics puzzle game" /></a>
 
                 <a href="/make/shooter.php" title="Create and edit shooter games"><img
-                        src="/chrome/creator4_shooter.jpg" width="180" height="280" hspace="0" border="0"
+                        src="/img/chrome/creator4_shooter.jpg" width="180" height="280" hspace="0" border="0"
                         alt="Make a shmup game" /></a>
 
             </div>
@@ -62,7 +62,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
                 <div style="float: center; width: 180px; height: 280px;">
 
                     <a href="/make/algo.php" title="Create and edit your 3d space mission games."><img
-                            src="/chrome/creator4_3dmission.jpg" width="180" height="280" hspace="0" border="0"
+                            src="/img/chrome/creator4_3dmission.jpg" width="180" height="280" hspace="0" border="0"
                             alt="Create and edit your 3d space mission games." /></a>
 
                 </div>

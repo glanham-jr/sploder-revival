@@ -6,7 +6,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/sploder_v2p22.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
     <?php require('../content/ruffle.php'); ?>
     <?php require('../content/swfobject.php'); ?>
     <?php require('../content/head.php'); ?>

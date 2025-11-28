@@ -8,9 +8,9 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 <head> 
 	<?php include('../content/head.php'); ?>
 	<link rel="stylesheet" type="text/css"  href="/css/sploder_v2p22.min.css" /> 
-	<script type="text/javascript" src="/includes/thumb.js"></script> 
-	<script type="text/javascript" src="/includes/peekaboo.js"></script> 
-	<script type="text/javascript" src="/includes/swfobject_min.js"></script> 
+	<script type="text/javascript" src="/js/includes/thumb.js"></script> 
+	<script type="text/javascript" src="/js/includes/peekaboo.js"></script> 
+	<script type="text/javascript" src="/js/includes/swfobject_min.js"></script> 
 	<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
 	<?php include('../content/ruffle.php'); ?>
 	<?php include('../content/onlinechecker.php'); ?>

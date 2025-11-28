@@ -4,7 +4,7 @@
 
 div.boostauction_intro {
     margin-top: -10px;
-    background: #000 url('/chrome/gameboost_intro_bkgd.png') no-repeat top;
+    background: #000 url('/img/chrome/gameboost_intro_bkgd.png') no-repeat top;
     padding: 40px 20px 20px 20px;
 }
 
@@ -36,7 +36,7 @@ div.alert {
 
 
 div.bidconfirm {
-    background: #234 url('/chrome/boostgame_simple_medium.png') no-repeat 10px;
+    background: #234 url('/img/chrome/boostgame_simple_medium.png') no-repeat 10px;
     border: 1px solid #345;
     padding-left: 140px;
     margin-bottom: 40px;
@@ -93,7 +93,7 @@ div.game p.boostpoints {
     bottom: 0;
     right: 10px;
     color: #fc0 !important;
-    background: transparent url('../chrome/coin.png') no-repeat left;
+    background: transparent url('/img/chrome/coin.png') no-repeat left;
 }
 
 div.game p.boostleader {
