@@ -18,13 +18,13 @@ $isolated = $userRepository->isIsolated($_SESSION['username']);
     ?>
     <title>Sploder</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="../css/sploder_v2p12.css" type="text/css" />
+    <link rel="stylesheet" href="/css/sploder_v2p12.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="/css/scrollbar.css" />
-    <link rel="stylesheet" href="../css/publishpage2.css" type="text/css" />
+    <link rel="stylesheet" href="/css/publishpage2.css" type="text/css" />
     <?php //require('../content/swfobject.php'); 
     ?>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-    <script type="text/javascript" src="content/publish.js"></script>
+    <script type="text/javascript" src="/js/make/content/publish.js"></script>
     <script>
     id = <?= $id ?>;
     window.parent.postMessage({ type: "iframe-audio", state: "playing" }, "*");

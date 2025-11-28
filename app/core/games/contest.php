@@ -12,8 +12,8 @@ $db = getDatabase();
 <head>
     <?php include('../content/head.php'); ?>
 
-    <link rel="stylesheet" type="text/css" href="../css/sploder_v2p22.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/members.css" />
+    <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/members.css" />
     <style media="screen" type="text/css">
         #swfhttpobj {
             visibility: hidden
@@ -29,7 +29,7 @@ $db = getDatabase();
     </script>
 
 
-    <link href="../css/sploder_v2p22.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/sploder_v2p22.min.css" rel="stylesheet" type="text/css" />
 
 
     <?php include('../content/onlinechecker.php'); ?>

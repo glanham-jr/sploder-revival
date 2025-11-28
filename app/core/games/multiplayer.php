@@ -35,9 +35,9 @@ $status = "playing";
         
         <div class="title_block">
             <ul>
-            <li><img src="/images/title_sploderheads.png" alt="SploderHeads Multiplayer Smash-Fest!" width="420" height="60" /></li>
-            <li><a href="#help"><img src="/images/help_sploderheads.png" alt="help" width="60" height="60" /></a></li>
-            <li class="shown_small"><a href="#game"><img src="/images/scrolltogame_sploderheads.gif" alt="help" width="60" height="60" /></a></li>
+            <li><img src="/img/images/title_sploderheads.png" alt="SploderHeads Multiplayer Smash-Fest!" width="420" height="60" /></li>
+            <li><a href="#help"><img src="/img/images/help_sploderheads.png" alt="help" width="60" height="60" /></a></li>
+            <li class="shown_small"><a href="#game"><img src="/img/images/scrolltogame_sploderheads.gif" alt="help" width="60" height="60" /></a></li>
             </ul>
         </div>
         
@@ -99,7 +99,7 @@ $status = "playing";
 
 
 
-<img class="right" src="/images/sploderheads_create.gif?v=3" width="286" height="190" alt="powerups" />
+<img class="right" src="/img/images/sploderheads_create.gif?v=3" width="286" height="190" alt="powerups" />
 
 <p>Welcome to Sploder's first multiplayer games portal! Through this portal, you'll be able to see a list of all the <em>SploderHeads</em> games currently being designed and played in real-time. 
 
@@ -107,7 +107,7 @@ You can either join an open game, or create your own. When you create your own g
 
 
 
-<img class="left" src="/images/sploderheads_draw.gif?v=3" width="286" height="190" alt="powerups" />
+<img class="left" src="/img/images/sploderheads_draw.gif?v=3" width="286" height="190" alt="powerups" />
 
 
 
@@ -122,9 +122,9 @@ You can draw your world and move the four players using the buttons at the top. 
 drag your world if no drawing buttons are selected.</p>
 
 
-<img class="right" src="/images/sploderheads_join.gif?v=3" width="286" height="190" alt="powerups" />
+<img class="right" src="/img/images/sploderheads_join.gif?v=3" width="286" height="190" alt="powerups" />
 
-<img class="right" src="/images/sploderheads_players.gif?v=3" width="286" height="190" alt="powerups" />
+<img class="right" src="/img/images/sploderheads_players.gif?v=3" width="286" height="190" alt="powerups" />
 
 
 <h3>Adding Players</h3>
@@ -163,7 +163,7 @@ disabled for you. You can still play games, however.</p>
 
 <br /><br />
 
-<a href="#top"><img align="right" src="/images/top_sploderheads.png" alt="back to top" width="60" height="60" /></a>
+<a href="#top"><img align="right" src="/img/images/top_sploderheads.png" alt="back to top" width="60" height="60" /></a>
 
 <div class="spacer"></div>
 
@@ -191,7 +191,7 @@ be exposed. If a player falls into water, they instantly lose the game.</p>
 
 
 
-<img class="right" src="/images/sploderheads_modes.gif" alt="player modes" width="440" height="230" />
+<img class="right" src="/img/images/sploderheads_modes.gif" alt="player modes" width="440" height="230" />
 
 
 
@@ -217,7 +217,7 @@ will be selected.</p>
 
 
 
-<img class="left" src="/images/sploderheads_powerups.gif" width="288" height="114" alt="powerups" />
+<img class="left" src="/img/images/sploderheads_powerups.gif" width="288" height="114" alt="powerups" />
 
 
 
@@ -243,7 +243,7 @@ will be selected.</p>
 
 
 
-<a href="#top"><img align="right" src="/images/top_sploderheads.png" alt="back to top" width="60" height="60" /></a>
+<a href="#top"><img align="right" src="/img/images/top_sploderheads.png" alt="back to top" width="60" height="60" /></a>
 
 <p>To win the game, be the last player standing. It's that simple. Enjoy!</p>
 

@@ -124,7 +124,7 @@ if (isset($_SESSION['challenge']) && !$challenge) {
     ) {
         $isFeatured = $gameRepository->getFeaturedStatus($game['g_id']);
         ?>
-        <script type="text/javascript" src="actions.js"></script>
+        <script type="text/javascript" src="/js/games/actions.js"></script>
         <a onclick="featureGame(<?= $game['g_id'] ?>, <?= $isFeatured ? 'false' : 'true' ?>)" id="featureGameLink" style="cursor:pointer;">
             <?= $isFeatured ? 'Unfeature' : 'Feature' ?> Game
         </a>
@@ -198,7 +198,7 @@ if (isset($_SESSION['challenge']) && !$challenge) {
                         You must download our launcher to run it<br><br>
                         Games made with the shooter creator will still work on your browser<br><br>
                         <a href="<?= getenv("LAUNCHER_REPOSITORY_URL") ?>/releases/latest" target="_blank">
-                            <img border="0" alt="Download" src="/images/download.gif" />
+                            <img border="0" alt="Download" src="/img/images/download.gif" />
                         </a>
                     </p>
                     <?php } ?>
@@ -271,7 +271,7 @@ if (isset($_SESSION['challenge']) && !$challenge) {
 
             <div class="sharebar">
                 <a href="/make/index.php">
-                    <img style="float: left;" src="/chrome/social_bar_make.gif" width="210" height="36" alt="make a game" />
+                    <img style="float: left;" src="/img/chrome/social_bar_make.gif" width="210" height="36" alt="make a game" />
                 </a>
                 <?php
                     $currentUrl = getenv('DOMAIN_NAME') . $_SERVER['REQUEST_URI'];
@@ -353,7 +353,7 @@ if (isset($_SESSION['challenge']) && !$challenge) {
             <div id="messages"></div>
             <?php } ?>
             <div id="venue" class="mprofvenue"></div>
-            <script type="text/javascript" src="/comments/venue7.js"></script>
+            <script type="text/javascript" src="/js/comments/venue7.js"></script>
             <div class="spacer">&nbsp;</div>
 
             <br>

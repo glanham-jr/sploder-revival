@@ -140,7 +140,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 <body>
     <a name="top"></a>
     <div style="text-align: center;">
-        <img src="/images/physics-puzzle-maker.png" width="348" height="172" />
+        <img src="/img/images/physics-puzzle-maker.png" width="348" height="172" />
     </div>
     <h1>User Guide</h1>
 
@@ -201,7 +201,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 
 
 
-    <p><img src="/images/help/interface.png" width="361" height="296" align="middle" /><br />
+    <p><img src="/img/images/help/interface.png" width="361" height="296" align="middle" /><br />
         The Physics Puzzle Maker allows you to create small worlds that simulate realistic physics. You can create
         worlds with objects you can move, aim and drag around. You can add projectiles, crushable objects, and connect
         objects together with joints and springs. You can add scoring and penalties to your simulations to turn them
@@ -237,7 +237,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t2s1"></a>
     <br />
     <h3>Testing, Saving &amp; Publishing Games</h3>
-    <p><img src="/images/help/game_manager.png" width="475" height="40" /><br />At any time, you can test your game by
+    <p><img src="/img/images/help/game_manager.png" width="475" height="40" /><br />At any time, you can test your game by
         pressing the <strong>Test</strong> button. This will test your current level. Be sure to save your game early
         and often as you build it. Saving is not the same as publishing, so you can save as often as you wish, and then
         publish when you are ready to share your creation with the world.</p>
@@ -248,7 +248,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t2s2"></a>
     <br />
     <h3>Adding &amp; Managing Game Levels</h3>
-    <p><img src="/images/help/level_manager.png" width="204" height="79" align="left" />You can add up to 9 levels to
+    <p><img src="/img/images/help/level_manager.png" width="204" height="79" align="left" />You can add up to 9 levels to
         your game. Levels are played in order from 1 to 9. To add a level, press the <strong>+</strong> button. You can
         change the order of levels by selecting a later level and pressing the <strong>&#x25B2;</strong> button. To
         remove a level, press the <strong>-</strong> button.</p>
@@ -264,7 +264,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t3s1"></a>
     <br />
     <h3>Prefabs</h3>
-    <p><img src="/images/help/prefabs.png" width="123" height="211" align="left" />Perhaps the simplest way to add
+    <p><img src="/img/images/help/prefabs.png" width="123" height="211" align="left" />Perhaps the simplest way to add
         complex objects to your game is to drag and drop ready-made objects from the Prefab tray onto the canvas. These
         objects already have all of the settings necessary to be used in your game. These objects were created with the
         creator itself, so you can modify them or pull them apart to learn how they work. Once you learn how these are
@@ -274,7 +274,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t3s2"></a>
     <br style="clear: both;" />
     <h3>Drawing New Objects</h3>
-    <p><img src="/images/help/tool_draw.png" width="219" height="44" align="left" />To make new objects in your game
+    <p><img src="/img/images/help/tool_draw.png" width="219" height="44" align="left" />To make new objects in your game
         from scratch, you start with the drawing tool. The drawing tool is the first button on the toolbar. When you
         select that tool, you'll see options on the right that allow you to select what to draw. The first dropdown menu
         shows a list of shapes you can draw, like circle, square, ramp and polygon. Drawing starts by clicking and
@@ -290,10 +290,10 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t4"></a>
     <br />
     <h2>Selecting Objects</h2>
-    <p><img src="/images/help/tool_select.png" width="218" height="43" align="left" />There are two ways to select
+    <p><img src="/img/images/help/tool_select.png" width="218" height="43" align="left" />There are two ways to select
         objects. The Select tool allows you to select a single object. You can edit its shape, size and rotation by
         dragging the handles that appear. You can also edit any modifiers that are attached to it. <img
-            src="/images/help/handles.png" width="168" height="164" align="right" />The Window Select tool allows you to
+            src="/img/images/help/handles.png" width="168" height="164" align="right" />The Window Select tool allows you to
         select multiple object by dragging a selection window. It also hides all modifiers so you can edit objects
         without the modifiers getting in your way.</p>
 
@@ -301,9 +301,9 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
         the properties of selected objects as a group. You cannot change the shape of objects by selecting a new shape
         from the dropdown. Once a shape is created, it is always that shape.</p>
     <p>You can delete objects by pressing the Delete key on your keyboard, or by pressing the <img
-            src="/images/help/help0002.gif" width="19" height="19" />at the upper right corner. If you've selected
+            src="/img/images/help/help0002.gif" width="19" height="19" />at the upper right corner. If you've selected
         multiple objects, you can also group them together for convenient editing by clicking the <img
-            src="/images/help/help0011.gif" width="18" height="18" />under the Delete button.</p>
+            src="/img/images/help/help0011.gif" width="18" height="18" />under the Delete button.</p>
     <p>You can also use several standard keyboard shortcuts with selected objects.</p>
     <ul>
         <li><strong>CTRL-A</strong>: Select All</li>
@@ -318,7 +318,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t5"></a>
     <br />
     <h2>Changing Object Physics</h2>
-    <img src="/images/help/attributes.png" width="409" height="45" />
+    <img src="/img/images/help/attributes.png" width="409" height="45" />
     <p>All objects you create have physical properties, which affect how they behave in the game.</p>
 
     <a name="t5s1"></a>
@@ -327,16 +327,16 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <p>Next to the Shape menu is the Movement Constraints menu. With it, you can select different kinds of movement for
         your object.</p>
     <ul>
-        <li><img src="/images/help/help0006.gif" width="42" height="42" /><strong>Free:</strong> Object moves and
+        <li><img src="/img/images/help/help0006.gif" width="42" height="42" /><strong>Free:</strong> Object moves and
             rotates naturally with no constraints.</li>
-        <li><img src="/images/help/help0007.gif" width="42" height="42" /><strong>Pinned:</strong> Object rotates but
+        <li><img src="/img/images/help/help0007.gif" width="42" height="42" /><strong>Pinned:</strong> Object rotates but
             does not move, like it is pinned.</li>
-        <li><img src="/images/help/help0008.gif" width="42" height="42" /><strong>Slide:</strong> Object moves but does
+        <li><img src="/img/images/help/help0008.gif" width="42" height="42" /><strong>Slide:</strong> Object moves but does
             not rotate, as if it is sliding.</li>
-        <li><img src="/images/help/help0009.gif" width="42" height="42" /><strong>Static:</strong> Object does not move
+        <li><img src="/img/images/help/help0009.gif" width="42" height="42" /><strong>Static:</strong> Object does not move
             or rotate, ever.</li>
     </ul>
-    <p><img src="/images/help/help0010.gif" width="22" height="22" align="left" /> The lock button will allow you to
+    <p><img src="/img/images/help/help0010.gif" width="22" height="22" align="left" /> The lock button will allow you to
         prevent movement of a free, pinned, or sliding object. You can use other actions to unlock the object during the
         simulation. This is covered in more detail later on.</p>
 
@@ -344,7 +344,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t5s2"></a>
     <br />
     <h3>Material</h3>
-    <p><img src="/images/help/help0005.gif" width="145" height="144" align="left" /> Object materials affect how much
+    <p><img src="/img/images/help/help0005.gif" width="145" height="144" align="left" /> Object materials affect how much
         objects bounce against eachother or slow down when they rub against eachother (friction.) They also change the
         mass of objects, so more massive objects are &quot;heavier&quot; when there is gravity, and push harder against
         less dense objects. There are also special materials.</p>
@@ -358,7 +358,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t5s3"></a>
     <br />
     <h3>Strength</h3>
-    <p><img src="/images/help/help0013.gif" width="69" height="89" align="left" /> Object strength allows you to create
+    <p><img src="/img/images/help/help0013.gif" width="69" height="89" align="left" /> Object strength allows you to create
         objects that are crushed by collision or pressure forces in the game. The default choice is <em>permanent</em>,
         which means it will never shatter. The next three are <em>strong, medium, and weak,</em> which are more and more
         fragile, respectively.</p>
@@ -368,12 +368,12 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t6"></a>
     <br />
     <h2>Changing what Objects Look Like</h2>
-    <img src="/images/help/tool_paint.png" width="218" height="44" />
+    <img src="/img/images/help/tool_paint.png" width="218" height="44" />
     <p>You can change the look and feel of objects in the game using the paint tool. Simply double-click on any object
         to pain it with the current styles. The pick tool, next to the paint tool, allows you to pick up styles from
         other objects so you can paint with them. You can also select multiple objects, just like the Window Select
         tool, and modify them while in paint mode.</p>
-    <img src="/images/help/styles.png" width="339" height="45" />
+    <img src="/img/images/help/styles.png" width="339" height="45" />
     <p>You can change several styles for any object. You can change the fill color, line color, or texture. You can also
         choose to turn off fills, lines, or textures for any object. Finally, you can change the layering of the object
         to choose which objects appear on top of others when they overlap. The last two buttons are Opacity, which
@@ -384,7 +384,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t7"></a>
     <br />
     <h2>Playfield, Background &amp; Goals</h2>
-    <p><img src="/images/help/world_settings.png" width="485" height="44" /><br />
+    <p><img src="/img/images/help/world_settings.png" width="485" height="44" /><br />
         If you activate the select tool and have no objects selected, you will see buttons for changing general settings
         for your game level.</p>
 
@@ -412,7 +412,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t8"></a>
     <br />
     <h2>Changing Object Behavior</h2>
-    <p><img src="/images/help/trays.png" width="104" height="142" align="left" />On the left side of the creator are
+    <p><img src="/img/images/help/trays.png" width="104" height="142" align="left" />On the left side of the creator are
         three more trays that are hidden when the creator starts. Click on any of the tabs to view them. They contain
         <em>modifiers</em> that allow you to change the way objects behave in the game. These can be dragged onto
         existing objects and modified by dragging the ends of the modifiers. Modifiers can only be edited in Select
@@ -460,7 +460,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t9s1"></a>
 
     <h3>Locking Objects</h3>
-    <p><img src="/images/help/help0010.gif" width="22" height="22" align="left" />When you lock an object in the
+    <p><img src="/img/images/help/help0010.gif" width="22" height="22" align="left" />When you lock an object in the
         creator, it not only locks its motion, it locks all modifiers attached to the object. So, you can start the
         object in an inactive state, and then attach an unlock action to it to turn it on in response to an event.</p>
     <p><a href="#top">Back to Top</a></p>
@@ -469,8 +469,8 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t10s2"></a>
     <br />
     <h3>Collision, Passthru &amp; Sensor Layers</h3>
-    <p><img src="/images/help/layers.png" width="174" height="211" align="left" /> With the <img
-            src="/images/help/help0014.gif" width="21" height="19" /> button you can set up three physics layers for
+    <p><img src="/img/images/help/layers.png" width="174" height="211" align="left" /> With the <img
+            src="/img/images/help/help0014.gif" width="21" height="19" /> button you can set up three physics layers for
         your object. Collision layers control which objects collide. Objects on the same collision layer will always
         collide. Passthru layers allow you to set up groups of objects you want to never collide. This is useful for
         objects that have sensor events that you don't wish to be activated when they collide with eachother. Finally,
@@ -481,12 +481,12 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t9s3"></a>
     <br />
     <h3>Object Actions &amp; Events</h3>
-    <p>If you select an object and click the <img src="/images/help/help0001.gif" width="12" height="18" /> button, you
+    <p>If you select an object and click the <img src="/img/images/help/help0001.gif" width="12" height="18" /> button, you
         will be able to turn your objects into special game objects that do seemingly intelligent things like increase
         the score when they are touched by the player. The Object Actions dialogue allows you to assign Actions to
         Events that happen to the object.</p>
 
-    <img src="/images/help/actionmatrix.png" width="400" height="245" />
+    <img src="/img/images/help/actionmatrix.png" width="400" height="245" />
 
     <p>Events are things that happen to the object during the simulation. When you think of Events, replace it in your
         mind with the words &quot;When this happens...&quot;</p>
@@ -506,7 +506,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <a name="t10"></a>
     <br />
     <h2>Sharing &amp; Copying Games</h2>
-    <p><img src="/images/help/copythis.png" width="161" height="72" align="left" />If you or anyone else has published
+    <p><img src="/img/images/help/copythis.png" width="161" height="72" align="left" />If you or anyone else has published
         their game and allowed copying, then you can copy the game level by clicking the <strong>Copy This</strong>
         button at the bottom right corner of the game. Once you come to the creator, click the Select tool, then the
         Clipboard button, and paste the level into your clipboard. You can then modify the game, learn from it, and make

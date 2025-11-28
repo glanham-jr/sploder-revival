@@ -9,7 +9,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: #32103C url('../chrome/v2-body-bkgd.jpg') repeat-x top;
+    background: #32103C url('/img/chrome/v2-body-bkgd.jpg') repeat-x top;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     vertical-align: top;
     text-align: center;
@@ -107,8 +107,8 @@ cite {
     float: left;
     width: 200px;
     height: 82px;
-    background: transparent url('../chrome/v2-chrome-main.png') no-repeat top left;
-    _background-image: url('../chrome/v2-chrome-main.gif');
+    background: transparent url('/img/chrome/v2-chrome-main.png') no-repeat top left;
+    _background-image: url('/img/chrome/v2-chrome-main.gif');
 }
 
 #title h1 {
@@ -159,7 +159,7 @@ cite {
     font-size: 12px;
     line-height: 16px;
     height: 18px;
-    background-image: url('../chrome/input_bkgd_header.jpg');
+    background-image: url('/img/chrome/input_bkgd_header.jpg');
     border: 1px solid #7b8eac;
 }
 
@@ -169,13 +169,13 @@ cite {
     font-weight: bold;
     color: #ec0;
     height: 26px !important;
-    background-image: url('../chrome/button_bkgd_small.jpg');
+    background-image: url('/img/chrome/button_bkgd_small.jpg');
 }
 
 #tools div.boostpoints {
     display: block;
     float: left;
-    background: #909 url('../chrome/coin.png') no-repeat 5px !important;
+    background: #909 url('/img/chrome/coin.png') no-repeat 5px !important;
         font-size: 12px;
         padding: 0 8px 0 25px;
         line-height: 26px;
@@ -211,8 +211,8 @@ body#home #tools a.dashlink {
     color: #eef;
     height: 33px;
     line-height: 33px !important;
-    background: url('../chrome/v2-chrome-main.png') no-repeat -328px 0 transparent;
-    _background-image: url('../chrome/v2-chrome-main.gif');
+    background: url('/img/chrome/v2-chrome-main.png') no-repeat -328px 0 transparent;
+    _background-image: url('/img/chrome/v2-chrome-main.gif');
 }
 
 #topnav li#nav1 a {
@@ -285,7 +285,7 @@ body#home #tools a.dashlink {
     background: -webkit-gradient(linear, left bottom, left top, from(hsl(218, 15%, 10%)), color-stop(0.6, hsl(218, 15%, 24%)), color-stop(0.6, hsl(218, 15%, 32%)), to(hsl(218, 15%, 25%))) #000;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#334455', endColorstr='#000000', GradientType=0);
         /* IE6-9 */
-    _background: #345 url('../chrome/button_bkgd.jpg') repeat-x;
+    _background: #345 url('/img/chrome/button_bkgd.jpg') repeat-x;
 }
 
 #subnav a.active {
@@ -368,7 +368,7 @@ body#creators #subnav .nav_creators {
     padding: 20px 0;
     width: 100%;
     height: 140px;
-    background: transparent url('../chrome/v2-bottom-bkgd.jpg') repeat-x bottom;
+    background: transparent url('/img/chrome/v2-bottom-bkgd.jpg') repeat-x bottom;
 }
 
 #bottomnav ul {
@@ -407,7 +407,7 @@ body#home div.homebuttons {
 }
 
 body#home .sprite_button {
-    background: #000 url('../chrome/homepage_buttons.gif') no-repeat -2px -2px;
+    background: #000 url('/img/chrome/homepage_buttons.gif') no-repeat -2px -2px;
 }
 body#home div.homebuttons .sprite_button {
     width: 180px;
@@ -530,7 +530,7 @@ ul.note li {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    background: #2854a3 url('../chrome/icons_status.png') no-repeat -290px -110px;
+    background: #2854a3 url('/img/chrome/icons_status.png') no-repeat -290px -110px;
 }
 
 .promo div,
@@ -635,7 +635,7 @@ input.postbutton {
     font-size: 15px;
     color: #ec0;
     padding: 6px 12px;
-    background-image: url('../chrome/button_bkgd.jpg');
+    background-image: url('/img/chrome/button_bkgd.jpg');
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
 
@@ -676,7 +676,7 @@ input.postbutton {
 
 input,
 textarea {
-    background-image: url('../chrome/input_bkgd.gif');
+    background-image: url('/img/chrome/input_bkgd.gif');
     border: 1px solid #89a;
     font-size: 13px;
     padding: 3px;
@@ -704,7 +704,7 @@ div.gameobject,
 p.graph {
     width: 570px;
     height: 220px;
-    background-image: url('../chrome/graph_loading.gif');
+    background-image: url('/img/chrome/graph_loading.gif');
 }
 
 p.graph img {
@@ -718,7 +718,7 @@ p.graph img {
 
 .set,
 .description {
-    background: #234 url('../chrome/noise.png') repeat;
+    background: #234 url('/img/chrome/noise.png') repeat;
     _background-image: none;
     border: 1px solid #567;
     clear: both;
@@ -794,7 +794,7 @@ span.button a,
 div.button a,
 input.post_button {
     border: 1px solid #567;
-    background: url('../chrome/button_bkgd_small.jpg') repeat-x top;
+    background: url('/img/chrome/button_bkgd_small.jpg') repeat-x top;
     padding: 8px 12px;
     margin-left: 10px;
     white-space: nowrap;
@@ -912,7 +912,7 @@ span.page_button_inactive {
 
 a.page_next {
     border-color: #567;
-    background: url('../chrome/button_bkgd_small.jpg') repeat-x;
+    background: url('/img/chrome/button_bkgd_small.jpg') repeat-x;
     padding: 0 15px;
 }
 
@@ -1070,7 +1070,7 @@ div.boosted_game p.boostpoints {
     bottom: 0;
     right: 10px;
     color: #fc0 !important;
-    background: transparent url('../chrome/coin.png') no-repeat left;
+    background: transparent url('/img/chrome/coin.png') no-repeat left;
 }
 
 div.boosted_game p.boostleader {
@@ -1334,7 +1334,7 @@ div.tagbox form input {
 div#friends {
     clear: both;
     position: relative;
-    background: #000 url('/friends/chrome/element_bkgd.gif') repeat-x top;
+    background: #000 url('/img/friends/chrome/element_bkgd.gif') repeat-x top;
     margin: 20px 0;
     padding: 20px 0 20px 20px;
     border: 2px solid #444;
@@ -1457,7 +1457,7 @@ div.friend_48_best {
 #sidebar .at_high h3 {
     margin-top: 20px;
     padding: 30px 10px 30px 10px;
-    background-image: url('/images/bucket_bkgd_sky2.jpg');
+    background-image: url('/img/images/bucket_bkgd_sky2.jpg');
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -1579,7 +1579,7 @@ ul.avatars_list {
 
 #sidebar div.newfeatures h4 {
     font-size: 16px;
-    background: transparent url('../chrome/feature_check.gif') no-repeat top left;
+    background: transparent url('/img/chrome/feature_check.gif') no-repeat top left;
     padding-left: 30px;
     line-height: 28px;
 }
@@ -1594,7 +1594,7 @@ ul.avatars_list {
 }
 
 #sidebar div.promo_home {
-    background: url('../chrome/promo_bkgd_175.gif') no-repeat top left;
+    background: url('/img/chrome/promo_bkgd_175.gif') no-repeat top left;
     width: 175px;
     height: 140px;
     margin: 0;
@@ -1981,7 +1981,7 @@ body.gamepage h4 {
 }
 
 object#game {
-    background: transparent url('../chrome/player_bkgd.gif') no-repeat center center;
+    background: transparent url('/img/chrome/player_bkgd.gif') no-repeat center center;
 }
 
 div.gameobject {
@@ -1995,7 +1995,7 @@ body.gamepage #content div.sharebar {
     height: 36px;
     clear: both;
     margin-bottom: 10px;
-    background: #333 url('../chrome/social_bar_bkgd.gif') repeat-x;
+    background: #333 url('/img/chrome/social_bar_bkgd.gif') repeat-x;
 }
 
 body.gamepage #content div.sharebar div.share_buttons {
@@ -2011,7 +2011,7 @@ div.share_buttons a {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url('../chrome/sharing_icons2.png') transparent 0 0 no-repeat;
+    background: url('/img/chrome/sharing_icons2.png') transparent 0 0 no-repeat;
 }
 
 div.share_buttons a.facebook {
@@ -2069,7 +2069,7 @@ body.gamepage .gamerating {
 }
 
 .gametypeinfo {
-    background: transparent url('../chrome/ribbons.png') no-repeat left -164px;
+    background: transparent url('/img/chrome/ribbons.png') no-repeat left -164px;
     width: 310px;
     height: 82px;
     margin-top: -12px;
@@ -2095,7 +2095,7 @@ body.gamepage .gamerating {
 
 
 .motd_widget {
-    background: transparent url('../chrome/ribbons.png') no-repeat left top;
+    background: transparent url('/img/chrome/ribbons.png') no-repeat left top;
     width: 382px;
     height: 82px;
 }
@@ -2127,13 +2127,13 @@ body.gamepage .gamerating {
 
 
 div.bucket.membercontest_winner {
-    background: #123 url('/chrome/motd_badge_bkgd.png') no-repeat top left;
+    background: #123 url('/img/chrome/motd_badge_bkgd.png') no-repeat top left;
     color: #69a;
     border-color: #345 !important;
 }
 
 div.bucket.membercontest_winner.winner_weekly {
-    background: transparent url('/chrome/winner_background.gif') no-repeat top left;
+    background: transparent url('/img/chrome/winner_background.gif') no-repeat top left;
     color: #c4c;
     border-color: #919 !important;
 }
@@ -2181,11 +2181,11 @@ div.bucket.membercontest_winner div.member_badge {
     float: left;
     margin: 0 12px 8px 0;
     text-align: center;
-    background: transparent url('/chrome/avatar_pedestal.gif') no-repeat bottom;
+    background: transparent url('/img/chrome/avatar_pedestal.gif') no-repeat bottom;
 }
 
 div.bucket.membercontest_winner.winner_weekly div.member_badge {
-    background: transparent url('/chrome/avatar_pedestal_bronze.gif') no-repeat bottom;
+    background: transparent url('/img/chrome/avatar_pedestal_bronze.gif') no-repeat bottom;
 }
 
 div.bucket.membercontest_winner div.member_badge img {

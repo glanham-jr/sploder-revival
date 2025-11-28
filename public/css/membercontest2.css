@@ -4,7 +4,7 @@
 
 div.motd_intro {
     margin-top: -10px;
-    background: #000 url('../chrome/motd_intro_bkgd.png') no-repeat top;
+    background: #000 url('/img/chrome/motd_intro_bkgd.png') no-repeat top;
         padding: 40px 20px;
 }
 
@@ -19,7 +19,7 @@ div.motd_intro p {
 }
 
 div.voteconfirm {
-    background: #234 url('/chrome/icon_vote_medium.png') no-repeat 10px 10px;
+    background: #234 url('/img/chrome/icon_vote_medium.png') no-repeat 10px 10px;
     border: 1px solid #345;
     padding-left: 140px;
 }
@@ -62,7 +62,7 @@ div.voteconfirm form {
 
 #content .bucket.votecontest h3 {
     font-size: 28px;
-    background: transparent url('/chrome/icon_votesimple_medium.png') no-repeat top left;
+    background: transparent url('/img/chrome/icon_votesimple_medium.png') no-repeat top left;
     text-indent: 80px;
     height: 64px;
     line-height: 70px;

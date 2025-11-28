@@ -25,13 +25,13 @@ if (isset($_GET['game']) && $_GET['game'] == null) {
 
 <head>
     <?php include('../content/head.php'); ?>
-    <link href="css/css.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="../css/sploder_v2p3.css">
-    <link rel="stylesheet" type="text/css" href="../css/sploder_v2p22.min.css" />
-    <link rel="stylesheet" type="text/css" href="../slider/nivo-slider.css" />
-    <link rel="stylesheet" type="text/css" href="../css/inline_help.css">
-    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
-    <link rel="stylesheet" type="text/css" href="./css/notifications.css">
+    <link href="/css/dashboard/css/css.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/css/sploder_v2p3.css">
+    <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slider/nivo-slider.css" />
+    <link rel="stylesheet" type="text/css" href="/css/inline_help.css">
+    <link rel="stylesheet" type="text/css" href="/css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="/css/dashboard/css/notifications.css">
     <style media="screen" type="text/css">
         #swfhttpobj {
             visibility: hidden

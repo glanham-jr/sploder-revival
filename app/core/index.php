@@ -18,10 +18,10 @@ if (isset($_GET['s'])) {
 <head>
     <?php include('content/head.php'); ?>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/slider/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript" src="/js/slider/jquery.nivo.slider.pack.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
-    <link rel="stylesheet" type="text/css" href="/slider/nivo-slider.css" />
-    <link rel="stylesheet" type="text/css" href="/slider/sploder/style_v2p10.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slider/nivo-slider.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slider/sploder/style_v2p10.css" />
     <script type="text/javascript">window.rpcinfo = "Idling";</script>
     <?php include('content/onlinechecker.php'); ?>
 </head>
@@ -37,62 +37,62 @@ if (isset($_GET['s'])) {
 
                 <div id="slider" class="nivoSlider">
 
-                    <a href="make/arcade.php"><img src="/images/hp3/hp_retro_arcade_night.gif"
-                            data-src="/images/hp3/hp_retro_arcade_night.gif" width="920" height="440" alt=""
+                    <a href="make/arcade.php"><img src="/img/images/hp3/hp_retro_arcade_night.gif"
+                            data-src="/img/images/hp3/hp_retro_arcade_night.gif" width="920" height="440" alt=""
                             title="#htmlcaption6" /></a>
                     <?php if(getenv('SPLODERHEADS_ENABLED') == 'true') { ?>
-                    <a href="/games/multiplayer.php"><img src="/images/hp3/hp_multiplayer_sploderheads2.gif" data-src="/images/hp3/hp_multiplayer_sploderheads2.gif" width="920" height="440" alt="" title="#htmlcaption5"/></a>
+                    <a href="/games/multiplayer.php"><img src="/img/images/hp3/hp_multiplayer_sploderheads2.gif" data-src="/img/images/hp3/hp_multiplayer_sploderheads2.gif" width="920" height="440" alt="" title="#htmlcaption5"/></a>
                     <?php } ?>
 
-                    <a href="make/plat.php "><img src="/images/hp3/loading.gif"
-                            data-src="/images/hp3/hp_platformer_archers.gif" width="920" height="440" alt=""
+                    <a href="make/plat.php "><img src="/img/images/hp3/loading.gif"
+                            data-src="/img/images/hp3/hp_platformer_archers.gif" width="920" height="440" alt=""
                             title="#htmlcaption2" /></a>
 
-                    <a href="make/ppg.php"><img src="/images/hp3/loading.gif"
-                            data-src="/images/hp3/hp_physics_topple.gif" width="920" height="440" alt=""
+                    <a href="make/ppg.php"><img src="/img/images/hp3/loading.gif"
+                            data-src="/img/images/hp3/hp_physics_topple.gif" width="920" height="440" alt=""
                             title="#htmlcaption4" /></a>
 
-                    <a href="make/shooter.php"><img src="/images/hp3/loading.gif"
-                            data-src="/images/hp3/hp_classic_kaboom.gif" width="920" height="440" alt=""
+                    <a href="make/shooter.php"><img src="/img/images/hp3/loading.gif"
+                            data-src="/img/images/hp3/hp_classic_kaboom.gif" width="920" height="440" alt=""
                             title="#htmlcaption1" /></a>
 
-                    <a href="make/algo.php"><img src="/images/hp3/loading.gif"
-                            data-src="/images/hp3/hp_3d_tactical_kaboom.gif" width="920" height="440" alt=""
+                    <a href="make/algo.php"><img src="/img/images/hp3/loading.gif"
+                            data-src="/img/images/hp3/hp_3d_tactical_kaboom.gif" width="920" height="440" alt=""
                             title="#htmlcaption3" /></a>
 
-                    <a href="make/arcade.php"><img src="/images/hp3/loading.gif"
-                            data-src="/images/hp3/hp_retro_arcade_slip.gif" width="920" height="440" alt=""
+                    <a href="make/arcade.php"><img src="/img/images/hp3/loading.gif"
+                            data-src="/img/images/hp3/hp_retro_arcade_slip.gif" width="920" height="440" alt=""
                             title="#htmlcaption6" /></a>
 
-                    <a href="make/plat.php"><img src="/images/hp3/loading.gif"
-                            data-src="/images/hp3/hp_platformer_ninjas.gif" width="920" height="440" alt=""
+                    <a href="make/plat.php"><img src="/img/images/hp3/loading.gif"
+                            data-src="/img/images/hp3/hp_platformer_ninjas.gif" width="920" height="440" alt=""
                             title="#htmlcaption2" /></a>
 
-                    <a href="make/ppg.php"><img src="/images/hp3/loading.gif"
-                            data-src="/images/hp3/hp_physics_splash.gif" width="920" height="440" alt=""
+                    <a href="make/ppg.php"><img src="/img/images/hp3/loading.gif"
+                            data-src="/img/images/hp3/hp_physics_splash.gif" width="920" height="440" alt=""
                             title="#htmlcaption4" /></a>
 
-                    <a href="make/shooter.php"><img src="/images/hp3/loading.gif"
-                            data-src="/images/hp3/hp_classic_episode.gif" width="920" height="440" alt=""
+                    <a href="make/shooter.php"><img src="/img/images/hp3/loading.gif"
+                            data-src="/img/images/hp3/hp_classic_episode.gif" width="920" height="440" alt=""
                             title="#htmlcaption1" /></a>
 
-                    <a href="make/algo.php"><img src="/images/hp3/loading.gif"
-                            data-src="/images/hp3/hp_3d_tactical_heroes.gif" width="920" height="440" alt=""
+                    <a href="make/algo.php"><img src="/img/images/hp3/loading.gif"
+                            data-src="/img/images/hp3/hp_3d_tactical_heroes.gif" width="920" height="440" alt=""
                             title="#htmlcaption3" /></a>
 
-                    <a href="make/plat.php"><img src="/images/hp3/loading.gif"
-                            data-src="/images/hp3/hp_platformer_gator.gif" width="920" height="440" alt=""
+                    <a href="make/plat.php"><img src="/img/images/hp3/loading.gif"
+                            data-src="/img/images/hp3/hp_platformer_gator.gif" width="920" height="440" alt=""
                             title="#htmlcaption2" /></a>
 
-                    <a href="make/shooter.php"><img src="/images/hp3/loading.gif"
-                            data-src="/images/hp3/hp_classic_robot_battles.gif" width="920" height="440" alt=""
+                    <a href="make/shooter.php"><img src="/img/images/hp3/loading.gif"
+                            data-src="/img/images/hp3/hp_classic_robot_battles.gif" width="920" height="440" alt=""
                             title="#htmlcaption1" /></a>
 
-                    <a href="make/algo.php"><img src="/images/hp3/loading.gif" data-src="/images/hp3/hp_3d_ship.gif"
+                    <a href="make/algo.php"><img src="/img/images/hp3/loading.gif" data-src="/img/images/hp3/hp_3d_ship.gif"
                             width="920" height="440" alt="" title="#htmlcaption3" /></a>
 
-                    <a href="make/shooter.php"><img src="/images/hp3/loading.gif"
-                            data-src="/images/hp3/hp_classic_art.gif" width="920" height="440" alt=""
+                    <a href="make/shooter.php"><img src="/img/images/hp3/loading.gif"
+                            data-src="/img/images/hp3/hp_classic_art.gif" width="920" height="440" alt=""
                             title="#htmlcaption1" /></a>
 
                 </div>
@@ -198,7 +198,7 @@ if (isset($_GET['s'])) {
                 if (getenv('SPLODERHEADS_ENABLED') == 'true') { ?>
                     <a href="/games/multiplayer.php" class="sprite_button home_button_multiplayer">Multiplayer Games</a>
                 <?php } else { ?>
-                    <a href="games/newest.php"><img src="/chrome/home_button_newestgames.gif" width="160" height="120"
+                    <a href="games/newest.php"><img src="/img/chrome/home_button_newestgames.gif" width="160" height="120"
                             alt="Newest Games" /></a>
                 <?php } ?>
             </div>

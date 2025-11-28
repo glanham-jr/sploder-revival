@@ -93,7 +93,7 @@ input {
     padding: 0;
     font-size: 10px;
     line-height: 17px;
-    background-image: url(../chrome/input_bkgd_small.jpg);
+    background-image: url(/img/chrome/input_bkgd_small.jpg);
 }
 #header #tools input.loginbutton {
     padding-bottom: 2px !important;
@@ -101,7 +101,7 @@ input {
     padding: 0;
     height: 21px;
     font-weight: bold;
-    background-image: url(../chrome/button_bkgd_small.jpg);
+    background-image: url(/img/chrome/button_bkgd_small.jpg);
 }
 #header ul#topnav {
     display: block;
@@ -130,27 +130,27 @@ input {
 }
 #header ul#topnav li#nav1 a {
     display: block;
-    background: transparent url(../chrome/topnav_left.gif) no-repeat top left;
+    background: transparent url(/img/chrome/topnav_left.gif) no-repeat top left;
     width: 117px;
 }
 #header ul#topnav li#nav2 a {
     display: block;
-    background: transparent url(../chrome/topnav_li_bkgd.gif) no-repeat top left;
+    background: transparent url(/img/chrome/topnav_li_bkgd.gif) no-repeat top left;
     width: 128px;
 }
 #header ul#topnav li#nav3 a {
     display: block;
-    background: transparent url(../chrome/topnav_li_bkgd.gif) no-repeat top left;
+    background: transparent url(/img/chrome/topnav_li_bkgd.gif) no-repeat top left;
     width: 107px;
 }
 #header ul#topnav li#nav4 a {
     display: block;
-    background: transparent url(../chrome/topnav_li_bkgd.gif) no-repeat top left;
+    background: transparent url(/img/chrome/topnav_li_bkgd.gif) no-repeat top left;
     width: 78px;
 }
 #header ul#topnav li#nav5 a {
     display: block;
-    background: transparent url(../chrome/topnav_right.gif) no-repeat top right;
+    background: transparent url(/img/chrome/topnav_right.gif) no-repeat top right;
     width: 120px;
 }
 #home #flashcontent,
@@ -201,7 +201,7 @@ body#everyones #header ul#topnav li ul {
     margin: 0;
     padding: 0 0 0 20px;
     width: 700px;
-    background: #000 url(../chrome/button_bkgd.jpg) repeat-x top left;
+    background: #000 url(/img/chrome/button_bkgd.jpg) repeat-x top left;
 }
 p#subnav {
     display: block;
@@ -210,7 +210,7 @@ p#subnav {
     padding: 7px 0 0 20px;
     width: 488px;
     height: 26px;
-    background: #000 url(../chrome/button_bkgd.jpg) repeat-x top left;
+    background: #000 url(/img/chrome/button_bkgd.jpg) repeat-x top left;
 }
 p#subnav a.active {
     color: #fff;
@@ -336,7 +336,7 @@ div.advert {
     margin: auto;
     padding: 20px 0;
     width: 800px;
-    background: #333 url(../chrome/footer_bkgd.gif) no-repeat top left;
+    background: #333 url(/img/chrome/footer_bkgd.gif) no-repeat top left;
 }
 /*  Home Page
     ---------------------------------------------------------------- */
@@ -356,7 +356,7 @@ body#home ul.popnav li {
     margin: 0;
     line-height: 30px;
     text-indent: 10px;
-    background: #000 url(../chrome/button_bkgd.jpg) repeat-x top left;
+    background: #000 url(/img/chrome/button_bkgd.jpg) repeat-x top left;
 }
 body#home div.homebuttons {
     margin-top: 15px;
@@ -539,7 +539,7 @@ div.button {
 span.button a,
 div.button a {
     border: 1px solid #999;
-    background: url(../chrome/button_bkgd_small.jpg) repeat-x top;
+    background: url(/img/chrome/button_bkgd_small.jpg) repeat-x top;
     padding: 5px;
     margin-left: 10px;
     white-space: nowrap;
@@ -646,7 +646,7 @@ div#content div.big a {
 .photo a img,
 .results .photo img {
     display: block;
-    background: #999 url(../chrome/photo_bkgd.jpg) no-repeat top left;
+    background: #999 url(/img/chrome/photo_bkgd.jpg) no-repeat top left;
     width: 80px;
     height: 80px;
     padding: 5px;
@@ -726,7 +726,7 @@ div.set div.game {
     display: inline;
     float: left;
     clear: none;
-    background: #333 url(../chrome/set_game_bkgd.jpg) no-repeat top left;
+    background: #333 url(/img/chrome/set_game_bkgd.jpg) no-repeat top left;
 }
 #admin div.set div.game {
     width: 230px;
@@ -970,7 +970,7 @@ div.forum {
     font-size: 12px;
     margin: 8px 0;
     padding: 0;
-    background: transparent url(../chrome/feature_check.gif) no-repeat left;
+    background: transparent url(/img/chrome/feature_check.gif) no-repeat left;
     padding-left: 30px;
 }
 cite {
@@ -991,7 +991,7 @@ object#rating {
     background-image: none;
 }
 object#game {
-    background: transparent url(../chrome/player_bkgd.gif) no-repeat center center;
+    background: transparent url(/img/chrome/player_bkgd.gif) no-repeat center center;
 }
 div.gameobject {
     clear: both;
@@ -999,7 +999,7 @@ div.gameobject {
     border: 1px solid white;
 }
 object.flashintro {
-    background: black url(../chrome/intro_bkgd.gif) no-repeat top left;
+    background: black url(/img/chrome/intro_bkgd.gif) no-repeat top left;
 }
 
 #content div.morelists {
@@ -1169,7 +1169,7 @@ div#show p.prompt {
 }
 input,
 textarea {
-    background-image: url(../chrome/input_bkgd.jpg);
+    background-image: url(/img/chrome/input_bkgd.jpg);
     border: 1px solid #999;
     font-size: 13px;
     padding: 3px;
@@ -1191,7 +1191,7 @@ input.postbutton {
     font-size: 15px;
     color: #0f9;
     padding: 6px;
-    background-image: url(../chrome/button_bkgd.jpg);
+    background-image: url(/img/chrome/button_bkgd.jpg);
 }
 body div div#entercomment,
 body div div#entercomment form,
@@ -1289,7 +1289,7 @@ ul.contentpromo li a:hover {
     margin-bottom: 10px;
 }
 #sidebar div.promo_home {
-    background: url(../chrome/promo_bkgd_175.gif) no-repeat top left;
+    background: url(/img/chrome/promo_bkgd_175.gif) no-repeat top left;
     width: 175px;
     height: 140px;
     margin: 0;
@@ -1347,7 +1347,7 @@ div#status img {
     background-color: black;
 }
 div#friends {
-    background: #000 url("/friends/chrome/element_bkgd.gif") repeat-x top;
+    background: #000 url("/img/friends/chrome/element_bkgd.gif") repeat-x top;
         margin-bottom: 10px;
         padding: 8px;
         border: 2px solid #444;
@@ -1414,31 +1414,31 @@ div.share ul li a {
     margin-right: 8px;
 }
 a.delicious {
-    background: transparent url(../chrome/share/delicious.gif) no-repeat top;
+    background: transparent url(/img/chrome/share/delicious.gif) no-repeat top;
 }
 a.digg {
-    background: transparent url(../chrome/share/digg.gif) no-repeat top;
+    background: transparent url(/img/chrome/share/digg.gif) no-repeat top;
 }
 a.fark {
-    background: transparent url(../chrome/share/fark.gif) no-repeat top;
+    background: transparent url(/img/chrome/share/fark.gif) no-repeat top;
 }
 a.furl {
-    background: transparent url(../chrome/share/furl.gif) no-repeat top;
+    background: transparent url(/img/chrome/share/furl.gif) no-repeat top;
 }
 a.newsvine {
-    background: transparent url(../chrome/share/newsvine.gif) no-repeat top;
+    background: transparent url(/img/chrome/share/newsvine.gif) no-repeat top;
 }
 a.reddit {
-    background: transparent url(../chrome/share/reddit.gif) no-repeat top;
+    background: transparent url(/img/chrome/share/reddit.gif) no-repeat top;
 }
 a.tailrank {
-    background: transparent url(../chrome/share/tailrank.gif) no-repeat top;
+    background: transparent url(/img/chrome/share/tailrank.gif) no-repeat top;
 }
 a.yahoo {
-    background: transparent url(../chrome/share/yahoomyweb.gif) no-repeat top;
+    background: transparent url(/img/chrome/share/yahoomyweb.gif) no-repeat top;
 }
 a.blinklist {
-    background: transparent url(../chrome/share/blinklist.gif) no-repeat top;
+    background: transparent url(/img/chrome/share/blinklist.gif) no-repeat top;
 }
 a.delicious:hover,
 a.digg:hover,

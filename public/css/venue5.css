@@ -216,7 +216,7 @@ div#us_content div.message_poster label {
 div#us_content div.message_poster textarea {
     width: 97%;
     margin: 0 0 10px 0;
-    background: url('../chrome/input_bkgd.gif') #222;
+    background: url('/img/chrome/input_bkgd.gif') #222;
     border: 1px solid #666;
     box-shadow: inset 2px 2px 3px #000;
     -moz-box-shadow: inset 2px 2px 3px #000;
@@ -258,7 +258,7 @@ div#us_content span.us_icon {
     line-height: 20px;
     padding: 12px 10px;
     margin-bottom: 2px;
-    background-image: url('/chrome/emoticons.gif');
+    background-image: url('/img/chrome/emoticons.gif');
     background-repeat: no-repeat;
 }
 

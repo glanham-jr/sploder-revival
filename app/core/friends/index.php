@@ -17,8 +17,8 @@ $friendsService = new FriendsListRenderService($friendsRepository);
 
 <head>
     <?php include('../content/head.php'); ?>
-    <link rel="stylesheet" type="text/css" href="../css/sploder_v2p22.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/friends2.css" />
+    <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/friends2.css" />
     <style media="screen" type="text/css">
     #swfhttpobj {
         visibility: hidden

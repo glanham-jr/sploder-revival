@@ -7,7 +7,7 @@ a.tooltip {
     height: 25px;
     cursor: help;
     color: #ccc !important;
-    background: #000 url(../chrome/help_icon.gif) no-repeat top left;
+    background: #000 url(/img/chrome/help_icon.gif) no-repeat top left;
 }
 
 a.tooltip span {

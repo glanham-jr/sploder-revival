@@ -56,13 +56,13 @@ if (count($result) > 0) {
 <head>
     <?php include('../content/head.php'); ?>
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
-    <link rel="stylesheet" type="text/css" href="/awards/css/awards.css" />
-    <link rel="stylesheet" type="text/css" href="/awards/css/awards_editor.css" />
-    <link rel="stylesheet" href="css/friends2.css">
+    <link rel="stylesheet" type="text/css" href="/css/awards/css/awards.css" />
+    <link rel="stylesheet" type="text/css" href="/css/awards/css/awards_editor.css" />
+    <link rel="stylesheet" href="/css/awards/css/friends2.css">
 
-    <script type="text/javascript" src="includes/awards.js"></script>
+    <script type="text/javascript" src="/js/awards/includes/awards.js"></script>
     <!-- Include jQuery UI -->
-    <script type="text/javascript" src="includes/autocomplete/lib/jquery-1.2.6.min.js"></script>
+    <script type="text/javascript" src="/js/awards/includes/autocomplete/lib/jquery-1.2.6.min.js"></script>
     <script type="text/javascript">
     var _sf_startpt = (new Date()).getTime()
     </script>
@@ -70,11 +70,11 @@ if (count($result) > 0) {
 
     <script type="text/javascript">window.rpcinfo = "Making an Award";</script>
     <!--[if IE 6]>
-<link rel="stylesheet" type="text/css"  href="/awards/css/ie6.css" />
+<link rel="stylesheet" type="text/css"  href="/css/awards/css/ie6.css" />
 <![endif]-->
 
     <!--[if IE 7]>
-<link rel="stylesheet" type="text/css"  href="/awards/css/ie7.css" />
+<link rel="stylesheet" type="text/css"  href="/css/awards/css/ie7.css" />
 <![endif]-->
 <?php include('../content/onlinechecker.php'); ?>
 
@@ -191,28 +191,28 @@ if (count($result) > 0) {
                 <div id="controls">
                     <div id="control_01" class="control">
                         <label>Medal Style</label>
-                        <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller"
+                        <input type="image" src="/img/avatar/avatar_controls_prev.gif" class="control_prev controller"
                             name="layer_01" value="up">
-                        <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller"
+                        <input type="image" src="/img/avatar/avatar_controls_next.gif" class="control_next controller"
                             name="layer_01" value="down">
                         <label>Material</label>
-                        <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller"
+                        <input type="image" src="/img/avatar/avatar_controls_prev.gif" class="control_prev controller"
                             name="layer_01" value="prev">
-                        <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller"
+                        <input type="image" src="/img/avatar/avatar_controls_next.gif" class="control_next controller"
                             name="layer_01" value="next">
                     </div>
                     <div id="control_02" class="control">
                         <label>Field Color</label>
-                        <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller"
+                        <input type="image" src="/img/avatar/avatar_controls_prev.gif" class="control_prev controller"
                             name="layer_02" value="prev">
-                        <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller"
+                        <input type="image" src="/img/avatar/avatar_controls_next.gif" class="control_next controller"
                             name="layer_02" value="next">
                     </div>
                     <div id="control_03" class="control">
                         <label>Icon</label>
-                        <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller"
+                        <input type="image" src="/img/avatar/avatar_controls_prev.gif" class="control_prev controller"
                             name="layer_03" value="prev">
-                        <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller"
+                        <input type="image" src="/img/avatar/avatar_controls_next.gif" class="control_next controller"
                             name="layer_03" value="next">
                     </div>
 
@@ -272,8 +272,8 @@ if (count($result) > 0) {
                     <div class="clear"></div>
                 </div>
                 <input onclick="updateAvatar()" type="image" style="height:24px;width:81px;"
-                    src="/awards/chrome/savebutton.png" id="control_save" name="save" value="save">
-                <input type="image" src="/avatar/avatar_controls_reset.gif" id="control_reset" class="controller"
+                    src="/img/awards/chrome/savebutton.png" id="control_save" name="save" value="save">
+                <input type="image" src="/img/avatar/avatar_controls_reset.gif" id="control_reset" class="controller"
                     name="reset" value="reset">
                 <div class="clear"></div>
             </div>
@@ -466,7 +466,7 @@ if (count($result) > 0) {
 
             <a name="guide">&nbsp;</a><br />
             <h2>Awards Guide:</h2>
-            <img src="/awards/chrome/award_guide.gif" title="Awards you can make at each level"
+            <img src="/img/awards/chrome/award_guide.gif" title="Awards you can make at each level"
                 alt="Awards you can make at each level" />
             <p>As you obtain higher levels on Sploder, you can make more types of awards. Above is a simple guide to the
                 types of awards

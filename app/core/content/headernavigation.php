@@ -30,7 +30,7 @@ function format_num(float $num, $precision = 0): string
 <div id="main" style="width:980px;">
     <div id="header">
         <div id="title">
-            <h1><a href="/" title="Sploder"><img style="margin-top:-20px; height: 130px" src="/chrome/logo.png"><span
+            <h1><a href="/" title="Sploder"><img style="margin-top:-20px; height: 130px" src="/img/chrome/logo.png"><span
                         class="hide">Games at Sploder</span></a></h1>
         </div>
         <div id="tools"><?php

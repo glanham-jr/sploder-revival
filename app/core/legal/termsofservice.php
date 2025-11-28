@@ -8,8 +8,8 @@
     <?php include('../content/head.php'); ?>
 
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
-    <link rel="stylesheet" type="text/css" href="/slider/nivo-slider.css" />
-    <link rel="stylesheet" type="text/css" href="/slider/sploder/style_v2p10.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slider/nivo-slider.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slider/sploder/style_v2p10.css" />
     <script type="text/javascript">window.rpcinfo = "Viewing the Terms of Service";</script>
     <?php include('../content/onlinechecker.php'); ?>
 </head>

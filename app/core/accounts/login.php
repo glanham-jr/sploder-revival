@@ -10,12 +10,12 @@ require('logincheck.php');
 <head>
     <?php include('../content/head.php'); ?>
 
-    <link rel="stylesheet" type="text/css" href="splodersimple.css" />
+    <link rel="stylesheet" type="text/css" href="/css/accounts/splodersimple.css" />
 
 
     <?php include('../content/onlinechecker.php'); ?>
     <script type="text/javascript">window.rpcinfo = "Logging in";</script>
-    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="/js/accounts/login.js"></script>
 
 </head>
 <?php include('../content/addressbar.php'); ?>
@@ -27,7 +27,7 @@ require('logincheck.php');
             <a href="/">
                 <div id="title">
                     <h1><a href="/" title="Sploder"><img style="margin-top:-20px; height: 130px"
-                                src="/chrome/logo.png"><span class="hide">Games at Sploder</span></a></h1>
+                                src="/img/chrome/logo.png"><span class="hide">Games at Sploder</span></a></h1>
                 </div>
                 <div id="tools"></div>
             </a>

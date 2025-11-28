@@ -189,12 +189,12 @@ div.mprofsection h4 a {
     color: #bcd;
     line-height: 19px;
     display: block;
-    background: url('/chrome/icon_expand.gif') no-repeat top right;
+    background: url('/img/chrome/icon_expand.gif') no-repeat top right;
 }
 
 div.mprofsection h4 a:hover {
     color: #fff;
-    background-image: url('/chrome/icon_expand_hover.gif');
+    background-image: url('/img/chrome/icon_expand_hover.gif');
     cursor: s-resize;
 }
 
@@ -229,7 +229,7 @@ div#mprof_about p {
 }
 
 div#mprof_about div.subsection {
-    background: #000 url('/chrome/arrow_subitem.gif') no-repeat top left;
+    background: #000 url('/img/chrome/arrow_subitem.gif') no-repeat top left;
     margin: 0;
     padding: 0;
 }
