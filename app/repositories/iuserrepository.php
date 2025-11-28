@@ -141,4 +141,6 @@ interface IUserRepository
      * @return bool true if online members exist, false otherwise
      */
     function showOnlineList(): bool;
+
+    function getUserStats(string $username): array|null;
 }
