@@ -54,6 +54,11 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
   && php composer-setup.php --install-dir=/usr/local/bin --filename=composer \
   && php -r "unlink('composer-setup.php');"
 
+
+RUN a2enmod rewrite # Enable mod rewrites in .htaccess \
+ && chown -R www-data:www-data /var/www/app # Set ownership so Apache can read app & vendor files \
+ && chown -R www-data:www-data /var/www/vendor
+
 COPY composer.json composer.json
 COPY composer.lock composer.lock
 RUN composer install \
