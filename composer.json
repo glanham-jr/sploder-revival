@@ -18,8 +18,9 @@
         "sort-packages": true
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "^3.0",
-        "phpunit/phpunit": "^11.5"
+        "flightphp/tracy-extensions": "*",
+        "phpunit/phpunit": "^11.5",
+        "squizlabs/php_codesniffer": "^3.0"
     },
     "require": {
         "php": "^8.0",
