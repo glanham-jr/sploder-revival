@@ -1,8 +1,8 @@
 <?php
-require_once '../../content/initialize.php';
+require_once __DIR__ . '/../../content/initialize.php';
  require(__DIR__.'/../../content/disablemobile.php'); ?>
 <?php
-require_once('php/verify.php');
+require_once(__DIR__ . '/php/verify.php');
 require_once(__DIR__ . '/../../../services/GameListRenderService.php');
 require_once(__DIR__ . '/../../../repositories/repositorymanager.php');
 
@@ -34,7 +34,7 @@ $gameListRenderService = new GameListRenderService(RepositoryManager::get()->get
     <?php include(__DIR__ . '/../../content/headernavigation.php'); ?>
 
     <div id="page">
-        <?php include('content/subnav.php'); ?>
+        <?php include(__DIR__ . '/content/subnav.php'); ?>
 
         <div id="content" style="width:940px;">
             <?php if (isset($_GET['err'])) : ?>

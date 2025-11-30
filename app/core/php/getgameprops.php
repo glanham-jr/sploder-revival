@@ -1,5 +1,5 @@
 <?php
-require_once '../content/initialize.php';
+require_once __DIR__ . '/../content/initialize.php';
 
 $separated = explode("_", $_GET['pubkey']);
 // Check whether pubkey matches game ID ad User ID

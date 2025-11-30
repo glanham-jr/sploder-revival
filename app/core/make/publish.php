@@ -1,8 +1,8 @@
 <?php
-require_once '../content/initialize.php';
+require_once __DIR__ . '/../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
-require_once('content/publish.php');
+require_once(__DIR__ . '/content/publish.php');
 require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 $userRepository = RepositoryManager::get()->getUserRepository();
 $isolated = $userRepository->isIsolated($_SESSION['username']);

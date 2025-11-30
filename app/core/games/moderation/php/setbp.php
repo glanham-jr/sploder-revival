@@ -1,8 +1,8 @@
 <?php
-require_once '../../../content/initialize.php';
+require_once __DIR__ . '/../../../content/initialize.php';
 
 
-include('verify.php');
+include(__DIR__ . '/verify.php');
 require_once(__DIR__ . "/../../../../database/connect.php");
 
 $username = $_POST['username'];
@@ -27,7 +27,7 @@ if (
     ':username' => $username
     ])
 ) {
-    include('log.php');
+    include(__DIR__ . '/log.php');
     logModeration('set boost points', 'from ' . $oldbp . ' to ' . $_POST['bp'] . ' for ' . $username, 2);
     header("Location: ../index.php?msg=Boost points set successfully");
 } else {

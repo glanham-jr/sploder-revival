@@ -1,8 +1,8 @@
 <?php
-require_once '../../../content/initialize.php';
+require_once __DIR__ . '/../../../content/initialize.php';
 
 
-include('verify.php');
+include(__DIR__ . '/verify.php');
 require_once(__DIR__ . "/../../../../database/connect.php");
 
 $db = getDatabase();
@@ -56,7 +56,7 @@ if (
     ':autounbandate' => $autounbandate
     ])
 ) {
-    include('log.php');
+    include(__DIR__ . '/log.php');
     logModeration('banned', $username . ' for ' . $_POST['time'] . " days because of " . $reason, 3);
     header("Location: ../index.php?msg=User banned successfully");
 } else {

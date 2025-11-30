@@ -1,8 +1,8 @@
 <?php
-require_once '../../../content/initialize.php';
+require_once __DIR__ . '/../../../content/initialize.php';
 
 
-include('verify.php');
+include(__DIR__ . '/verify.php');
 require_once(__DIR__ . "/../../../../database/connect.php");
 $db = getDatabase();
 
@@ -26,6 +26,6 @@ $bp = $db->queryFirstColumn("SELECT boostpoints
 ]);
 
 // Send header with boost points
-include('log.php');
+include(__DIR__ . '/log.php');
 logModeration('checked boost points', 'of ' . $username . ' which is ' . $bp, 1);
 header("Location: ../index.php?bp=" . $bp);

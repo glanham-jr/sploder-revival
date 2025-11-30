@@ -1,5 +1,5 @@
 <?php
-require_once '../../content/initialize.php';
+require_once __DIR__ . '/../../content/initialize.php';
 
 $material_list = array(
     0 => "Pewter",

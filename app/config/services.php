@@ -61,8 +61,8 @@ use Tracy\Debugger;
  *
  * For more options, see https://tracy.nette.org/en/configuration
  **********************************************/
-Debugger::enable(); // Auto-detects environment
-// Debugger::enable(Debugger::Development); // Explicitly set environment
+# Debugger::enable(); // Auto-detects environment
+Debugger::enable(Debugger::Development); // Explicitly set environment
 // Debugger::enable('23.75.345.200'); // Restrict debug bar to specific IPs
 Debugger::$logDirectory = __DIR__ . $ds . '..' . $ds . 'log'; // Log directory
 Debugger::$strictMode = true; // Show all errors (set to E_ALL & ~E_DEPRECATED for less noise)
@@ -71,6 +71,7 @@ Debugger::$strictMode = true; // Show all errors (set to E_ALL & ~E_DEPRECATED f
 // Debugger::$editor = 'vscode'; // Enable clickable file links in debug bar
 // Debugger::$email = 'your@email.com'; // Send error notifications
 if (Debugger::$showBar === true && php_sapi_name() !== 'cli') {
+    Flight::set('flight.content_length', false);
 	(new TracyExtensionLoader($app)); // Load FlightPHP Tracy extensions
 }
 

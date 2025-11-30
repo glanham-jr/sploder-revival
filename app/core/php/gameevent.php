@@ -1,5 +1,5 @@
 <?php
-require_once '../content/initialize.php';
+require_once __DIR__ . '/../content/initialize.php';
 session_start();
 // If the user is not logged in, die
 if (!isset($_SESSION['username'])) {

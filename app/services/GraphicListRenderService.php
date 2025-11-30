@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__ . '/../content/pages.php');
+require_once(__DIR__ . '/../core/content/pages.php');
 
 class GraphicListRenderService
 {

@@ -1,8 +1,8 @@
 <?php
-require_once '../../../content/initialize.php';
+require_once __DIR__ . '/../../../content/initialize.php';
 
 
-include('verify.php');
+include(__DIR__ . '/verify.php');
 require_once(__DIR__ . "/../../../../database/connect.php");
 
 $db = getDatabase();
@@ -103,7 +103,7 @@ if ($count >= 3) {
             ]);
         }
 
-        include_once('log.php');
+        include_once(__DIR__ . '/log.php');
         logModeration('made a delete request', 'on ' . $title . ' and deleted it because of ' . $reason, 3);
         header("Location: ../" . $page . "?msg=Game deleted successfully");
     } catch (Exception $e) {
@@ -125,7 +125,7 @@ if ($count >= 3) {
 
     $title = getGameName($gameId);
 
-    include_once('log.php');
+    include_once(__DIR__ . '/log.php');
     logModeration('made a delete request', 'on ' . $title . ' because of ' . $reason, 3);
     http_response_code(204);
     header("Location: ../" . $page . "?msg=Game deletion request submitted successfully. Total requests: " . $count . "/3");

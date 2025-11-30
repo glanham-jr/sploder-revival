@@ -1,7 +1,7 @@
 <?php
-require_once '../../content/initialize.php';
+require_once __DIR__ . '/../../content/initialize.php';
  require(__DIR__.'/../../content/disablemobile.php'); ?>
-<?php include('php/verify.php'); ?>
+<?php include(__DIR__ . '/php/verify.php'); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -26,7 +26,7 @@ require_once '../../content/initialize.php';
     <?php include(__DIR__ . '/../../content/headernavigation.php'); ?>
 
     <div id="page">
-        <?php include('content/subnav.php'); ?>
+        <?php include(__DIR__ . '/content/subnav.php'); ?>
 
         <div id="content">
             <?php if (isset($_GET['err'])) : ?>
@@ -38,7 +38,7 @@ require_once '../../content/initialize.php';
             <h2>List of all banned members</h2>
 
             <?php
-            require_once('content/getbans.php');
+            require_once(__DIR__ . '/content/getbans.php');
             if (count($bans) == 0) {
                 echo "<p>No members are currently banned</p>";
             } else {

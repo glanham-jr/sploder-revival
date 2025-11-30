@@ -1,5 +1,5 @@
 <?php
-require_once '../content/initialize.php';
+require_once __DIR__ . '/../content/initialize.php';
 
 include(__DIR__ . '/../content/logincheck.php');
 require_once(__DIR__ . '/../content/censor.php');

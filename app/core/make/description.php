@@ -1,8 +1,8 @@
 <?php
-require_once '../content/initialize.php';
+require_once __DIR__ . '/../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
-require('content/verify.php');
+require(__DIR__ . '/content/verify.php');
 require(__DIR__ . '/../content/censor.php');
 $description = trim(censorText($_POST['description']));
 

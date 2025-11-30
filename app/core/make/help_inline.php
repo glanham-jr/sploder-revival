@@ -1,5 +1,5 @@
 <?php
-require_once '../content/initialize.php';
+require_once __DIR__ . '/../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php include_once(__DIR__ . '/../config/env.php'); ?>
 <!DOCTYPE html

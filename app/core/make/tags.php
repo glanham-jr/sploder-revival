@@ -1,6 +1,6 @@
 <?php
-require_once '../content/initialize.php';
-require('content/verify.php');
+require_once __DIR__ . '/../content/initialize.php';
+require(__DIR__ . '/content/verify.php');
 require_once(__DIR__ . '/../content/censor.php');
 $tags = explode(" ", censorText($_POST['tags']));
 // Check whether each tag is valid
