@@ -3,7 +3,7 @@ require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 require_once('content/publish.php');
-require_once('../../repositories/repositorymanager.php');
+require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 $userRepository = RepositoryManager::get()->getUserRepository();
 $isolated = $userRepository->isIsolated($_SESSION['username']);
 ?>
@@ -13,7 +13,7 @@ $isolated = $userRepository->isIsolated($_SESSION['username']);
 <head>
     <?php
     if ($game['g_swf'] == 1) {
-        include('../content/ruffle.php');
+        include(__DIR__ . '/../content/ruffle.php');
     }
     ?>
     <title>Sploder</title>
@@ -21,7 +21,7 @@ $isolated = $userRepository->isIsolated($_SESSION['username']);
     <link rel="stylesheet" href="/css/sploder_v2p12.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="/css/scrollbar.css" />
     <link rel="stylesheet" href="/css/publishpage2.css" type="text/css" />
-    <?php //require('../content/swfobject.php'); 
+    <?php //require(__DIR__ . '/../content/swfobject.php'); 
     ?>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
     <script type="text/javascript" src="/js/make/content/publish.js"></script>
@@ -135,7 +135,7 @@ $isolated = $userRepository->isIsolated($_SESSION['username']);
                     <a class="tagcolor0">alien</a>).
                     Use any words you like:
                     <?php } else {
-                            require('../content/taglister.php');
+                            require(__DIR__ . '/../content/taglister.php');
                         ?>
                     Tags: <?= displayTags($tags, false) ?>
                     <?php } ?>

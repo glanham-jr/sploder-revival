@@ -3,7 +3,7 @@ require_once '../content/initialize.php';
 session_start();
 header('Content-Type: text/xml');
 $id = (int)filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
-require_once('../../database/connect.php');
+require_once(__DIR__ . '/../../database/connect.php');
 $db = getDatabase();
 $qs2 = "SELECT userid FROM graphics WHERE id=:id";
 $userid = $db->queryFirstColumn($qs2,0,[':id' => $id

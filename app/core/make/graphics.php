@@ -7,9 +7,9 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 
 <head>
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
-    <?php require('../content/ruffle.php'); ?>
-    <?php require('../content/swfobject.php'); ?>
-    <?php require('../content/head.php'); ?>
+    <?php require(__DIR__ . '/../content/ruffle.php'); ?>
+    <?php require(__DIR__ . '/../content/swfobject.php'); ?>
+    <?php require(__DIR__ . '/../content/head.php'); ?>
 
 
 
@@ -64,14 +64,14 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 
 
 </head>
-<?php require('../content/addressbar.php'); ?>
+<?php require(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="creator" class="graphicseditor">
-    <?php require('../content/headernavigation.php'); ?>
+    <?php require(__DIR__ . '/../content/headernavigation.php'); ?>
 
 
     <div id="page">
-        <?php require('../content/subnav.php'); ?>
+        <?php require(__DIR__ . '/../content/subnav.php'); ?>
 
 
         <div id="content">
@@ -104,7 +104,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
             <div class="spacer">&nbsp;</div>
         </div>
         <div class="spacer">&nbsp;</div>
-        <?php require('../content/footernavigation.php'); ?>
+        <?php require(__DIR__ . '/../content/footernavigation.php'); ?>
 
 
 </body>

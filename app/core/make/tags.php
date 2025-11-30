@@ -1,7 +1,7 @@
 <?php
 require_once '../content/initialize.php';
 require('content/verify.php');
-require_once('../content/censor.php');
+require_once(__DIR__ . '/../content/censor.php');
 $tags = explode(" ", censorText($_POST['tags']));
 // Check whether each tag is valid
 // For a tag to be valid, it must be less than 30 characters long

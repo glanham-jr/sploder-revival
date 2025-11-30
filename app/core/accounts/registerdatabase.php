@@ -16,7 +16,7 @@ if (!$captcha) {
 }
 
 $ip = getVisitorIp();
-require_once('../config/env.php');
+require_once(__DIR__ . '/../config/env.php');
 $secretKey = getenv("CF_TURNSTILE_SECRET_KEY");
 
 $url_path = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
@@ -53,7 +53,7 @@ if (intval($responseKeys["success"]) !== 1) {
     $isolate = $_POST['social'] ?? "off";
     $tostest = $_POST['tostest'] ?? "off";
     $username = mb_strtolower($_SESSION['enteredusername']);
-    require_once("../content/censor.php");
+    require_once(__DIR__ . "/../content/censor.php");
     $censoredUsername = censorText($username);
 
     if ($censoredUsername !== $username) {
@@ -68,7 +68,7 @@ if (intval($responseKeys["success"]) !== 1) {
     }
     $t = time();
     if ($tostest == "on") {
-        require('../../database/connect.php');
+        require(__DIR__ . '/../../database/connect.php');
 
         $originalMembersDb = getOriginalMembersDatabase();
         $result2 = $originalMembersDb->query("SELECT username FROM members WHERE username=:user LIMIT 1", [

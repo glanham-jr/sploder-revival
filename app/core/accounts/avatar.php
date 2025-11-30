@@ -1,12 +1,12 @@
 <?php
 require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
-<?php include('../content/logincheck.php') ?>
+<?php include(__DIR__ . '/../content/logincheck.php') ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <?php include('../content/head.php'); ?>
+    <?php include(__DIR__ . '/../content/head.php'); ?>
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
     <link rel="stylesheet" href="/css/friends2.css">
     <script type="text/javascript">
@@ -22,19 +22,19 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <!--[if IE 7]>
 <link rel="stylesheet" type="text/css"  href="/css/awards/css/ie7.css" />
 <![endif]-->
-    <?php include('../content/onlinechecker.php'); ?>
+    <?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
 
 
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="awardsmanager" class="">
-    <?php include('../content/headernavigation.php'); ?>
+    <?php include(__DIR__ . '/../content/headernavigation.php'); ?>
 
 
     <div id="page">
         <?php
-        require_once('../../services/DashboardSubnavService.php');
+        require_once(__DIR__ . '/../../services/DashboardSubnavService.php');
         $subnavService = new DashboardSubnavService();
         echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
         ?>
@@ -146,7 +146,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
             <div style="width:100%;height:30px;">
             </div>
         </div>
-        <?php include('../content/footernavigation.php') ?>
+        <?php include(__DIR__ . '/../content/footernavigation.php') ?>
 
         <input type="hidden" id="newURL" size="40" value="https://some.domain/classic-0">
     </div>

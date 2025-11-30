@@ -3,7 +3,7 @@ require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php session_start(); ?>
 <?php
-require_once('../../repositories/repositorymanager.php');
+require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 $gameRepository = RepositoryManager::get()->getGameRepository();
 if (isset($_GET['review'])) {
     // Direct access via review ID needs some work
@@ -48,7 +48,7 @@ if (isset($_SESSION['loggedin'])) {
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <?php include('../content/head.php') ?>
+    <?php include(__DIR__ . '/../content/head.php') ?>
     <link rel="stylesheet" type="text/css" href="/css/reviews.css" />
     <!-- <link rel="stylesheet" type="text/css" href="/css/allreviews.css" /> -->
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
@@ -58,13 +58,13 @@ if (isset($_SESSION['loggedin'])) {
     <?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
     <script type="text/javascript">window.rpcinfo = "Viewing a Review";</script>
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="everyones" class="reviews">
 
-    <?php include('../content/headernavigation.php') ?>
+    <?php include(__DIR__ . '/../content/headernavigation.php') ?>
     <div id="page">
-        <?php include('../content/subnav.php') ?>
+        <?php include(__DIR__ . '/../content/subnav.php') ?>
 
 
         <div id="content">
@@ -208,7 +208,7 @@ if (isset($_SESSION['loggedin'])) {
             <div class="spacer">&nbsp;</div>
         </div>
         <div class="spacer">&nbsp;</div>
-        <?php include('../content/footernavigation.php') ?>
+        <?php include(__DIR__ . '/../content/footernavigation.php') ?>
 </body>
 
 </html>

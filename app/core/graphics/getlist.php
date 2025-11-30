@@ -6,7 +6,7 @@ session_start();
 $start = $_GET['start'] ?? 0; 
 $num = $_GET['num'] ?? 12; 
 
-require('../../database/connect.php');
+require(__DIR__ . '/../../database/connect.php');
 
 $db = getDatabase();
 

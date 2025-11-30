@@ -2,11 +2,11 @@
 require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
-include('../content/logincheck.php');
-require_once('../../database/connect.php');
+include(__DIR__ . '/../content/logincheck.php');
+require_once(__DIR__ . '/../../database/connect.php');
 $db = getDatabase();
-require_once('../../repositories/repositorymanager.php');
-require_once('../../services/FriendsListRenderService.php');
+require_once(__DIR__ . '/../../repositories/repositorymanager.php');
+require_once(__DIR__ . '/../../services/FriendsListRenderService.php');
 $friendsRepository = RepositoryManager::get()->getFriendsRepository();
 $friendsRepository->setAllFriendsAsViewed($_SESSION['userid']);
 $userRepository = RepositoryManager::get()->getUserRepository();
@@ -16,7 +16,7 @@ $friendsService = new FriendsListRenderService($friendsRepository);
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <?php include('../content/head.php'); ?>
+    <?php include(__DIR__ . '/../content/head.php'); ?>
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/friends2.css" />
     <style media="screen" type="text/css">
@@ -34,16 +34,16 @@ $friendsService = new FriendsListRenderService($friendsRepository);
     <link href="/css/members.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" language="Javascript">
     </script>
-    <?php include('../content/onlinechecker.php'); ?>
+    <?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
     <script type="text/javascript">window.rpcinfo = "Managing their Friends";</script>
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="friendsmanager" class="friend" onload="doLoad();">
-    <?php include('../content/headernavigation.php'); ?>
+    <?php include(__DIR__ . '/../content/headernavigation.php'); ?>
     <div id="page">
         <?php
-        require_once('../../services/DashboardSubnavService.php');
+        require_once(__DIR__ . '/../../services/DashboardSubnavService.php');
         $subnavService = new DashboardSubnavService();
         echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
         ?>
@@ -142,10 +142,10 @@ $friendsService = new FriendsListRenderService($friendsRepository);
                 if (onload2) onload2();
             }
             </script>
-            <?php include('../content/onlinelist.php') ?>
+            <?php include(__DIR__ . '/../content/onlinelist.php') ?>
 
         </div>
-        <div class="spacer">&nbsp;</div><?php include('../content/footernavigation.php') ?>
+        <div class="spacer">&nbsp;</div><?php include(__DIR__ . '/../content/footernavigation.php') ?>
 </body>
 
 </html>

@@ -5,11 +5,11 @@ session_start();
 session_destroy();
 session_start();
 
-require_once("../../database/connect.php");
+require_once(__DIR__ . "/../../database/connect.php");
 
 $u = mb_strtolower($_POST['username']);
 
-require_once("../content/censor.php");
+require_once(__DIR__ . "/../content/censor.php");
 $censoredUsername = censorText($u);
 
 if ($censoredUsername !== $u) {

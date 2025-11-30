@@ -2,7 +2,7 @@
 require_once '../../content/initialize.php';
 
 session_start();
-require_once('../../../database/connect.php');
+require_once(__DIR__ . '/../../../database/connect.php');
 
 $db = getDatabase();
 $db->execute("UPDATE friends

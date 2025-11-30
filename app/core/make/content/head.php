@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
-<?php require('../content/swfobject.php'); ?>
-<?php include('../content/head.php'); ?>
+<?php require(__DIR__ . '/../content/swfobject.php'); ?>
+<?php include(__DIR__ . '/../content/head.php'); ?>
 <?php require(__DIR__ . '/../../../repositories/repositorymanager.php'); ?>
 <?php
 $userRepository = RepositoryManager::get()->getUserRepository();

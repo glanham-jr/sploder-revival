@@ -2,9 +2,9 @@
 require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
-include('../content/logincheck.php');
-require_once('../graphics/verify.php');
-require_once('../../repositories/repositorymanager.php');
+include(__DIR__ . '/../content/logincheck.php');
+require_once(__DIR__ . '/../graphics/verify.php');
+require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 $id = $_GET['id'];
 $verified = verifyIfGraphicOwner((int)$id, $_SESSION['userid']);
 
@@ -19,7 +19,7 @@ if ($verified) {
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <?php include('../content/head.php'); ?>
+    <?php include(__DIR__ . '/../content/head.php'); ?>
     <link href="/css/dashboard/css/css.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p3.css">
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
@@ -32,16 +32,16 @@ if ($verified) {
         visibility: hidden
     }
     </style>
-    <?php include('../content/onlinechecker.php'); ?>
+    <?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
     <script type="text/javascript">window.rpcinfo = "Tagging a Graphic";</script>
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="home" class="" onload="doLoad();">
-    <?php include('../content/headernavigation.php'); ?>
+    <?php include(__DIR__ . '/../content/headernavigation.php'); ?>
     <div id="page">
         <?php
-        require_once('../../services/DashboardSubnavService.php');
+        require_once(__DIR__ . '/../../services/DashboardSubnavService.php');
         $subnavService = new DashboardSubnavService();
         echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
         ?>
@@ -83,7 +83,7 @@ if ($verified) {
                             <a class="tagcolor0">alien</a>).
                             Use any words you like: </big>
                         <?php } else { ?>
-                        Tags: <?php include('../content/taglister.php');
+                        Tags: <?php include(__DIR__ . '/../content/taglister.php');
                                     echo displayTags($tags, false, TagType::Graphics) ?><br><br>
                         Edit your descriptive tags:
                         <?php } ?><br><br>
@@ -106,5 +106,5 @@ if ($verified) {
             <?php } ?>
         </div>
         <div class="spacer">&nbsp;</div>
-        <?php include('../content/footernavigation.php') ?>
+        <?php include(__DIR__ . '/../content/footernavigation.php') ?>
 </body>

@@ -3,7 +3,7 @@ require_once '../content/initialize.php';
 
 
 // Get the list of staff members
-require_once('../../database/connect.php');
+require_once(__DIR__ . '/../../database/connect.php');
 $db = getDatabase();
 // Get all members who have permission that is not null as well as not just blank in a random order
 $sql = "SELECT username FROM members WHERE perms IS NOT NULL AND perms != '' ORDER BY RANDOM()";

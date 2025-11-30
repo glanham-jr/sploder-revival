@@ -5,7 +5,7 @@ session_start();
 if (!isset($_SESSION['loggedin'])) {
     die("Not logged in");
 }
-require_once('../../repositories/repositorymanager.php');
+require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 $gameRepository = RepositoryManager::get()->getGameRepository();
 $userRepository = RepositoryManager::get()->getUserRepository();
 
@@ -30,7 +30,7 @@ if (isset($_GET['feature']) && $_GET['feature'] === 'false') {
 }
 $gameRepository->setFeaturedStatus($id, $feature, $_SESSION['userid']);
 $gameInfo = $gameRepository->getGameBasicInfo($id);
-require_once('../games/moderation/php/log.php');
+require_once(__DIR__ . '/../games/moderation/php/log.php');
 if ($feature) {
     logModeration('featured', $gameInfo['title'] . ' by ' . $gameInfo['author'], 2);
 } else {

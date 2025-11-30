@@ -18,7 +18,7 @@ function displayTags($tagList, $hyperlink = true, TagType $tagType = TagType::Ga
     $colors = ["0", "1", "2", "3"]; // There are 4 colors for tags on Sploder
 
     // Get total number of games for said tag
-    require_once('../../database/connect.php');
+    require_once(__DIR__ . '/../../database/connect.php');
     $db = getDatabase();
     $tagParameters = array_map(function ($tag) {
         return $tag[0];

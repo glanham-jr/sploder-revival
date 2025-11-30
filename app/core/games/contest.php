@@ -3,14 +3,14 @@ require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 session_start();
-include('../../database/connect.php');
+include(__DIR__ . '/../../database/connect.php');
 $db = getDatabase();
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <?php include('../content/head.php'); ?>
+    <?php include(__DIR__ . '/../content/head.php'); ?>
 
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/members.css" />
@@ -19,7 +19,7 @@ $db = getDatabase();
             visibility: hidden
         }
     </style>
-    <?php include('../content/ruffle.php'); ?>
+    <?php include(__DIR__ . '/../content/ruffle.php'); ?>
 
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
@@ -32,15 +32,15 @@ $db = getDatabase();
     <link href="/css/sploder_v2p22.min.css" rel="stylesheet" type="text/css" />
 
 
-    <?php include('../content/onlinechecker.php'); ?>
+    <?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
     <script type="text/javascript">window.rpcinfo = "Viewing Contest";</script>
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="everyones" class="contest">
-    <?php include('../content/headernavigation.php'); ?>
+    <?php include(__DIR__ . '/../content/headernavigation.php'); ?>
     <div id="page">
-        <?php include('../content/subnav.php') ?>
+        <?php include(__DIR__ . '/../content/subnav.php') ?>
         <div id="content">
             <h3>Game Contest</h3>
             <div class="gameobject" style="width: 570px; height: 406px;">
@@ -126,24 +126,24 @@ $db = getDatabase();
 
             <br style="clear: both;" /><br />
 
-            <?php include('../content/trendinggames.php'); ?>
+            <?php include(__DIR__ . '/../content/trendinggames.php'); ?>
 
             <div class="spacer">&nbsp;</div>
         </div>
         <div id="sidebar">
 
 
-            <?php include('../content/hotgames.php'); ?>
+            <?php include(__DIR__ . '/../content/hotgames.php'); ?>
 
 
-            <?php include('../content/friendliest.php'); ?>
+            <?php include(__DIR__ . '/../content/friendliest.php'); ?>
 
 
             <br /><br /><br />
             <div class="spacer">&nbsp;</div>
         </div>
         <div class="spacer">&nbsp;</div>
-        <?php include('../content/footernavigation.php') ?>
+        <?php include(__DIR__ . '/../content/footernavigation.php') ?>
 </body>
 
 </html>

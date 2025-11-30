@@ -6,7 +6,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <?php require('../content/ruffle.php'); ?>
+    <?php require(__DIR__ . '/../content/ruffle.php'); ?>
     <?php require('content/head.php'); ?>
 
     var attributes = {
@@ -22,9 +22,9 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 
 <body id="creator" class="shooter">
 
-    <?php include('../content/headernavigation.php'); ?>
+    <?php include(__DIR__ . '/../content/headernavigation.php'); ?>
     <div id="page">
-        <?php include('../content/subnav.php'); ?>
+        <?php include(__DIR__ . '/../content/subnav.php'); ?>
 
         <div id="content">
             <h3>Make My Own Shooter Game</h3>
@@ -47,7 +47,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
             <div class="spacer">&nbsp;</div>
         </div>
         <div class="spacer">&nbsp;</div>
-        <?php include('../content/footernavigation.php') ?>
+        <?php include(__DIR__ . '/../content/footernavigation.php') ?>
 </body>
 
 </html>

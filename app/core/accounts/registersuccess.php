@@ -6,16 +6,16 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <?php include('../content/head.php'); ?>
+    <?php include(__DIR__ . '/../content/head.php'); ?>
 
     <link rel="stylesheet" type="text/css" href="/css/accounts/splodersimple.css" />
 
     <link rel="stylesheet" type="text/css" href="/css/slider/nivo-slider.css" />
     <link rel="stylesheet" type="text/css" href="/css/slider/sploder/style_v2p10.css" />
     <script type="text/javascript">window.rpcinfo = "Signed up";</script>
-    <?php include('../content/onlinechecker.php'); ?>
+    <?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="home" class="">
 

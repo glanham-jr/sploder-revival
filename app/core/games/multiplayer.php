@@ -12,7 +12,7 @@ $status = "playing";
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <?php include('../content/head.php') ?>
+    <?php include(__DIR__ . '/../content/head.php') ?>
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
     <link rel="stylesheet" href="/css/sploder_mobile_v03.min.css">
     <script type="text/javascript">
@@ -22,13 +22,13 @@ $status = "playing";
     <script type="text/javascript">window.rpcinfo = "Playing Sploderheads Multiplayer";</script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="creator" class="multiplayer" >
 
-    <?php include('../content/headernavigation.php') ?>
+    <?php include(__DIR__ . '/../content/headernavigation.php') ?>
     <div id="page">
-        <?php include('../content/subnav.php') ?>
+        <?php include(__DIR__ . '/../content/subnav.php') ?>
 
 			<div id="content"><h3>SploderHeads Multiplayer Smash-fest</h3>
         <a name="top"></a>
@@ -263,7 +263,7 @@ will be selected.</p>
 				<div class="spacer">&nbsp;</div>
 			</div>			
 
-    <?php include('../content/footernavigation.php') ?>
+    <?php include(__DIR__ . '/../content/footernavigation.php') ?>
 
 </body>
 </html>

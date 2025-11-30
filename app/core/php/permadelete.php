@@ -6,7 +6,7 @@ session_start();
 header('Content-Type: text/xml');
 $id = (int)filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
 
-require_once('../../database/connect.php');
+require_once(__DIR__ . '/../../database/connect.php');
 
 $db = getDatabase();
 $result2 = $db->query("SELECT author FROM games WHERE g_id=:id", [

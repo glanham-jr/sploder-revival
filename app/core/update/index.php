@@ -19,7 +19,7 @@ if ($os == 'win32') {
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <?php include('../content/head.php'); ?>
+    <?php include(__DIR__ . '/../content/head.php'); ?>
 
     <link rel="stylesheet" type="text/css" href="/css/update/update.css" />
 

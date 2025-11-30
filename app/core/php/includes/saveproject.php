@@ -13,7 +13,7 @@ function saveProject(int $g_swf): int
         $ispublished = 0;
         $id = 0;
         $new_game = false;
-        include('../database/connect.php');
+        include(__DIR__ . '/../database/connect.php');
         $db = getDatabase();
         if (isset($_GET['projid'])) {
             $id = (int)filter_var($_GET['projid'], FILTER_SANITIZE_NUMBER_INT);
@@ -47,7 +47,7 @@ function saveProject(int $g_swf): int
             // Set xml2 "id" attribute to the new game id
             $xml2->attributes()['id'] = $id;
         } else {
-            require_once('../../../repositories/repositorymanager.php');
+            require_once(__DIR__ . '/../../../repositories/repositorymanager.php');
             $gameRepository = RepositoryManager::get()->getGameRepository();
 
 

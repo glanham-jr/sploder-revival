@@ -1,10 +1,10 @@
 <?php
 
 session_start();
-include('../database/connect.php');
+include(__DIR__ . '/../database/connect.php');
 $username = $_GET['u'];
 
-require_once('../content/timeelapsed.php');
+require_once(__DIR__ . '/../content/timeelapsed.php');
 
 $db = getDatabase();
 $userParam = [':username' => $username];
@@ -42,7 +42,7 @@ $exists = isset($result['userid']) ? 1 : 0;
 $user_id = $exists ? $result['userid'] : null;
 
 // Fetch user level
-require_once('../../../repositories/repositorymanager.php');
+require_once(__DIR__ . '/../../../repositories/repositorymanager.php');
 
 $userRepository = RepositoryManager::get()->getUserRepository();
 $result['level'] = $userRepository->getLevelByUserId($user_id);
