@@ -2,22 +2,34 @@
 
 printenv | grep -v "no_proxy" | awk -F= '{print "export " $1 "=\"" substr($0, index($0,$2)) "\""}' > /etc/environment
 
+# Configure Apache to run as the specified UID/GID (for development volume mounting)
+if [ -n "$UID" ] && [ -n "$GID" ]; then
+    echo "Configuring Apache to run as UID=$UID, GID=$GID..."
+
+    # Change www-data's UID and GID to match the host user
+    usermod -u "$UID" www-data
+    groupmod -g "$GID" www-data
+
+    # Update ownership of Apache directories
+    chown -R www-data:www-data /var/www/html /var/log/apache2 /var/run/apache2
+fi
+
 # Configure PHP based on environment variables
 # Default to development settings if not specified
 
-chmod 777 /var/www/html/users
-chmod 777 /var/www/html/avatar/a
-chmod 777 /var/www/html/cache/
-chmod 777 /var/www/html/config/currentcontest.txt
-chmod 777 /var/www/html/database/originalmembers.db
-chmod 777 /var/www/html/graphics/gif
-chmod 777 /var/www/html/graphics/png
-chmod 777 /var/www/html/graphics/prj
-chmod 777 /var/www/html/legal
-chmod 777 /var/www/html/update/temp
-chmod 777 /var/www/html/update/uploads
-chmod 777 /var/www/html/update/currentversion.txt
-chmod 777 /var/www/html/php/verifyscore.php
+# chmod 777 /var/www/html/users
+# chmod 777 /var/www/html/avatar/a
+# chmod 777 /var/www/html/cache/
+# chmod 777 /var/www/html/config/currentcontest.txt
+# chmod 777 /var/www/html/database/originalmembers.db
+# chmod 777 /var/www/html/graphics/gif
+# chmod 777 /var/www/html/graphics/png
+# chmod 777 /var/www/html/graphics/prj
+# chmod 777 /var/www/html/legal
+# chmod 777 /var/www/html/update/temp
+# chmod 777 /var/www/html/update/uploads
+# chmod 777 /var/www/html/update/currentversion.txt
+# chmod 777 /var/www/html/php/verifyscore.php
 
 
 if [ "${PHP_ENVIRONMENT:-development}" = "production" ]; then
