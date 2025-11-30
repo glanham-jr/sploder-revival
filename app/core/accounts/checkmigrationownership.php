@@ -1,5 +1,5 @@
 <?php
-require_once '../content/initialize.php';
+require_once __DIR__ . '/../content/initialize.php';
 
 # Including all the required scripts for demo
 require(__DIR__ . "/discord.php");

@@ -1,5 +1,5 @@
 <?php
-require_once '../../content/initialize.php';
+require_once __DIR__ . '/../../content/initialize.php';
 
 require_once(__DIR__ . '/../../content/logincheck.php');
 require_once(__DIR__ . '/../../../database/connect.php');
@@ -40,7 +40,7 @@ if (strlen($message) > 40) {
     die("Haxxor detected");
 }
 // Validation complete for award date, include main functions
-require_once('functions.php');
+require_once(__DIR__ . '/functions.php');
 
 // Start eligibility validation
 require_once(__DIR__ . '/../../../repositories/repositorymanager.php');

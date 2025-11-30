@@ -1,9 +1,9 @@
 <?php
-require_once '../../content/initialize.php';
+require_once __DIR__ . '/../../content/initialize.php';
  require(__DIR__.'/../../content/disablemobile.php'); ?>
-<?php include('php/verify.php'); ?>
+<?php include(__DIR__ . '/php/verify.php'); ?>
 <?php
-include('php/admincheck.php');
+include(__DIR__ . '/php/admincheck.php');
 if(!isAdmin($_SESSION['username'])) {
     die("Haxxor detected");
 }
@@ -36,7 +36,7 @@ $userRepository = RepositoryManager::get()->getUserRepository();
     <?php include(__DIR__ . '/../../content/headernavigation.php'); ?>
 
     <div id="page">
-        <?php include('content/subnav.php'); ?>
+        <?php include(__DIR__ . '/content/subnav.php'); ?>
 
         <div id="content">
             <?php if (isset($_GET['err'])) : ?>

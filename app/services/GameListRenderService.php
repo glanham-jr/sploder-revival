@@ -1,7 +1,7 @@
 <?php
 
-require_once(__DIR__ . '/../content/pages.php');
-require_once(__DIR__ . '/../content/timeelapsed.php');
+require_once(__DIR__ . '/../core/content/pages.php');
+require_once(__DIR__ . '/../core/content/timeelapsed.php');
 
 class GameListRenderService
 {
@@ -142,7 +142,7 @@ class GameListRenderService
 
     public function renderPartialViewForMostPopularTags(): void
     {
-        require_once(__DIR__ . '/../content/taglister.php');
+        require_once(__DIR__ . '/../core/content/taglister.php');
         echo '<div class="tagbox"><p class="tags"><strong>Most Popular Tags: </strong>';
         echo displayTags($this->gameRepository->getGameTags(0, 25)->data, true);
         echo '<p>Learn more about <a href="/games/tags.php">tags</a>.</p>';

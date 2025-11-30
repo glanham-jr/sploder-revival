@@ -1,7 +1,7 @@
 <?php
-require_once '../content/initialize.php';
+require_once __DIR__ . '/../content/initialize.php';
 
-include('getip.php');
+include(__DIR__ . '/getip.php');
 function error_found()
 {
     header("Location: register.php?err=unk");

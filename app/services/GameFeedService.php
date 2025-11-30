@@ -23,7 +23,7 @@ class GameFeedService
 
     private function generateFeed(string $title, string $description, array $results): string
     {
-        require_once(__DIR__ . '/../content/getdomain.php');
+        require_once(__DIR__ . '/../core/content/getdomain.php');
         $domain = getDomainNameWithoutProtocolWww();
 
         header("Content-Type: application/rss+xml; charset=utf-8");

@@ -1,8 +1,8 @@
 <?php
-require_once '../content/initialize.php';
+require_once __DIR__ . '/../content/initialize.php';
 
 include(__DIR__ . '/../../database/connect.php');
-include('includes/votes.php');
+include(__DIR__ . '/includes/votes.php');
 $g_id = $_GET['ssid'];
 $score = $_GET['score'];
 session_id($_GET['PHPSESSID']);

@@ -1,4 +1,4 @@
 <?php
-require_once '../content/initialize.php';
-require('includes/saveproject.php');
+require_once __DIR__ . '/../content/initialize.php';
+require(__DIR__ . '/includes/saveproject.php');
 saveProject(3);

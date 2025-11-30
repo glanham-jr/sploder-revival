@@ -36,7 +36,7 @@ class DatabaseManager implements IDatabaseManager
     public static function get(): IDatabaseManager
     {
         if (DatabaseManager::$value == null) {
-            require_once(__DIR__ . '/../config/env.php');
+            require_once(__DIR__ . '/../core/config/env.php');
 
             // Postgres
             $host = getenv("POSTGRES_HOST");

@@ -1,8 +1,8 @@
 <?php
-require_once '../content/initialize.php';
+require_once __DIR__ . '/../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
-require_once('content/index.php');
+require_once(__DIR__ . '/content/index.php');
 require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 require_once(__DIR__ . '/../../services/GameListRenderService.php');
 require_once(__DIR__ . '/../../services/FriendsListRenderService.php');

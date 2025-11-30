@@ -1,10 +1,10 @@
 <?php
 
 session_start();
-include(__DIR__ . '/../database/connect.php');
+include(__DIR__ . '/../../../database/connect.php');
 $username = $_GET['u'];
 
-require_once(__DIR__ . '/../content/timeelapsed.php');
+require_once(__DIR__ . '/../../content/timeelapsed.php');
 
 $db = getDatabase();
 $userParam = [':username' => $username];

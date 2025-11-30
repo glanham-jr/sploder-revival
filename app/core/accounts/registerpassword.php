@@ -1,8 +1,8 @@
 <?php
-require_once '../content/initialize.php';
+require_once __DIR__ . '/../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
-require('logincheck.php');
+require(__DIR__ . '/logincheck.php');
 if (!isset($_SESSION['usermigrate'])) {
     header('Location: register.php?err=ses');
 }

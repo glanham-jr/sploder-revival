@@ -1,7 +1,7 @@
 <?php
-require_once '../content/initialize.php';
+require_once __DIR__ . '/../content/initialize.php';
 
-require('logincheck.php');
+require(__DIR__ . '/logincheck.php');
 require_once(__DIR__ . '/../../database/connect.php');
 
 if (session_status() === PHP_SESSION_ACTIVE) {

@@ -1,10 +1,10 @@
 <?php
-require_once '../content/initialize.php';
+require_once __DIR__ . '/../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 require_once(__DIR__ . '/../content/logincheck.php');
 require_once(__DIR__ . '/../../database/connect.php');
-require_once('php/functions.php');
+require_once(__DIR__ . '/php/functions.php');
 require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 require_once(__DIR__ . '/../../services/AwardsListRenderService.php');
 require_once(__DIR__ . '/../content/pages.php');

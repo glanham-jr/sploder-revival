@@ -1,9 +1,9 @@
 <?php
-require_once '../content/initialize.php';
+require_once __DIR__ . '/../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 include(__DIR__ . '/../content/logincheck.php');
-include('content/my-graphics.php');
+include(__DIR__ . '/content/my-graphics.php');
 require(__DIR__ . '/../../repositories/repositorymanager.php');
 $graphicRepository = RepositoryManager::get()->getGraphicsRepository();
 $total_likes = $graphicRepository->getTotalGraphicLikesByUserId($_SESSION['userid']);
