@@ -2,8 +2,8 @@
 require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
-require_once('../content/logincheck.php');
-require_once('../../database/connect.php');
+require_once(__DIR__ . '/../content/logincheck.php');
+require_once(__DIR__ . '/../../database/connect.php');
 $membername = $_GET['membername'];
 // If membername is username, send header and die
 if ($membername == $_SESSION['username']) {
@@ -11,7 +11,7 @@ if ($membername == $_SESSION['username']) {
     die();
 }
 include('php/functions.php');
-require_once('../../repositories/repositorymanager.php');
+require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 
 $userRepository = RepositoryManager::get()->getUserRepository();
 $level = $userRepository->getLevelByUserId($_SESSION['userid']);
@@ -54,7 +54,7 @@ if (count($result) > 0) {
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <?php include('../content/head.php'); ?>
+    <?php include(__DIR__ . '/../content/head.php'); ?>
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/awards/css/awards.css" />
     <link rel="stylesheet" type="text/css" href="/css/awards/css/awards_editor.css" />
@@ -76,20 +76,20 @@ if (count($result) > 0) {
     <!--[if IE 7]>
 <link rel="stylesheet" type="text/css"  href="/css/awards/css/ie7.css" />
 <![endif]-->
-<?php include('../content/onlinechecker.php'); ?>
+<?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
 
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="awardsmanager" class="">
-    <?php include('../content/headernavigation.php'); ?>
+    <?php include(__DIR__ . '/../content/headernavigation.php'); ?>
 
 
 
 
     <div id="page">
         <?php
-        require_once('../../services/DashboardSubnavService.php');
+        require_once(__DIR__ . '/../../services/DashboardSubnavService.php');
         $subnavService = new DashboardSubnavService();
         echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
         ?>
@@ -490,7 +490,7 @@ if (count($result) > 0) {
             <div class="spacer">&nbsp;</div>
         </div>
         <div class="spacer">&nbsp;</div>
-        <?php include('../content/footernavigation.php'); ?>
+        <?php include(__DIR__ . '/../content/footernavigation.php'); ?>
 
 
 </body>

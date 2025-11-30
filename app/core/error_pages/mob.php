@@ -5,7 +5,7 @@
 <head>
     <?php
 require_once '../content/initialize.php';
- include('../content/head.php'); ?>
+ include(__DIR__ . '/../content/head.php'); ?>
 
     <link rel="stylesheet" type="text/css" href="/css/update/update.css" />
     <!-- Mobile device support -->

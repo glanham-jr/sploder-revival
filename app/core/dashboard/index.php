@@ -2,10 +2,10 @@
 require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
-include('../content/logincheck.php');
+include(__DIR__ . '/../content/logincheck.php');
 $username = $_SESSION['username'];
-require_once('../../database/connect.php');
-require_once('../../repositories/repositorymanager.php');
+require_once(__DIR__ . '/../../database/connect.php');
+require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 
 $friendsRepository = RepositoryManager::get()->getFriendsRepository();
 $newFriends = $friendsRepository->getFriendRequestCount($_SESSION['userid'], false);
@@ -23,7 +23,7 @@ $isModerator = $perms !== null && $perms !== '' && str_contains($perms, 'M');
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <?php include('../content/head.php'); ?>
+  <?php include(__DIR__ . '/../content/head.php'); ?>
   <link href="/css/dashboard/css/css.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="/css/sploder_v2p3.css">
   <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
@@ -37,16 +37,16 @@ $isModerator = $perms !== null && $perms !== '' && str_contains($perms, 'M');
     }
   </style>
   <script type="text/javascript">window.rpcinfo = "On the Dashboard";</script>
-  <?php include('../content/onlinechecker.php'); ?>
+  <?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
 
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="home" class="" onload="doLoad();">
-  <?php include('../content/headernavigation.php'); ?>
+  <?php include(__DIR__ . '/../content/headernavigation.php'); ?>
   <div id="page">
     <?php
-    require_once('../../services/DashboardSubnavService.php');
+    require_once(__DIR__ . '/../../services/DashboardSubnavService.php');
     $subnavService = new DashboardSubnavService();
     echo $subnavService->renderNavigationLinks($_SERVER['REQUEST_URI']);
     ?>
@@ -135,17 +135,17 @@ $isModerator = $perms !== null && $perms !== '' && str_contains($perms, 'M');
         </ul>
       </div>
       <div class="spacer">&nbsp;</div>
-      <?php include('../content/checkban.php') ?>
+      <?php include(__DIR__ . '/../content/checkban.php') ?>
       <?php if (checkBan($username)) { ?>
         <?php
         $banInfo = $userRepository->getBanInfo($username);
         ?>
         <div class="promo"><b>NOTICE: </b>Your account access has been limited. A moderator has disallowed you from publishing games, making comments or giving awards. You will be unbanned on <?= date('Y/m/d', $banInfo['autounbandate']) ?>.<br>Reason: <?= htmlspecialchars($banInfo['reason']) ?></div>
       <?php } ?>
-      <?php /* include('../content/friendgamelist.php'); */ ?>
+      <?php /* include(__DIR__ . '/../content/friendgamelist.php'); */ ?>
       <!-- <br> -->
       <!-- <div class="spacer">&nbsp;</div> -->
-      <?php /* include('../content/friendactivity.php') */ ?>
+      <?php /* include(__DIR__ . '/../content/friendactivity.php') */ ?>
       <!-- <br>
       <br> -->
       <?php if (!$isolated) { ?>
@@ -202,9 +202,9 @@ $isModerator = $perms !== null && $perms !== '' && str_contains($perms, 'M');
     
     <div id="sidebar">
 
-      <?php include('../content/powercharts.php') ?>
+      <?php include(__DIR__ . '/../content/powercharts.php') ?>
 
-      <?php include('../content/onlinelist.php') ?>
+      <?php include(__DIR__ . '/../content/onlinelist.php') ?>
 
 
       <br>
@@ -213,7 +213,7 @@ $isModerator = $perms !== null && $perms !== '' && str_contains($perms, 'M');
       <div class="spacer">&nbsp;</div>
     </div>
     <div class="spacer">&nbsp;</div>
-    <?php include('../content/footernavigation.php') ?>
+    <?php include(__DIR__ . '/../content/footernavigation.php') ?>
 </body>
 
 </html>

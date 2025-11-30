@@ -8,17 +8,17 @@ require('logincheck.php');
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <?php include('../content/head.php'); ?>
+    <?php include(__DIR__ . '/../content/head.php'); ?>
 
     <link rel="stylesheet" type="text/css" href="/css/accounts/splodersimple.css" />
 
 
-    <?php include('../content/onlinechecker.php'); ?>
+    <?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
     <script type="text/javascript">window.rpcinfo = "Logging in";</script>
     <script type="text/javascript" src="/js/accounts/login.js"></script>
 
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="home" class="">
 

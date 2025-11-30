@@ -1,13 +1,13 @@
 <?php
 require_once '../content/initialize.php';
 
-require_once("../../database/connect.php");
+require_once(__DIR__ . "/../../database/connect.php");
 
 $originalMembersDb = getOriginalMembersDatabase();
 
 $u = mb_strtolower($_GET['u']);
 
-require_once("../content/censor.php");
+require_once(__DIR__ . "/../content/censor.php");
 $censoredUsername = censorText($u);
 
 $result2 = $originalMembersDb->query("SELECT username FROM members WHERE username=:user LIMIT 1", [

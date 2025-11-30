@@ -3,7 +3,7 @@ require_once '../content/initialize.php';
 
 $loc = explode("projects/proj", $_GET["loc"]);
 $loc = (int)filter_var($loc[1], FILTER_SANITIZE_NUMBER_INT);
-include('../../database/connect.php');
+include(__DIR__ . '/../../database/connect.php');
 $db = getDatabase();
 $result = $db->query("SELECT l.*
     FROM leaderboard l

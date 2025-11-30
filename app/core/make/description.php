@@ -3,7 +3,7 @@ require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 require('content/verify.php');
-require('../content/censor.php');
+require(__DIR__ . '/../content/censor.php');
 $description = trim(censorText($_POST['description']));
 
 // Enforce max length of 2000 characters

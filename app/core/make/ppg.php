@@ -21,13 +21,13 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 
 
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="creator" class="physics">
 
-    <?php include('../content/headernavigation.php'); ?>
+    <?php include(__DIR__ . '/../content/headernavigation.php'); ?>
     <div id="page">
-        <?php include('../content/subnav.php'); ?>
+        <?php include(__DIR__ . '/../content/subnav.php'); ?>
 
         <div id="content">
             <h3>Physics Puzzle Game Maker</h3>
@@ -37,7 +37,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
                         <img src="../images/physics-puzzle-maker.png" width="348" height="172" /><br /><br /><br />
                         <p>Make your own physics puzzle game with this game maker. Build machines, robots, Rube
                             Goldberg devices, and unique games with this game maker.</p>
-                        <?php include('../content/noflash.php') ?>
+                        <?php include(__DIR__ . '/../content/noflash.php') ?>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
             <div class="spacer">&nbsp;</div>
         </div>
         <div class="spacer">&nbsp;</div>
-        <?php include('../content/footernavigation.php') ?>
+        <?php include(__DIR__ . '/../content/footernavigation.php') ?>
 </body>
 
 </html>

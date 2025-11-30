@@ -6,7 +6,8 @@ if (!session_id() && session_status() !== PHP_SESSION_ACTIVE) {
 ?>
 
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . '/database/connect.php');
+# include_once($_SERVER['DOCUMENT_ROOT'] . '/database/connect.php');
+include_once(__DIR__ . '/../../database/connect.php');
 $db = getDatabase();
 $bp = $db->query("SELECT boostpoints
     FROM members

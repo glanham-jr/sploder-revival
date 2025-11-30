@@ -9,7 +9,7 @@ function get_total_graphics(mixed $db, int $userid): int
 
 $username = $_SESSION['username'];
 $userid = $_SESSION['userid'];
-include('../database/connect.php');
+include(__DIR__ . '/../database/connect.php');
 $db = getDatabase();
 $total_games = get_total_graphics($db, $userid);
 

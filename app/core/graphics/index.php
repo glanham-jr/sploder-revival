@@ -3,19 +3,19 @@ require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php
 session_start();
-require_once('../../repositories/repositorymanager.php');
+require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 $graphicsRepository = RepositoryManager::get()->getGraphicsRepository();
 $stats = $graphicsRepository->getTotal();
 
 $perPage = 36;
-require_once('../../services/GraphicListRenderService.php');
+require_once(__DIR__ . '/../../services/GraphicListRenderService.php');
 $graphicListRenderService = new GraphicListRenderService($graphicsRepository);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <?php include('../content/head.php'); ?>
+    <?php include(__DIR__ . '/../content/head.php'); ?>
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p3.css">
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/slider/nivo-slider.css" />
@@ -27,7 +27,7 @@ $graphicListRenderService = new GraphicListRenderService($graphicsRepository);
             visibility: hidden
         }
     </style>
-    <?php include('../content/onlinechecker.php'); ?>
+    <?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
     <script>
         function delproj(id) {
             let text;
@@ -38,12 +38,12 @@ $graphicListRenderService = new GraphicListRenderService($graphicsRepository);
     </script>
     <script type="text/javascript">window.rpcinfo = "Viewing all Graphics";</script>
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="everyones" class="graphics" onload="doLoad();">
-    <?php include('../content/headernavigation.php'); ?>
+    <?php include(__DIR__ . '/../content/headernavigation.php'); ?>
     <div id="page">
-    <?php include('../content/subnav.php'); ?>
+    <?php include(__DIR__ . '/../content/subnav.php'); ?>
     <div id="content">
     <h3>Game Graphics</h3><h4>What are these?</h4>
     <p>These are all of the graphics created by Sploder Revival members.
@@ -65,5 +65,5 @@ $graphicListRenderService = new GraphicListRenderService($graphicsRepository);
             <div class="spacer">&nbsp;</div>
         </div>
         <div class="spacer">&nbsp;</div>
-        <?php include('../content/footernavigation.php') ?>
+        <?php include(__DIR__ . '/../content/footernavigation.php') ?>
 </body>

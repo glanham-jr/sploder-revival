@@ -13,7 +13,7 @@ $graphicTags = $graphicsRepository->getGraphicTags($_GET['offset'] ?? 0,100);
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <?php include('../content/head.php') ?>
+    <?php include(__DIR__ . '/../content/head.php') ?>
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/tags.css" />
     <script type="text/javascript">
@@ -22,12 +22,12 @@ $graphicTags = $graphicsRepository->getGraphicTags($_GET['offset'] ?? 0,100);
     <script type="text/javascript">window.rpcinfo = "Viewing Graphic Tags";</script>
     <?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="everyones">
-    <?php include('../content/headernavigation.php') ?>
+    <?php include(__DIR__ . '/../content/headernavigation.php') ?>
     <div id="page">
-        <?php include('../content/subnav.php') ?>
+        <?php include(__DIR__ . '/../content/subnav.php') ?>
         <div id="content">
             <h3>Tags</h3>
             <h4>Why Tag Your Graphics?</h4>
@@ -36,12 +36,12 @@ $graphicTags = $graphicsRepository->getGraphicTags($_GET['offset'] ?? 0,100);
                 <div class="tagbox">
                     <p class="tags" style="line-height: 40px;">Tags:
                         <?php
-                        require_once('../content/taglister.php');
+                        require_once(__DIR__ . '/../content/taglister.php');
                         echo displayTags($graphicTags->data, true, TagType::Graphics);
                         ?>
                     </p>
 
-                    <?php require('../content/pages.php');
+                    <?php require(__DIR__ . '/../content/pages.php');
                     addPagination($graphicTags->total ?? 0, 100)
                     ?>
                 </div>
@@ -53,7 +53,7 @@ $graphicTags = $graphicsRepository->getGraphicTags($_GET['offset'] ?? 0,100);
             <div class="spacer">&nbsp;</div>
         </div>
         <div class="spacer">&nbsp;</div>
-        <?php include('../content/footernavigation.php') ?>
+        <?php include(__DIR__ . '/../content/footernavigation.php') ?>
 </body>
 
 </html>

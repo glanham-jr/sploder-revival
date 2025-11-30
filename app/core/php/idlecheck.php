@@ -4,7 +4,7 @@ require_once '../content/initialize.php';
 session_start();
 
 if (isset($_SESSION['username'])) {
-    require_once('../../database/connect.php');
+    require_once(__DIR__ . '/../../database/connect.php');
     $t = time();
     $db = getDatabase();
     $db->execute("UPDATE members SET lastpagechange=:t WHERE username=:username", [

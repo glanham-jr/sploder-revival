@@ -1,9 +1,9 @@
 <?php
 require_once '../content/initialize.php';
 
-include('../content/logincheck.php');
+include(__DIR__ . '/../content/logincheck.php');
 require_once('verify.php');
-require_once('../content/censor.php');
+require_once(__DIR__ . '/../content/censor.php');
 require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 
 $id = (int)$_POST['id'];

@@ -18,15 +18,15 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     <script type="text/javascript">window.rpcinfo = "Making a Platformer Game";</script>
 
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="creator" class="platformer">
-    <?php include('../content/headernavigation.php'); ?>
+    <?php include(__DIR__ . '/../content/headernavigation.php'); ?>
 
 
 
     <div id="page">
-        <?php include('../content/subnav.php'); ?>
+        <?php include(__DIR__ . '/../content/subnav.php'); ?>
 
 
 
@@ -39,7 +39,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
                         <img src="../images/platformer-creator.png" width="405px" height="240" /><br />
                         <p>Make your own platformer game with this game maker. Add ninjas, dragons, and other bad guys
                             and battle them with swords, guns, and other cool weapons.</p>
-                        <?php include('../content/noflash.php') ?>
+                        <?php include(__DIR__ . '/../content/noflash.php') ?>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
             <div class="spacer">&nbsp;</div>
         </div>
         <div class="spacer">&nbsp;</div>
-        <?php include('../content/footernavigation.php') ?>
+        <?php include(__DIR__ . '/../content/footernavigation.php') ?>
 </body>
 
 </html>

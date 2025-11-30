@@ -1,10 +1,10 @@
 <?php
 require_once '../content/initialize.php';
 session_start();
-require('../../repositories/repositorymanager.php');
+require(__DIR__ . '/../../repositories/repositorymanager.php');
 $userRepository = RepositoryManager::get()->getUserRepository();
 $a = $_GET['a'];
-require_once('../../database/connect.php');
+require_once(__DIR__ . '/../../database/connect.php');
 $db = getDatabase();
 $creator_name = $_SESSION['username'] ?? null;
 function extracted(IDatabase $db): string
@@ -188,8 +188,8 @@ if ($a == "read") {
 } elseif ($a == "post") {
     $posts = file_get_contents("php://input");
     $formatter = explode("&", $posts);
-    require_once('../content/censor.php');
-    require_once('../content/keyboardfilter.php');
+    require_once(__DIR__ . '/../content/censor.php');
+    require_once(__DIR__ . '/../content/keyboardfilter.php');
     $rawMessage = substr($formatter[0], 2);
     $filteredMessage = filterKeyboard(trim($rawMessage));
     $urlDecodedFilteredMessage = urldecode($filteredMessage);
@@ -220,7 +220,7 @@ if ($a == "read") {
             die("Comments are not allowed for this game.");
         }
     }
-    include_once('../content/checkban.php');
+    include_once(__DIR__ . '/../content/checkban.php');
     if (checkBan($creator_name)) {
         // set header to 403 (forbidden) and echo a message
         http_response_code(403);
@@ -241,7 +241,7 @@ if ($a == "read") {
     }
 } elseif ($a == "like") {
     if ($_SESSION['username'] != null) {
-        include_once('../content/checkban.php');
+        include_once(__DIR__ . '/../content/checkban.php');
         if (checkBan($creator_name)) {
             http_response_code(403);
             die("You are banned and will not be able to send any comments.");
@@ -286,7 +286,7 @@ if ($a == "read") {
     }
 } elseif ($a == "unlike") {
     if ($_SESSION['username'] != null) {
-        include_once('../content/checkban.php');
+        include_once(__DIR__ . '/../content/checkban.php');
         if (checkBan($creator_name)) {
             // set header to 403 (forbidden) and echo a message
             http_response_code(403);
@@ -381,7 +381,7 @@ if ($a == "read") {
         if (str_contains($userPerms, 'M')) {
             $is_owner = true;
             // Log moderator action
-            require('../games/moderation/php/log.php');
+            require(__DIR__ . '/../games/moderation/php/log.php');
             // Get comment details for logging
             $commentDetails = $db->queryFirst("SELECT creator_name, body FROM comments WHERE id = :id", [
                 ':id' => $id

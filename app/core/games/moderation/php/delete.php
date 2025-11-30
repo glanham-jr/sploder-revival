@@ -3,7 +3,7 @@ require_once '../../../content/initialize.php';
 
 
 include('verify.php');
-require_once("../../../../database/connect.php");
+require_once(__DIR__ . "/../../../../database/connect.php");
 
 $db = getDatabase();
 
@@ -29,7 +29,7 @@ function getIdFromUrl($url)
 
 function getGameName($g_id)
 {
-    include_once('../../../../database/connect.php');
+    include_once(__DIR__ . '/../../../../database/connect.php');
     $db = getDatabase();
     $sql = "SELECT title FROM games WHERE g_id=:id";
     return $db->queryFirstColumn($sql, 0, [':id' => $g_id]);

@@ -1,7 +1,7 @@
 <?php
 require_once '../content/initialize.php';
 
-include('../content/logincheck.php');
+include(__DIR__ . '/../content/logincheck.php');
 
 require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 

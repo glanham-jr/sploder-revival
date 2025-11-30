@@ -30,8 +30,8 @@ if ($membername == $_SESSION['username']) {
 if (!in_array($category, $valid_categories)) {
     die("Haxxor detected");
 }
-require_once('../../content/censor.php');
-require_once('../../content/keyboardfilter.php');
+require_once(__DIR__ . '/../../content/censor.php');
+require_once(__DIR__ . '/../../content/keyboardfilter.php');
 $message = filterKeyboard(censorText($_GET['message']));
 
 // If message is over 40 characters, die
@@ -43,7 +43,7 @@ if (strlen($message) > 40) {
 require_once('functions.php');
 
 // Start eligibility validation
-require_once('../../../repositories/repositorymanager.php');
+require_once(__DIR__ . '/../../../repositories/repositorymanager.php');
 
 $userRepository = RepositoryManager::get()->getUserRepository();
 $level = $userRepository->getLevelByUserId($_SESSION['userid']);

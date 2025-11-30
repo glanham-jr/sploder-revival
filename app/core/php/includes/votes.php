@@ -1,5 +1,5 @@
 <?php
-include_once('../database/connect.php');
+include_once(__DIR__ . '/../database/connect.php');
 function get_votes($g_id)
 {
     $db = getDatabase();

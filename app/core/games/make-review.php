@@ -3,7 +3,7 @@ require_once '../content/initialize.php';
 require(__DIR__.'/../content/disablemobile.php'); ?>
 <?php session_start(); ?>
 <?php
-require_once('../../repositories/repositorymanager.php');
+require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 $userRepository = RepositoryManager::get()->getUserRepository();
 $perms = $userRepository->getUserPerms($_SESSION['username']);
 if ($perms === null || $perms === '' || !str_contains($perms, 'R')) {
@@ -26,8 +26,8 @@ if ($gameInfo === null) {
 $gameAuthor = $gameInfo['author'];
 $gameTitle = $gameInfo['title'];
 if (isset($_POST['reviewTitle'])) {
-    require_once('../content/keyboardfilter.php');
-    require_once('../content/censor.php');
+    require_once(__DIR__ . '/../content/keyboardfilter.php');
+    require_once(__DIR__ . '/../content/censor.php');
     $title = censorText(trim($_POST['reviewTitle']));
     // Capitalize the first letter of each word in the title
     $title = filterKeyboard(censorText(ucwords(trim($title))), false);
@@ -59,7 +59,7 @@ $reviewData = $gameRepository->getReviewData($_SESSION['userid'], $gameId);
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <?php include('../content/head.php') ?>
+    <?php include(__DIR__ . '/../content/head.php') ?>
     <link rel="stylesheet" type="text/css" href="/css/reviews.css" />
     <!-- <link rel="stylesheet" type="text/css" href="/css/allreviews.css" /> -->
     <link rel="stylesheet" type="text/css" href="/css/sploder_v2p22.min.css" />
@@ -69,13 +69,13 @@ $reviewData = $gameRepository->getReviewData($_SESSION['userid'], $gameId);
     <?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
     <script type="text/javascript">window.rpcinfo = "Writing a Review";</script>
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="everyones" class="reviews">
 
-    <?php include('../content/headernavigation.php') ?>
+    <?php include(__DIR__ . '/../content/headernavigation.php') ?>
     <div id="page">
-        <?php include('../content/subnav.php') ?>
+        <?php include(__DIR__ . '/../content/subnav.php') ?>
 
 
         <div id="content">
@@ -137,7 +137,7 @@ $reviewData = $gameRepository->getReviewData($_SESSION['userid'], $gameId);
             <div class="spacer">&nbsp;</div>
         </div>
         <div class="spacer">&nbsp;</div>
-        <?php include('../content/footernavigation.php') ?>
+        <?php include(__DIR__ . '/../content/footernavigation.php') ?>
 </body>
 
 </html>

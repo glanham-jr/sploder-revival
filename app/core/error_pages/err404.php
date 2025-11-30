@@ -6,23 +6,23 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
     "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="https://www.w3.org/1999/xhtml"> 
 <head> 
-	<?php include('../content/head.php'); ?>
+	<?php include(__DIR__ . '/../content/head.php'); ?>
 	<link rel="stylesheet" type="text/css"  href="/css/sploder_v2p22.min.css" /> 
 	<script type="text/javascript" src="/js/includes/thumb.js"></script> 
 	<script type="text/javascript" src="/js/includes/peekaboo.js"></script> 
 	<script type="text/javascript" src="/js/includes/swfobject_min.js"></script> 
 	<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
-	<?php include('../content/ruffle.php'); ?>
-	<?php include('../content/onlinechecker.php'); ?>
+	<?php include(__DIR__ . '/../content/ruffle.php'); ?>
+	<?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
 	<script type="text/javascript">window.rpcinfo = "Got lost wandering around";</script>
 
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="everyones" class="" >
-		<?php include('../content/headernavigation.php'); ?>
+		<?php include(__DIR__ . '/../content/headernavigation.php'); ?>
 		<div id="page">
-			<?php include('../content/subnav.php'); ?>
+			<?php include(__DIR__ . '/../content/subnav.php'); ?>
 			
 			<div id="content" style="margin-left: 180px;">
 			    
@@ -68,7 +68,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 			
 			
 					
-<?php include('../content/footernavigation.php') ?>
+<?php include(__DIR__ . '/../content/footernavigation.php') ?>
 </body>
 
 </html>

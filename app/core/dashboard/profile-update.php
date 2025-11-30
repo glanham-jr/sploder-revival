@@ -1,9 +1,9 @@
 <?php
 require_once '../content/initialize.php';
 
-include('../content/logincheck.php');
-require_once('../content/censor.php');
-require_once('../content/keyboardfilter.php');
+include(__DIR__ . '/../content/logincheck.php');
+require_once(__DIR__ . '/../content/censor.php');
+require_once(__DIR__ . '/../content/keyboardfilter.php');
 // Get the form data
 $username = $_SESSION['username'];
 $description = filterKeyboard(censorText($_POST["description"]), false);
@@ -31,8 +31,8 @@ if ($isolated === "on") {
 }
 
 // Connect to the PostgreSQL database
-include('../../database/connect.php');
-require_once('../../repositories/repositorymanager.php');
+include(__DIR__ . '/../../database/connect.php');
+require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 $userRepository = RepositoryManager::get()->getUserRepository();
 $db = getDatabase();
 

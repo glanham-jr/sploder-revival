@@ -12,7 +12,7 @@ function is_winner($id)
     }
     return false;
 }
-include('../../database/connect.php');
+include(__DIR__ . '/../../database/connect.php');
 session_start();
 $output = "";
 $a = $_POST['action'];

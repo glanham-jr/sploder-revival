@@ -1,7 +1,7 @@
 <?php
 require_once '../content/initialize.php';
 
-require_once('../../repositories/repositorymanager.php');
+require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 
 $challengesRepository = RepositoryManager::get()->getChallengesRepository();
 $userRepository = RepositoryManager::get()->getUserRepository();
@@ -59,7 +59,7 @@ if ($verifiedScore) {
     } else {
         $insert = $gtm;
     }
-    require_once('../../database/connect.php');
+    require_once(__DIR__ . '/../../database/connect.php');
     $db = getDatabase();
     $db->execute("INSERT INTO leaderboard
         (username, pubkey, gtm, w)

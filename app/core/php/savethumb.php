@@ -6,7 +6,7 @@ session_id($_GET['PHPSESSID']);
 session_start();
 $data = file_get_contents("php://input");
 $id = (int)filter_var(substr($_GET['projid'], 4), FILTER_SANITIZE_NUMBER_INT);
-require_once('../../repositories/repositorymanager.php');
+require_once(__DIR__ . '/../../repositories/repositorymanager.php');
 $gameRepository = RepositoryManager::get()->getGameRepository();
 
 

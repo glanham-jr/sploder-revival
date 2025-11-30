@@ -3,7 +3,7 @@ require_once '../content/initialize.php';
 
 $separated = explode("_", $_GET['pubkey']);
 // Check whether pubkey matches game ID ad User ID
-require_once('../../database/connect.php');
+require_once(__DIR__ . '/../../database/connect.php');
 $db = getDatabase();
 $qs = "SELECT user_id, g_swf FROM games WHERE g_id = :id";
 $game = $db->queryFirst($qs, [':id' => $separated[1]]);

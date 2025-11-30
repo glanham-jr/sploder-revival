@@ -82,14 +82,14 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 </script>
 <script type="text/javascript">window.rpcinfo = "Making an Arcade Game";</script>
 </head>
-<?php include('../content/addressbar.php'); ?>
+<?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
 <body id="creator" class="arcade">
-    <?php include('../content/headernavigation.php'); ?>
+    <?php include(__DIR__ . '/../content/headernavigation.php'); ?>
 
 
     <div id="page">
-        <?php include('../content/subnav.php'); ?>
+        <?php include(__DIR__ . '/../content/subnav.php'); ?>
 
         <div id="content">
             <h3>Retro Arcade Game Maker</h3>
@@ -109,7 +109,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
                         <p style="width: 420px; margin: auto;">Make your own 8-bit retro arcade game with this game
                             maker. Build fun platformers, RPG stories, boss-battles, and unique games with this game
                             maker.</p>
-                            <?php include('../content/noflash.php') ?>
+                            <?php include(__DIR__ . '/../content/noflash.php') ?>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
             <div class="spacer">&nbsp;</div>
         </div>
         <div class="spacer">&nbsp;</div>
-        <?php include('../content/footernavigation.php') ?>
+        <?php include(__DIR__ . '/../content/footernavigation.php') ?>
 </body>
 
 </html>
