@@ -67,15 +67,15 @@ div#new_status li {
 }
 
 div#new_status ul.actions {
-    list-style-image: url("/img/chrome/bullet1.gif");
+    list-style-image: url("/img/bullet1.gif");
 }
 
 div#new_status ul.actions li.meh {
-    list-style-image: url("/img/chrome/bullet0.gif");
+    list-style-image: url("/img/bullet0.gif");
 }
 
 div#new_status ul.actions li.wow {
-    list-style-image: url("/img/chrome/bullet2.gif");
+    list-style-image: url("/img/bullet2.gif");
 }
 
 div#new_status li a {

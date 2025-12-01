@@ -12,7 +12,7 @@ body
 {
     padding: 0;
     margin: 0;
-    background: #32103C url('/img/chrome/v2-body-bkgd.jpg') repeat-x top;
+    background: #32103C url('/img/v2-body-bkgd.jpg') repeat-x top;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     vertical-align: top;
     text-align: center;
@@ -96,8 +96,8 @@ hr
     float: left;
     width: 200px;
     height: 82px;
-    background: transparent url('/img/chrome/v2-chrome-main.png') no-repeat top left;
-    _background-image: url('/img/chrome/v2-chrome-main.gif');
+    background: transparent url('/img/v2-chrome-main.png') no-repeat top left;
+    _background-image: url('/img/v2-chrome-main.gif');
 }
 
 #title h1
@@ -168,7 +168,7 @@ hr
     padding: 20px 0;
     width: 100%;
     height: 140px;
-    background: transparent url('/img/chrome/v2-bottom-bkgd.jpg') repeat-x bottom;
+    background: transparent url('/img/v2-bottom-bkgd.jpg') repeat-x bottom;
 }
 
 #bottomnav ul
@@ -273,7 +273,7 @@ ul.note li
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    background: #2854a3 url('/img/chrome/icons_status.png') no-repeat -290px -110px;
+    background: #2854a3 url('/img/icons_status.png') no-repeat -290px -110px;
 }
 
 .prompt a,
@@ -421,7 +421,7 @@ input.postbutton
     font-size: 15px;
     color: #ec0;
     padding: 6px 12px;
-    background-image: url('/img/chrome/button_bkgd.jpg');
+    background-image: url('/img/button_bkgd.jpg');
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
 }
@@ -448,7 +448,7 @@ form td .checkbutton {
 input,
 textarea
 {
-    background-image: url('/img/chrome/input_bkgd.gif');
+    background-image: url('/img/input_bkgd.gif');
     border: 1px solid #89a;
     font-size: 16px;
     height: 26px;
@@ -598,7 +598,7 @@ body.gamepage #content div.sharebar
     height: 36px;
     clear: both;
     margin-bottom: 10px;
-    background: #333 url('/img/chrome/social_bar_bkgd.gif') repeat-x;
+    background: #333 url('/img/social_bar_bkgd.gif') repeat-x;
 }
 
 body.gamepage #content div.sharebar div.share_buttons
@@ -616,7 +616,7 @@ div.share_buttons a
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url('/img/chrome/sharing_icons2.png') transparent 0 0 no-repeat;
+    background: url('/img/sharing_icons2.png') transparent 0 0 no-repeat;
 }
 
 div.share_buttons a.facebook

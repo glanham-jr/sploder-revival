@@ -530,7 +530,7 @@ function us_renderPagination() {
 }
 
 function us_setStatus(msg, show_icon) {
-    var icon = (show_icon) ? '<img src="/img/chrome/loading_icon.gif" width="24" height="12" /> ' : '';
+    var icon = (show_icon) ? '<img src="/img/loading_icon.gif" width="24" height="12" /> ' : '';
     if (msg && msg.length > 0) {
         $us_content_status.innerHTML = '<p class="us_prompt">' + icon + msg + '</p>';
     } else {

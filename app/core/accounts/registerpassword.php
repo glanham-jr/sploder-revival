@@ -115,7 +115,7 @@ if (!isset($_SESSION['usermigrate'])) {
         <div id="header">
             <a>
                 <div id="title">
-                    <h1><a title="Sploder"><img style="margin-top:-20px; height: 130px" src="/img/chrome/logo.png"><span
+                    <h1><a title="Sploder"><img style="margin-top:-20px; height: 130px" src="/img/logo.png"><span
                                 class="hide">Games at Sploder</span></a></h1>
                 </div>
                 <div id="tools"></div>

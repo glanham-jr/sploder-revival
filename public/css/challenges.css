@@ -4,7 +4,7 @@
 
 div.challenges_intro {
     margin-top: -10px;
-    background: #000 url('/img/chrome/challenges_intro_bkgd.png') no-repeat top;
+    background: #000 url('/img/challenges_intro_bkgd.png') no-repeat top;
     padding: 60px 20px 20px 20px;
 }
 
@@ -35,7 +35,7 @@ div.alert {
 }
 
 div.challenge_confirm {
-    background: #606 url('/img/chrome/challenge_accept_medium.png') no-repeat 10px 10px;
+    background: #606 url('/img/challenge_accept_medium.png') no-repeat 10px 10px;
     padding-left: 120px;
     padding-top: 20px;
 }
@@ -71,7 +71,7 @@ div.challenge_confirm div.button a:hover {
 }
 
 div.challenge_form {
-    background: #606 url('/img/chrome/challenge_simple_large.png') no-repeat 10px 10px;
+    background: #606 url('/img/challenge_simple_large.png') no-repeat 10px 10px;
 
     padding-left: 200px;
     margin-bottom: 40px;
@@ -239,7 +239,7 @@ p.prize {
 
 p.prize span {
     display: inline-block;
-    background: transparent url('/img/chrome/coin.png') no-repeat left;
+    background: transparent url('/img/coin.png') no-repeat left;
     text-indent: 18px;
     font-weight: bold;
     color: #fc0 !important;
