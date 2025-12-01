@@ -101,7 +101,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
                     <div style="margin: 40px auto; text-align: center; width: 600px;">
                         <br /><br />
 
-                        <img src="../images/retro-arcade-game-maker2.gif" width="420" height="260" /><br /><br />
+                        <img src="/img/images/retro-arcade-game-maker2.gif" width="420" height="260" /><br /><br />
 
 
                         <br />

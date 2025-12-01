@@ -54,7 +54,7 @@ $forums = getenv("FORUMS_URL");
 <body>
     <h1>Sploder</h1>
     <div class="epicfail">
-        <img align="left" src="../images/ad_200x200.jpg" alt="boom!" />
+        <img align="left" src="/img/images/ad_200x200.jpg" alt="boom!" />
         <h3>
             <script type="text/javascript">document.write(make_title());</script>
         </h3>

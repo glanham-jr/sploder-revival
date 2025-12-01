@@ -41,7 +41,7 @@ require(__DIR__ . '/logincheck.php');
 
         var img = document.getElementById("usernamecheck");
 
-        img.src = "/images/working.gif";
+        img.src = "/img/images/working.gif";
 
         if (delayed_id > 0) clearTimeout(delayed_id);
 
