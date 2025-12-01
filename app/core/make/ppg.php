@@ -34,7 +34,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
             <div id="creatorcontainer" style="height: 600px; width: 860px">
                 <div id="flashcontent">
                     <div style="margin: 40px auto; text-align: center; width: 420px;">
-                        <img src="../images/physics-puzzle-maker.png" width="348" height="172" /><br /><br /><br />
+                        <img src="/img/images/physics-puzzle-maker.png" width="348" height="172" /><br /><br /><br />
                         <p>Make your own physics puzzle game with this game maker. Build machines, robots, Rube
                             Goldberg devices, and unique games with this game maker.</p>
                         <?php include(__DIR__ . '/../content/noflash.php') ?>

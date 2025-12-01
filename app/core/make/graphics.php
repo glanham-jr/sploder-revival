@@ -79,7 +79,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
             <div id="creatorcontainer" style="height: 550px;">
                 <div id="flashcontent">
                     <div style="margin: 40px auto; text-align: center; width: 420px;">
-                        <img src="../images/graphics-editor.png" width="348" height="172" /><br /><br /><br />
+                        <img src="/img/images/graphics-editor.png" width="348" height="172" /><br /><br /><br />
                         <p>Learn how to design and draw your own graphics with this <strong>free graphics
                                 editor</strong>. With this, you can build your own animated game sprites, game tiles and
                             textures (like <a href="https://www.gimp.org">gimp</a> or other programs) for use in the

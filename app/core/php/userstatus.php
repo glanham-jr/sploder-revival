@@ -29,4 +29,4 @@ if ($result3[0]['lastlogin'] < $last) {
 } else {
     $status = "offline";
 }
-echo file_get_contents('../images/profile_status_' . $status . '.gif');
+echo file_get_contents(__DIR__ . '/../../images/profile_status_' . $status . '.gif');

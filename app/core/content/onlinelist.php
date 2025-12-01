@@ -7,7 +7,7 @@
     </h3>
     <div id="whos_online_container">
         <p style="color: #666;">
-            <img src="../images/loading_icon.gif" width="24" height="12"> Checking members...
+            <img src="/img/images/loading_icon.gif" width="24" height="12"> Checking members...
         </p>
     </div>
 

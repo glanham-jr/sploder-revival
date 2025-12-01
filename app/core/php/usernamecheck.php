@@ -39,16 +39,16 @@ if ($status1 == "can") {
         $status = "green";
     }
     if ($status == "alert") {
-        $status = file_get_contents('../images/alert.png');
+        $status = file_get_contents(__DIR__ . '/../../images/alert.png');
     } elseif ($status == "green") {
         $length = strlen($u);
         if ((2 < $length) && ($length < 17) && (ctype_alnum($u))) {
-            $status = file_get_contents('../images/check.png');
+            $status = file_get_contents(__DIR__ . '/../../images/check.png');
         } else {
-            $status = file_get_contents('../images/ex.png');
+            $status = file_get_contents(__DIR__ . '/../../images/ex.png');
         }
     }
 } else {
-    $status = file_get_contents('../images/ex.png');
+    $status = file_get_contents(__DIR__ . '/../../images/ex.png');
 }
 echo $status;

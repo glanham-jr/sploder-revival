@@ -36,7 +36,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
             <div id="creatorcontainer" style="width: 860px;">
                 <div id="flashcontent">
                     <div style="margin: 20px auto; text-align: center; width: 425px;">
-                        <img src="../images/platformer-creator.png" width="405px" height="240" /><br />
+                        <img src="/img/images/platformer-creator.png" width="405px" height="240" /><br />
                         <p>Make your own platformer game with this game maker. Add ninjas, dragons, and other bad guys
                             and battle them with swords, guns, and other cool weapons.</p>
                         <?php include(__DIR__ . '/../content/noflash.php') ?>
