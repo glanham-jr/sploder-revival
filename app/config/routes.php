@@ -69,7 +69,7 @@ $router->group('', function(Router $router) use ($app) {
 	$router->get('/accounts/registersuccess.php', [ AccountsController::class, 'registersuccess' ]);
 
 	// ==================== DASHBOARD ROUTES ====================
-	$router->get('/dashboard/', [ DashboardController::class, 'index' ]);
+	$router->get('/dashboard/index.php', [ DashboardController::class, 'index' ]);
 	$router->get('/dashboard/my-games.php', [ DashboardController::class, 'mygames' ]);
 	$router->get('/dashboard/my-graphics.php', [ DashboardController::class, 'mygraphics' ]);
 	$router->get('/dashboard/profile-edit.php', [ DashboardController::class, 'profileedit' ]);
@@ -94,22 +94,22 @@ $router->group('', function(Router $router) use ($app) {
 	$router->get('/games/view-review.php', [ GamesController::class, 'viewreview' ]);
 
 	// ==================== GAMES MODERATION ROUTES ====================
+	$router->get('/games/moderation/index.php', [ GamesModerationController::class, 'index' ]);
 	$router->get('/games/moderation/admin.php', [ GamesModerationController::class, 'admin' ]);
 	$router->post('/games/moderation/admin.php', [ GamesModerationController::class, 'admin' ]);
 	$router->get('/games/moderation/banned.php', [ GamesModerationController::class, 'banned' ]);
-	$router->get('/games/moderation', [ GamesModerationController::class, 'index' ]);
 	$router->get('/games/moderation/ipcheck.php', [ GamesModerationController::class, 'ipcheck' ]);
 	$router->get('/games/moderation/logs.php', [ GamesModerationController::class, 'logs' ]);
 	$router->get('/games/moderation/pending.php', [ GamesModerationController::class, 'pending' ]);
 
 	// ==================== MAKE (GAME CREATION) ROUTES ====================
+	$router->get('/make/index.php', [ MakeController::class, 'index' ]);
 	$router->get('/make/algo.php', [ MakeController::class, 'algo' ]);
 	$router->get('/make/arcade.php', [ MakeController::class, 'arcade' ]);
 	$router->get('/make/description.php', [ MakeController::class, 'description' ]);
 	$router->post('/make/description.php', [ MakeController::class, 'description' ]);
 	$router->get('/make/graphics.php', [ MakeController::class, 'graphics' ]);
 	$router->get('/make/help_inline.php', [ MakeController::class, 'helpinline' ]);
-	$router->get('/make', [ MakeController::class, 'index' ]);
 	$router->get('/make/plat.php', [ MakeController::class, 'plat' ]);
 	$router->get('/make/ppg.php', [ MakeController::class, 'ppg' ]);
 	$router->get('/make/publish.php', [ MakeController::class, 'publish' ]);
@@ -119,9 +119,9 @@ $router->group('', function(Router $router) use ($app) {
 	$router->post('/make/tags.php', [ MakeController::class, 'tags' ]);
 
 	// ==================== AWARDS ROUTES ====================
+	$router->get('/awards/index.php', [ AwardsController::class, 'index' ]);
 	$router->get('/awards/all.php', [ AwardsController::class, 'all' ]);
 	$router->get('/awards/creator.php', [ AwardsController::class, 'creator' ]);
-	$router->get('/awards', [ AwardsController::class, 'index' ]);
 	$router->post('/awards/php/accept.php', [ AwardsController::class, 'accept' ]);
 	$router->post('/awards/php/decline.php', [ AwardsController::class, 'decline' ]);
 	$router->post('/awards/php/materials.php', [ AwardsController::class, 'materials' ]);
@@ -129,8 +129,8 @@ $router->group('', function(Router $router) use ($app) {
 	$router->post('/awards/php/send.php', [ AwardsController::class, 'send' ]);
 
 	// ==================== FRIENDS ROUTES ====================
+	$router->get('/friends/index.php', [ FriendsController::class, 'index' ]);
 	$router->get('/friends/all.php', [ FriendsController::class, 'all' ]);
-	$router->get('/friends', [ FriendsController::class, 'index' ]);
 	$router->post('/friends/php/accept.php', [ FriendsController::class, 'accept' ]);
 	$router->post('/friends/php/best.php', [ FriendsController::class, 'best' ]);
 	$router->post('/friends/php/ignore.php', [ FriendsController::class, 'ignore' ]);
@@ -140,26 +140,26 @@ $router->group('', function(Router $router) use ($app) {
 	$router->post('/friends/php/unfriend.php', [ FriendsController::class, 'unfriend' ]);
 
 	// ==================== MESSAGES ROUTES ====================
-	$router->get('/messages', [ MessagesController::class, 'index' ]);
+	$router->get('/messages/index.php', [ MessagesController::class, 'index' ]);
 
 	// ==================== GRAPHICS ROUTES ====================
+	$router->get('/graphics/index.php', [ GraphicsController::class, 'index' ]);
 	$router->post('/graphics/add-tag.php', [ GraphicsController::class, 'addtag' ]);
 	$router->get('/graphics/feedback.php', [ GraphicsController::class, 'feedback' ]);
 	$router->get('/graphics/getlist.php', [ GraphicsController::class, 'getlist' ]);
 	$router->get('/graphics/graphic-tags.php', [ GraphicsController::class, 'graphictags' ]);
-	$router->get('/graphics', [ GraphicsController::class, 'index' ]);
 	$router->post('/graphics/put.php', [ GraphicsController::class, 'put' ]);
 	$router->get('/graphics/tags.php', [ GraphicsController::class, 'tags' ]);
 	$router->get('/graphics/verify.php', [ GraphicsController::class, 'verify' ]);
 
 	// ==================== MEMBERS ROUTES ====================
+	$router->get('/members/index.php', [ MembersController::class, 'index' ]);
 	$router->get('/members/all.php', [ MembersController::class, 'all' ]);
-	$router->get('/members', [ MembersController::class, 'index' ]);
 	$router->get('/members/search.php', [ MembersController::class, 'search' ]);
 
 	// ==================== COMMENTS ROUTES ====================
+	$router->get('/comments/index.php', [ CommentsController::class, 'index' ]);
 	$router->get('/comments/include.js.php', [ CommentsController::class, 'includejs' ]);
-	$router->get('/comments', [ CommentsController::class, 'index' ]);
 
 	// ==================== PHP (API) ROUTES ====================
 	$router->get('/php/allstaff.php', [ PhpController::class, 'allstaff' ]);
@@ -223,7 +223,7 @@ $router->group('', function(Router $router) use ($app) {
 	$router->get('/music/author_redirect.php', [ MusicController::class, 'authorredirect' ]);
 
 	// ==================== UPDATE ROUTES ====================
-	$router->get('/update', [ UpdateController::class, 'index' ]);
+	$router->get('/update/index.php', [ UpdateController::class, 'index' ]);
 	$router->post('/update/upload.php', [ UpdateController::class, 'upload' ]);
 
 	// ==================== FEEDS ROUTES ====================
