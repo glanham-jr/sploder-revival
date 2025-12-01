@@ -32,47 +32,47 @@ div.share ul li a
 
 a.delicious
     {
-    background: transparent url(/img/chrome/share/delicious.gif) no-repeat top;
+    background: transparent url(/img/share/delicious.gif) no-repeat top;
     }
 
 a.digg
     {
-    background: transparent url(/img/chrome/share/digg.gif) no-repeat top;
+    background: transparent url(/img/share/digg.gif) no-repeat top;
     }
 
 a.fark
     {
-    background: transparent url(/img/chrome/share/fark.gif) no-repeat top;
+    background: transparent url(/img/share/fark.gif) no-repeat top;
     }
 
 a.furl
     {
-    background: transparent url(/img/chrome/share/furl.gif) no-repeat top;
+    background: transparent url(/img/share/furl.gif) no-repeat top;
     }
 
 a.newsvine
     {
-    background: transparent url(/img/chrome/share/newsvine.gif) no-repeat top;
+    background: transparent url(/img/share/newsvine.gif) no-repeat top;
     }
 
 a.reddit
     {
-    background: transparent url(/img/chrome/share/reddit.gif) no-repeat top;
+    background: transparent url(/img/share/reddit.gif) no-repeat top;
     }
 
 a.tailrank
     {
-    background: transparent url(/img/chrome/share/tailrank.gif) no-repeat top;
+    background: transparent url(/img/share/tailrank.gif) no-repeat top;
     }
 
 a.yahoo
     {
-    background: transparent url(/img/chrome/share/yahoomyweb.gif) no-repeat top;
+    background: transparent url(/img/share/yahoomyweb.gif) no-repeat top;
     }
 
 a.blinklist
     {
-    background: transparent url(/img/chrome/share/blinklist.gif) no-repeat top;
+    background: transparent url(/img/share/blinklist.gif) no-repeat top;
     }
 
 a.delicious:hover,

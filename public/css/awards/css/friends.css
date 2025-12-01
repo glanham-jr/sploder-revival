@@ -7,7 +7,7 @@ body#friendsmanager h4 {
 div#friends,
 div.friend_request,
 div.friend_chooser {
-    background: #000 url("/img/chrome/element_bkgd.gif") repeat-x top;
+    background: #000 url("/img/element_bkgd.gif") repeat-x top;
     margin-bottom: 10px;
     padding: 8px;
     border: 2px solid #444;
@@ -144,7 +144,7 @@ div#avatar_editor #prompt p {
 div#avatar_editor div#avatar {
     width: 136px;
     height: 136px;
-    background: #000 url("/img/chrome/avatar_bkgd.gif");
+    background: #000 url("/img/avatar_bkgd.gif");
     float: left;
 }
 
@@ -167,65 +167,65 @@ div#avatar_editor div#avatar div.layer {
 
 div#avatar_editor div#avatar div.layer_01 {
     z-index: 1;
-    background: url("/img/chrome/avatar_01_96.png");
+    background: url("/img/avatar_01_96.png");
 }
 
 div#avatar_editor div#avatar div.layer_02 {
     z-index: 2;
-    background-image: url("/img/chrome/avatar_02_96.png");
+    background-image: url("/img/avatar_02_96.png");
 }
 
 div#avatar_editor div#avatar div.layer_03 {
     z-index: 3;
-    background-image: url("/img/chrome/avatar_03_96.png");
+    background-image: url("/img/avatar_03_96.png");
 }
 
 div#avatar_editor div#avatar div.layer_04 {
     z-index: 4;
-    background-image: url("/img/chrome/avatar_04_96.png");
+    background-image: url("/img/avatar_04_96.png");
 }
 
 div#avatar_editor div#avatar div.layer_05 {
     z-index: 5;
-    background-image: url("/img/chrome/avatar_05_96.png");
+    background-image: url("/img/avatar_05_96.png");
 }
 
 div#avatar_editor div#avatar div.layer_06 {
     z-index: 6;
-    background-image: url("/img/chrome/avatar_06_96.png");
+    background-image: url("/img/avatar_06_96.png");
 }
 
 div#avatar_editor div#avatar div.layer_07 {
     z-index: 7;
-    background-image: url("/img/chrome/avatar_07_96.png");
+    background-image: url("/img/avatar_07_96.png");
 }
 
 div#avatar_editor div#avatar div.layer2_01 {
-    background-image: url("/img/chrome/avatar2_01_96.png") !important;
+    background-image: url("/img/avatar2_01_96.png") !important;
 }
 
 div#avatar_editor div#avatar div.layer2_02 {
-    background-image: url("/img/chrome/avatar2_02_96.png") !important;
+    background-image: url("/img/avatar2_02_96.png") !important;
 }
 
 div#avatar_editor div#avatar div.layer2_03 {
-    background-image: url("/img/chrome/avatar2_03_96.png") !important;
+    background-image: url("/img/avatar2_03_96.png") !important;
 }
 
 div#avatar_editor div#avatar div.layer2_04 {
-    background-image: url("/img/chrome/avatar2_04_96.png") !important;
+    background-image: url("/img/avatar2_04_96.png") !important;
 }
 
 div#avatar_editor div#avatar div.layer2_05 {
-    background-image: url("/img/chrome/avatar2_05_96.png") !important;
+    background-image: url("/img/avatar2_05_96.png") !important;
 }
 
 div#avatar_editor div#avatar div.layer2_06 {
-    background-image: url("/img/chrome/avatar2_06_96.png") !important;
+    background-image: url("/img/avatar2_06_96.png") !important;
 }
 
 div#avatar_editor div#avatar div.layer2_07 {
-    background-image: url("/img/chrome/avatar2_07_96.png") !important;
+    background-image: url("/img/avatar2_07_96.png") !important;
 }
 
 

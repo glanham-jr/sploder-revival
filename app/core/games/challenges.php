@@ -217,7 +217,7 @@ $offset = $_GET['o'] ?? 0;
                         <p class="winners"><?= ($totalWinners) ?>/<?= ($winners) ?> winners</p>
                         <p class="prize">Win and get <span><?= $prize ?></span></p>
                         <?php if($challenge['verified']) { ?>
-                            <img class="verified" src="/img/chrome/challenge_verified.png" width="24" height="24" alt="Challenge verified" title="This challenge was verified as possible by <?= $gameAuthor ?>" />
+                            <img class="verified" src="/img/challenge_verified.png" width="24" height="24" alt="Challenge verified" title="This challenge was verified as possible by <?= $gameAuthor ?>" />
                         <?php } ?>
                         <div class="spacer">&nbsp;</div>
 

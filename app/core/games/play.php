@@ -271,7 +271,7 @@ if (isset($_SESSION['challenge']) && !$challenge) {
 
             <div class="sharebar">
                 <a href="/make/index.php">
-                    <img style="float: left;" src="/img/chrome/social_bar_make.gif" width="210" height="36" alt="make a game" />
+                    <img style="float: left;" src="/img/social_bar_make.gif" width="210" height="36" alt="make a game" />
                 </a>
                 <?php
                     $currentUrl = getenv('DOMAIN_NAME') . $_SERVER['REQUEST_URI'];

@@ -51,7 +51,7 @@ p#subnav {
     height: 36px;
     clear: both;
     margin-bottom: 10px;
-    background: #333 url(/img/chrome/social_bar_bkgd.gif) repeat-x;
+    background: #333 url(/img/social_bar_bkgd.gif) repeat-x;
 }
 body.wide940 .related_set {
     padding: 0;

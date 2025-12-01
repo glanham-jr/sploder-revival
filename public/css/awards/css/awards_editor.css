@@ -5,7 +5,7 @@ body#awardsmanager h4 {
 }
 
 div.member_chooser {
-    background: #000 url("/img/chrome/element_bkgd.gif") repeat-x top;
+    background: #000 url("/img/element_bkgd.gif") repeat-x top;
     margin-bottom: 10px;
     padding: 8px;
     border: 2px solid #444;
@@ -95,7 +95,7 @@ div#icon_editor #prompt p {
 div#icon_editor div#icon {
     width: 136px;
     height: 136px;
-    background: #000 url("/img/chrome/editor_bkgd.gif");
+    background: #000 url("/img/editor_bkgd.gif");
     float: left;
 }
 
@@ -118,17 +118,17 @@ div#icon_editor div#icon div.layer {
 
 div#icon_editor div#icon div.layer_01 {
     z-index: 1;
-    background: url("/img/chrome/art_01_96.gif");
+    background: url("/img/art_01_96.gif");
 }
 
 div#icon_editor div#icon div.layer_02 {
     z-index: 2;
-    background-image: url("/img/chrome/art_02_96.gif");
+    background-image: url("/img/art_02_96.gif");
 }
 
 div#icon_editor div#icon div.layer_03 {
     z-index: 3;
-    background-image: url("/img/chrome/art_03_96.gif");
+    background-image: url("/img/art_03_96.gif");
 }
 
 div#icon_editor div#controls {

@@ -3,7 +3,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: #32103C url('/img/chrome/v2-body-bkgd.jpg') repeat-x top;
+    background: #32103C url('/img/v2-body-bkgd.jpg') repeat-x top;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     vertical-align: top;
     text-align: center;
@@ -101,8 +101,8 @@ cite {
     float: left;
     width: 200px;
     height: 82px;
-    background: transparent url('/img/chrome/v2-chrome-main.png') no-repeat top left;
-    _background-image: url('/img/chrome/v2-chrome-main.gif');
+    background: transparent url('/img/v2-chrome-main.png') no-repeat top left;
+    _background-image: url('/img/v2-chrome-main.gif');
 }
 
 #title h1 {
@@ -153,7 +153,7 @@ cite {
     font-size: 12px;
     line-height: 16px;
     height: 18px;
-    background-image: url('/img/chrome/input_bkgd_header.jpg');
+    background-image: url('/img/input_bkgd_header.jpg');
     border: 1px solid #7b8eac;
 }
 
@@ -163,7 +163,7 @@ cite {
     font-weight: bold;
     color: #ec0;
     height: 26px !important;
-    background-image: url('/img/chrome/button_bkgd_small.jpg');
+    background-image: url('/img/button_bkgd_small.jpg');
 }
 
 body#home #tools a.dashlink {
@@ -193,8 +193,8 @@ body#home #tools a.dashlink {
     color: #eef;
     height: 33px;
     line-height: 33px !important;
-    background: url('/img/chrome/v2-chrome-main.png') no-repeat -328px 0 transparent;
-    _background-image: url('/img/chrome/v2-chrome-main.gif');
+    background: url('/img/v2-chrome-main.png') no-repeat -328px 0 transparent;
+    _background-image: url('/img/v2-chrome-main.gif');
 }
 
 #topnav li#nav1 a {
@@ -267,7 +267,7 @@ body#home #tools a.dashlink {
     background: -webkit-gradient(linear, left bottom, left top, from(hsl(218, 15%, 10%)), color-stop(0.6, hsl(218, 15%, 24%)), color-stop(0.6, hsl(218, 15%, 32%)), to(hsl(218, 15%, 25%))) #000;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#334455', endColorstr='#000000', GradientType=0);
         /* IE6-9 */
-    _background: #345 url('/img/chrome/button_bkgd.jpg') repeat-x;
+    _background: #345 url('/img/button_bkgd.jpg') repeat-x;
 }
 
 #subnav a.active {
@@ -350,7 +350,7 @@ body#creators #subnav .nav_creators {
     padding: 20px 0;
     width: 100%;
     height: 140px;
-    background: transparent url('/img/chrome/v2-bottom-bkgd.jpg') repeat-x bottom;
+    background: transparent url('/img/v2-bottom-bkgd.jpg') repeat-x bottom;
 }
 
 #bottomnav ul {
@@ -481,7 +481,7 @@ ul.note li {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    background: #2854a3 url('/img/chrome/icons_status.png') no-repeat -290px -110px;
+    background: #2854a3 url('/img/icons_status.png') no-repeat -290px -110px;
 }
 
 .promo div,
@@ -586,7 +586,7 @@ input.postbutton {
     font-size: 15px;
     color: #ec0;
     padding: 6px 12px;
-    background-image: url('/img/chrome/button_bkgd.jpg');
+    background-image: url('/img/button_bkgd.jpg');
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
 
@@ -627,7 +627,7 @@ input.postbutton {
 
 input,
 textarea {
-    background-image: url('/img/chrome/input_bkgd.gif');
+    background-image: url('/img/input_bkgd.gif');
     border: 1px solid #89a;
     font-size: 13px;
     padding: 3px;
@@ -655,7 +655,7 @@ div.gameobject,
 p.graph {
     width: 570px;
     height: 220px;
-    background-image: url('/img/chrome/graph_loading.gif');
+    background-image: url('/img/graph_loading.gif');
 }
 
 p.graph img {
@@ -669,7 +669,7 @@ p.graph img {
 
 .set,
 .description {
-    background: url('/img/chrome/noise.png') repeat #383f4c;
+    background: url('/img/noise.png') repeat #383f4c;
     _background-image: none;
     border: 1px solid #567;
     clear: both;
@@ -850,7 +850,7 @@ span.page_button_inactive {
 
 a.page_next {
     border-color: #567;
-    background: url('/img/chrome/button_bkgd_small.jpg') repeat-x;
+    background: url('/img/button_bkgd_small.jpg') repeat-x;
     padding: 0 15px;
 }
 
@@ -1852,7 +1852,7 @@ body.gamepage #content div.sharebar {
     height: 36px;
     clear: both;
     margin-bottom: 10px;
-    background: #333 url(/img/chrome/social_bar_bkgd.gif) repeat-x;
+    background: #333 url(/img/social_bar_bkgd.gif) repeat-x;
 }
 
 body.gamepage #content div.sharebar div.share_buttons {
@@ -1868,7 +1868,7 @@ div.share_buttons a {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url('/img/chrome/sharing_icons2.png') transparent 0px 0px no-repeat;
+    background: url('/img/sharing_icons2.png') transparent 0px 0px no-repeat;
 }
 
 div.share_buttons a:hover {
@@ -1918,7 +1918,7 @@ body.gamepage .gamerating {
 }
 
 .gametypeinfo {
-    background: transparent url('/img/chrome/game-ribbon.gif') no-repeat left top;
+    background: transparent url('/img/game-ribbon.gif') no-repeat left top;
     width: 270px;
     height: 82px;
     margin-top: -12px;
