@@ -4,6 +4,12 @@ PHP Backend code used to power the Sploder Revival.
 
 The code is mostly complete and will only ever be updated to allow for running on newer PHP versions.
 
+## Branches
+
+The `sploder-proprietary-backports` branch contains critical security updates for major bugs/issues that have been patched in a proprietary fork for sploder.net but deserve to be released publicly for the internet to be a safer place.
+
+The private fork has all AGPL licensed code stripped and is thus, not under violation of any licenses.
+
 ## Flash & Security Notice
 
 For using Sploder Revival securely as an end-user, we recommend you to download the official launcher directly from the [Sploder Revival website](https://sploder.net/). It will prompt you to download it when necessary.
