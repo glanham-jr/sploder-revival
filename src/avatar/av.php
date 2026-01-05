@@ -102,12 +102,10 @@ foreach ($renderOrder as $layerName) {
         $height         // height
     );
     
-    imagedestroy($sourceImage);
 }
 
 // Save the final image
 $success = imagepng($finalImage, 'a/' . $_SESSION["username"] . '.png');
-imagedestroy($finalImage);
 
 if ($success) {
     echo "prompt:Avatar saved successfully!";
