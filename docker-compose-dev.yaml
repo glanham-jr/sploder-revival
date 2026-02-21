@@ -10,9 +10,9 @@ services:
     depends_on:
      - "db"
     volumes:
-      - ./app:/var/www/app # DEV-ONLY: No need to rebuild source for modifying code
-      - ./public:/var/www/html # DEV-ONLY: No need to rebuild source for modifying code
-      - ./vendor:/var/www/vendor # DEV-ONLY: No need to rebuild source for modifying code
+      - ./app:/var/www/app:Z # DEV-ONLY: No need to rebuild source for modifying code
+      - ./public:/var/www/html:Z # DEV-ONLY: No need to rebuild source for modifying code
+      - ./vendor:/var/www/vendor:Z # DEV-ONLY: No need to rebuild source for modifying code
     environment:
       UID: 1000
       GID: 1000
@@ -69,9 +69,8 @@ services:
       POSTGRES_USER: sploder 
       POSTGRES_PASSWORD: geoff
     volumes:
-      - ./db:/bootstrap  # Mount the backup file into the container
-      - ./pgdata:/var/lib/postgresql/data  # Persistent storage for the database
-      # - ./db:/docker-entrypoint-initdb.d  # Mount the backup file into the container
+      - ./db:/bootstrap:Z  # Mount the backup file into the container
+      - pgdata:/var/lib/postgresql/data  # Persistent storage for the database
     ports:
       - "5432:5432"
     healthcheck:

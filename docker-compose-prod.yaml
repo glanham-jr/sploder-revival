@@ -11,18 +11,18 @@ services:
      - "db"
     volumes:
       # Production volumes - only expose specific writable directories
-      - ./src/users:/var/www/html/users:rw
-      - ./src/avatar/a:/var/www/html/avatar/a:rw
-      - ./src/cache:/var/www/html/cache:rw
-      - ./src/config/currentcontest.txt:/var/www/html/config/currentcontest.txt:rw
-      - ./src/database/originalmembers.db:/var/www/html/database/originalmembers.db:rw
-      - ./src/graphics/gif:/var/www/html/graphics/gif:rw
-      - ./src/graphics/png:/var/www/html/graphics/png:rw
-      - ./src/graphics/prj:/var/www/html/graphics/prj:rw
-      - ./src/legal:/var/www/html/legal:rw
-      - ./src/update/uploads:/var/www/html/update/uploads:rw
-      - ./src/update/currentversion.txt:/var/www/html/update/currentversion.txt:rw
-      - ./src/php/verifyscore.php:/var/www/html/php/verifyscore.php:rw
+      - ./src/users:/var/www/html/users:rw,Z
+      - ./src/avatar/a:/var/www/html/avatar/a:rw,Z
+      - ./src/cache:/var/www/html/cache:rw,Z
+      - ./src/config/currentcontest.txt:/var/www/html/config/currentcontest.txt:rw,Z
+      - ./src/database/originalmembers.db:/var/www/html/database/originalmembers.db:rw,Z
+      - ./src/graphics/gif:/var/www/html/graphics/gif:rw,Z
+      - ./src/graphics/png:/var/www/html/graphics/png:rw,Z
+      - ./src/graphics/prj:/var/www/html/graphics/prj:rw,Z
+      - ./src/legal:/var/www/html/legal:rw,Z
+      - ./src/update/uploads:/var/www/html/update/uploads:rw,Z
+      - ./src/update/currentversion.txt:/var/www/html/update/currentversion.txt:rw,Z
+      - ./src/php/verifyscore.php:/var/www/html/php/verifyscore.php:rw,Z
       - php_sessions:/tmp # Store PHP sessions between container restarts
     environment:
       PHP_ENVIRONMENT: production
@@ -80,7 +80,7 @@ services:
       POSTGRES_USER: ${POSTGRES_USERNAME}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - ./db:/bootstrap  # Mount the backup file into the container
+      - ./db:/bootstrap:Z  # Mount the backup file into the container
       - postgres_data:/var/lib/postgresql/data  # Persistent storage for the database
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U sploder -d sploder"]
