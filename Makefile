@@ -1,4 +1,4 @@
-.PHONY: help build build.prod install.composer dev dev.watch dev.down dev.bootstrap dev.bash.site dev.bash.db dev.backup.db dev.hook dev.fix-permissions prod prod.down prod.bootstrap prod.bash.site prod.bash.db prod.backup.db prod.logs clean clean.prod test backup.data
+.PHONY: help build build.force build.prod install.composer dev dev.watch dev.down dev.bootstrap dev.bash.site dev.bash.db dev.backup.db dev.hook prod prod.down prod.bootstrap prod.bash.site prod.bash.db prod.backup.db prod.logs clean clean.prod test backup.data
 
 ifeq ($(OS),Windows_NT)
   OPEN_CMD = start
@@ -17,13 +17,20 @@ DEV_DB_CONTAINER = sploder_postgres
 PROD_DB_CONTAINER = sploder_postgres_prod
 CONTAINER_CMD = podman
 
+# Set compose command based on container runtime
+ifeq ($(CONTAINER_CMD),podman)
+  COMPOSE_CMD = podman-compose
+else
+  COMPOSE_CMD = ${CONTAINER_CMD} compose
+endif
+
 # Helper functions
 define compose_up
-	${CONTAINER_CMD} compose -f $(1) up $(if $(2),$(2),-d)
+	${COMPOSE_CMD} -f $(1) up $(if $(2),$(2),-d)
 endef
 
 define compose_down
-	${CONTAINER_CMD} compose -f $(1) down
+	${COMPOSE_CMD} -f $(1) down
 endef
 
 define exec_container
@@ -49,7 +56,7 @@ define wait_for_db
 endef
 
 define is_container_running
-	docker inspect -f '{{.State.Running}}' $(1) 2>/dev/null || echo false
+	${CONTAINER_CMD} inspect -f '{{.State.Running}}' $(1) 2>/dev/null || echo false
 endef
 
 define backup_db
@@ -63,10 +70,10 @@ define backup_db
 	\
 	if [ "$(3)" = "schema" ]; then \
 		echo "Creating schema-only backup..."; \
-		docker exec -i $(2) /bin/bash -c "pg_dump -U sploder -d sploder --format=p --schema-only --create > /bootstrap/sploder.sql"; \
+		${CONTAINER_CMD} exec -i $(2) /bin/bash -c "pg_dump -U sploder -d sploder --format=p --schema-only --create > /bootstrap/sploder.sql"; \
 	else \
 		echo "Creating full backup..."; \
-		docker exec -i $(2) /bin/bash -c "pg_dump -U sploder -d sploder --format=p --create > /bootstrap/sploder-backup-$$(date +%Y%m%d_%H%M%S).sql"; \
+		${CONTAINER_CMD} exec -i $(2) /bin/bash -c "pg_dump -U sploder -d sploder --format=p --create > /bootstrap/sploder-backup-$$(date +%Y%m%d_%H%M%S).sql"; \
 	fi
 	if [ "$(3)" = "schema" ]; then \
 		echo "Stopping container $(2)..."; \
@@ -91,9 +98,14 @@ define backup_data
 	echo "Data backup completed: $$BACKUP_FILE"
 endef
 
+define fix_dev_permissions
+	@echo "Ensuring bind-mounted directories are world-readable..."
+	chmod -R a+rX ./app ./public ./vendor 2>/dev/null || true
+endef
+
 define build_image
 	composer install
-	${CONTAINER_CMD} build . -t $(1)
+	${CONTAINER_CMD} build $(if $(NO_CACHE),--no-cache,) . -t $(1)
 endef
 
 define clean_env
@@ -119,6 +131,7 @@ help:
 	@echo ""
 	@echo "Build commands:"
 	@echo "  make build            - build the sploder-revival docker image for development"
+	@echo "  make build.force      - build the docker image with no cache (forces full rebuild)"
 	@echo "  make build.prod       - build the sploder-revival docker image for production"
 	@echo "  make install.composer - installs composer for php"
 	@echo ""
@@ -151,12 +164,15 @@ help:
 	@echo "  make backup.data      - creates a timestamped zip backup of user data directories"
 build:
 	$(call build_image,sploder-revival)
+build.force:
+	NO_CACHE=1 $(MAKE) build
 install.composer:
 	php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 	php -r "if (file_exists('composer-setup.php')) { echo 'Installer verified'.PHP_EOL; } else { echo 'Installer corrupt'.PHP_EOL; unlink('composer-setup.php'); exit(1); }"
 	php composer-setup.php
 	php -r "unlink('composer-setup.php');"
 dev:
+	$(call fix_dev_permissions)
 	$(call compose_down,${DEV_COMPOSE})
 	@if [ "$(WATCH)" = "true" ]; then \
 		(sleep 2; ${OPEN_CMD} ${DEV_URL}; ) & $(call compose_up,${DEV_COMPOSE},); \
@@ -167,7 +183,8 @@ dev.hook:
 	cp .hooks/pre-commit .git/hooks/pre-commit
 	chmod u+x .git/hooks/pre-commit
 dev.watch:
-	$(MAKE) dev WATCH=true
+	$(call fix_dev_permissions)
+	${COMPOSE_CMD} -f docker-compose-dev.yaml up
 dev.down:
 	$(call compose_down,${DEV_COMPOSE})
 dev.bootstrap:
@@ -206,7 +223,7 @@ prod.bash.db:
 prod.backup.db:
 	$(call backup_db,${PROD_COMPOSE},${PROD_DB_CONTAINER},full)
 prod.logs:
-	${CONTAINER_CMD} compose -f ${PROD_COMPOSE} logs -f
+	${COMPOSE_CMD} -f ${PROD_COMPOSE} logs -f
 clean:
 	$(call clean_env,${DEV_SITE_CONTAINER},${DEV_DB_CONTAINER},sploder-revival)
 clean.prod:
