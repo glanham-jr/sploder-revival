@@ -57,8 +57,8 @@ if [ "$ENVIRONMENT" = "dev" ]; then
     for i in $(seq 1 50);
     do
         psql -U sploder -d sploder --command="\
-            insert into games (author, title, date, description, g_swf, user_id, isprivate, ispublished)\
-            values ('test', 'gtest$i', timezone('utc', now()), 'foobar', 0, 1, 0, 1);"
+            insert into games (author, title, date, description, g_swf, user_id, isprivate, ispublished, first_published_date, last_published_date, first_created_date)\
+            values ('test', 'gtest$i', timezone('utc', now()), 'foobar', 0, 1, 0, 1, timezone('utc', now()), timezone('utc', now()), timezone('utc', now()));"
 
         psql -U sploder -d sploder --command="\
             insert into game_tags (g_id, tag)\
