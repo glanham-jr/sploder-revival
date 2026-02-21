@@ -10,8 +10,17 @@ if [ -n "$UID" ] && [ -n "$GID" ]; then
     usermod -u "$UID" www-data
     groupmod -g "$GID" www-data
 
-    # Update ownership of Apache directories
-    chown -R www-data:www-data /var/www/html /var/log/apache2 /var/run/apache2
+    # Update ownership of Apache directories and bind-mounted volumes
+    chown -R www-data:www-data /var/www/html /var/www/app /var/www/vendor /var/log/apache2 /var/run/apache2 2>/dev/null
+
+    # Rootless Podman silently ignores chown on bind mounts (exits 0 but does
+    # nothing). Verify ownership actually changed; if not, run Apache as root.
+    # In rootless Podman "root" (UID 0) maps to the host user, so this carries
+    # no extra privileges and can read the bind-mounted files.
+    if [ "$(stat -c '%U' /var/www/app)" != "www-data" ]; then
+        echo "Warning: chown had no effect (rootless container?), running Apache as container root..."
+        sed -i 's/:=www-data/:=root/g' /etc/apache2/envvars
+    fi
 fi
 
 # Configure PHP based on environment variables
