@@ -52,3 +52,4 @@ $db->execute($query, [
 ]);
 
 header('Location: ../accounts/account.php');
+exit();
