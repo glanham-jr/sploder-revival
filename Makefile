@@ -1,4 +1,4 @@
-.PHONY: help build build.force build.prod install.composer dev dev.watch dev.down dev.bootstrap dev.bash.site dev.bash.db dev.backup.db dev.hook prod prod.down prod.bootstrap prod.bash.site prod.bash.db prod.backup.db prod.logs clean clean.prod test backup.data
+.PHONY: help build build.force build.prod install.composer dev dev.watch dev.down dev.bootstrap dev.bash.site dev.bash.db dev.backup.db dev.hook prod prod.down prod.bootstrap prod.bash.site prod.bash.db prod.backup.db prod.logs clean clean.prod test backup.data dev.fix-permissions
 
 ifeq ($(OS),Windows_NT)
   OPEN_CMD = start
