@@ -10,9 +10,12 @@ $u = mb_strtolower($_GET['u']);
 require_once(__DIR__ . "/../content/censor.php");
 $censoredUsername = censorText($u);
 
-$result2 = $originalMembersDb->query("SELECT username FROM members WHERE username=:user LIMIT 1", [
-    ':user' => mb_strtolower($u)
-]);
+$result2 = [];
+if ($originalMembersDb !== null) {
+    $result2 = $originalMembersDb->query("SELECT username FROM members WHERE username=:user LIMIT 1", [
+        ':user' => mb_strtolower($u)
+    ]);
+}
 
 $db = getDatabase();
 $result3 = $db->query("SELECT username FROM members WHERE username=:user LIMIT 1", [

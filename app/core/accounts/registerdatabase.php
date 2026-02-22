@@ -44,6 +44,7 @@ $responseKeys = json_decode($response, true);
 
 if (intval($responseKeys["success"]) !== 1) {
     header('Location: register.php?err=cap');
+    exit();
 } else {
     session_start();
     $password = $_POST['pass2'];
@@ -71,9 +72,12 @@ if (intval($responseKeys["success"]) !== 1) {
         require(__DIR__ . '/../../database/connect.php');
 
         $originalMembersDb = getOriginalMembersDatabase();
-        $result2 = $originalMembersDb->query("SELECT username FROM members WHERE username=:user LIMIT 1", [
-            ':user' => $username
-        ]);
+        $result2 = [];
+        if ($originalMembersDb !== null) {
+            $result2 = $originalMembersDb->query("SELECT username FROM members WHERE username=:user LIMIT 1", [
+                ':user' => $username
+            ]);
+        }
 
         $db = getDatabase();
         $result3 = $db->query("SELECT username FROM members WHERE username=:user LIMIT 1", [
@@ -114,6 +118,7 @@ if (intval($responseKeys["success"]) !== 1) {
                     ]);
                     session_destroy();
                     header('Location: registersuccess.php');
+                    exit();
                 }
             } elseif ($status == "green") {
                 $length = strlen($username);
@@ -131,10 +136,15 @@ if (intval($responseKeys["success"]) !== 1) {
                     ]);
                     session_destroy();
                     header('Location: registersuccess.php');
+                    exit();
                 } else {
+                    header('Location: register.php?err=inv');
+                    exit();
                 }
             }
         } else {
+            header('Location: register.php?err=acc');
+            exit();
         }
     }
 }

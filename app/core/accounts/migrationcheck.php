@@ -18,10 +18,12 @@ if ($censoredUsername !== $u) {
 }
 
 $originalMembersDb = getOriginalMembersDatabase();
-#$qs = "UPDATE sploder SET isprivate=" . $isprivate . " WHERE g_id = " . $id;
-$result2 = $originalMembersDb->query("SELECT username FROM members WHERE username=:user LIMIT 1", [
-    ':user' => $u
-]);
+$result2 = [];
+if ($originalMembersDb !== null) {
+    $result2 = $originalMembersDb->query("SELECT username FROM members WHERE username=:user LIMIT 1", [
+        ':user' => $u
+    ]);
+}
 
 $db = getDatabase();
 $result3 = $db->query("SELECT username FROM members WHERE username=:user LIMIT 1", [
@@ -54,16 +56,20 @@ if ($status1 == "can") {
         $auth_url = url($client_id, $redirect_url, $scopes);
         $_SESSION['enteredusername'] = $u;
         header('Location: ' . $auth_url);
+        exit();
     } elseif ($status == "green") {
         $length = strlen($u);
         if ((2 < $length) && ($length < 17) && (ctype_alnum($u))) {
-            header('Location: registerpassword.php');
             $_SESSION['usermigrate'] = "false";
             $_SESSION['enteredusername'] = $u;
+            header('Location: registerpassword.php');
+            exit();
         } else {
             header('Location: register.php?err=inv');
+            exit();
         }
     }
 } else {
     header('Location: register.php?err=acc');
+    exit();
 }

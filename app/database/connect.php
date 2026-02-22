@@ -18,7 +18,7 @@ function getDatabase(): IDatabase
  *
  * @return IDatabase
  */
-function getOriginalMembersDatabase(): IDatabase
+function getOriginalMembersDatabase(): ?IDatabase
 {
     return DatabaseManager::get()->getOriginalMembersDatabase();
 }

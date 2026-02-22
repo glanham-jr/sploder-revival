@@ -10,9 +10,9 @@ require_once(__DIR__ . '/connectionmanager.php');
 class DatabaseManager implements IDatabaseManager
 {
     private IDatabase $postgresDatabase;
-    private IDatabase $originalMembersDatabase;
+    private ?IDatabase $originalMembersDatabase;
 
-    private function __construct(IDatabase $postgresDatabase, IDatabase $originalMembersDatabase)
+    private function __construct(IDatabase $postgresDatabase, ?IDatabase $originalMembersDatabase)
     {
         $this->postgresDatabase = $postgresDatabase;
         $this->originalMembersDatabase = $originalMembersDatabase;
@@ -23,7 +23,7 @@ class DatabaseManager implements IDatabaseManager
         return $this->postgresDatabase;
     }
 
-    public function getOriginalMembersDatabase(): IDatabase
+    public function getOriginalMembersDatabase(): ?IDatabase
     {
         return $this->originalMembersDatabase;
     }
@@ -55,8 +55,7 @@ class DatabaseManager implements IDatabaseManager
                 $originalMembersSqliteFile = 'sqlite:../database/' . $originalMembersDbFile . '.db';
                 $originalDatabase = new Database(new ConnectionManager($originalMembersSqliteFile));
             } else {
-                throw new Exception("ORIGINAL_MEMBERS_DB SQLITE must be provided");
-                // $originalDatabase = null;
+                $originalDatabase = null;
             }
             DatabaseManager::$value = new DatabaseManager($postgresDatabase, $originalDatabase);
         }

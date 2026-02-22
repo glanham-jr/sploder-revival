@@ -5,6 +5,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 require(__DIR__ . '/logincheck.php');
 if (!isset($_SESSION['usermigrate'])) {
     header('Location: register.php?err=ses');
+    exit();
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
