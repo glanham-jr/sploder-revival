@@ -69,12 +69,12 @@ $isModerator = $perms !== null && $perms !== '' && str_contains($perms, 'M');
                 width="96" height="96">
             </a>
             <p class="badgename">
-              <a href="../members/index.php?u=<?= $username ?>"
+              <a href="/members/index.php?u=<?= $username ?>"
                 title="View profile"><?php echo $username ?></a>
             </p>
             <?php if (!$isolated) { ?>
             <p>
-              <a href="../friends/index.php"
+              <a href="/friends/index.php"
                 title="Manage friends"><?= $friends ?> friend<?= $friends == 1 ? '' : 's' ?></a>
             </p>
             <?php } ?>
@@ -185,7 +185,7 @@ $isModerator = $perms !== null && $perms !== '' && str_contains($perms, 'M');
             <br>
             <div class="pagination">
               <span class="button firstbutton">
-                <a href="/messages/">Messages</a>
+                <a href="../messages/index.php">Messages</a>
               </span>
             </div>
             <br>

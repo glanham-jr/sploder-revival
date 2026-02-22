@@ -22,7 +22,7 @@
         <li><a href="/staff.php">Staff</a></li>
         <!-- <li><a href="/members/contest/">Member of the Day</a></li>
 					<li><a href="/members/hall-of-fame/">Hall of Fame</a></li> -->
-        <li><a href="/messages/">Latest Comments</a></li>
+        <li><a href="/messages/index.php">Latest Comments</a></li>
     </ul>
     <ul class="nav_creators">
         <li><a href="/">Home</a></li>
