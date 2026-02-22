@@ -1,4 +1,4 @@
-.PHONY: help build build.prod install.composer dev dev.watch dev.down dev.bootstrap dev.bash.site dev.bash.db dev.backup.db dev.hook prod prod.down prod.bootstrap prod.bash.site prod.bash.db prod.backup.db prod.logs clean clean.prod test backup.data
+.PHONY: help build build.prod install.composer dev dev.watch dev.down dev.bootstrap dev.bash.site dev.bash.db dev.backup.db dev.hook dev.fix-permissions prod prod.down prod.bootstrap prod.bash.site prod.bash.db prod.backup.db prod.logs clean clean.prod test backup.data
 
 ifeq ($(OS),Windows_NT)
   OPEN_CMD = start
@@ -131,6 +131,7 @@ help:
 	@echo "  make dev.bash.site    - enter the sploder revival container"
 	@echo "  make dev.bash.db      - enter the db container"
 	@echo "  make dev.backup.db    - creates a schema backup of the database into the mounted folder"
+	@echo "  make dev.fix-permissions - restores file ownership to the current user after container use"
 	@echo ""
 	@echo "Production commands:"
 	@echo "  make prod             - start production environment"
@@ -178,6 +179,17 @@ dev.bash.db:
 dev.backup.db:
 	$(call compose_down,${DEV_COMPOSE})
 	$(call backup_db,${DEV_COMPOSE},${DEV_DB_CONTAINER},schema)
+dev.fix-permissions:
+	@echo "Restoring file permissions..."
+	@if command -v sudo >/dev/null 2>&1; then \
+		sudo chown -R $$(id -u):$$(id -g) ./src ./vendor ./app ./public; \
+	elif command -v run0 >/dev/null 2>&1; then \
+		run0 chown -R $$(id -u):$$(id -g) ./src ./vendor ./app ./public; \
+	else \
+		echo "Error: neither sudo nor run0 found. Cannot fix permissions."; \
+		exit 1; \
+	fi
+	@echo "File permissions restored."
 
 # Production commands
 prod:
