@@ -13,7 +13,7 @@
  * @return string The censored text. Returns the original text if it's empty,
  * or if no censored words are defined.
  */
-function censorText(string $text): string {
+function censorText(?string $text): string {
     // Return early if text is empty, as there's nothing to censor.
     if (empty($text)) {
         return $text;

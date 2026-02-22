@@ -13,7 +13,7 @@ $favoriteGames = filterKeyboard(censorText($_POST["favoriteGames"]));
 $favoriteMovies = filterKeyboard(censorText($_POST["favoriteMovies"]));
 $favoriteBands = filterKeyboard(censorText($_POST["favoriteBands"]));
 $whomIRespect = filterKeyboard(censorText($_POST["whomIRespect"]));
-$isolated = censorText($_POST["isolate"]) ?? null;
+$isolated = filter_input(INPUT_POST, 'isolate', FILTER_VALIDATE_BOOLEAN);
 
 $description = mb_substr($description, 0, 500);
 $hobbies = mb_substr($hobbies, 0, 500);
@@ -23,12 +23,8 @@ $favoriteMovies = mb_substr($favoriteMovies, 0, 500);
 $favoriteBands = mb_substr($favoriteBands, 0, 500);
 $whomIRespect = mb_substr($whomIRespect, 0, 500);
 
-# $isolated is set to "on" if the checkbox is checked
-if ($isolated === "on") {
-    $isolated = false;
-} else {
-    $isolated = true;
-}
+# Checkbox "Allow comments and friending" is checked = not isolated
+$isolated = !$isolated;
 
 // Connect to the PostgreSQL database
 include(__DIR__ . '/../../database/connect.php');
@@ -60,3 +56,4 @@ $db->execute($sql, [
   ':respect' => $whomIRespect
 ]);
 header('Location: profile-edit.php');
+exit();
