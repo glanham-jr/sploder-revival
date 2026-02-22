@@ -1,5 +1,6 @@
 <?php
 $pageExecutionEndTime = microtime(true);
+$pageExecutionStartTime = $pageExecutionStartTime ?? $pageExecutionEndTime;
 $pageExecutionTime = $pageExecutionEndTime - $pageExecutionStartTime;
 $pageExecutionTime = number_format($pageExecutionTime, 3) . "s";
 $peakMemoryUsage = number_format(memory_get_peak_usage() / 1024 / 1024, 2) . " MB";
