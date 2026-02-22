@@ -158,6 +158,7 @@ $router->group('', function(Router $router) use ($app) {
 	$router->get('/members/search.php', [ MembersController::class, 'search' ]);
 
 	// ==================== COMMENTS ROUTES ====================
+	$router->get('/comments/', [ CommentsController::class, 'index' ]);
 	$router->get('/comments/index.php', [ CommentsController::class, 'index' ]);
 	$router->get('/comments/include.js.php', [ CommentsController::class, 'includejs' ]);
 
@@ -183,9 +184,11 @@ $router->group('', function(Router $router) use ($app) {
 	$router->post('/php/getproject.php', [ PhpController::class, 'getproject' ]);
 	$router->get('/php/getprojects.php', [ PhpController::class, 'getprojects' ]);
 	$router->post('/php/getprojects.php', [ PhpController::class, 'getprojects' ]);
+	$router->get('/php/idlecheck.php', [ PhpController::class, 'idlecheck' ]);
 	$router->post('/php/idlecheck.php', [ PhpController::class, 'idlecheck' ]);
 	$router->get('/php/info.php', [ PhpController::class, 'info' ]);
 	$router->get('/php/onlinelist.php', [ PhpController::class, 'onlinelist' ]);
+	$router->get('/php/online.php', [ PhpController::class, 'online' ]);
 	$router->post('/php/online.php', [ PhpController::class, 'online' ]);
 	$router->post('/php/permadelete.php', [ PhpController::class, 'permadelete' ]);
 	$router->post('/php/ping.php', [ PhpController::class, 'ping' ]);
