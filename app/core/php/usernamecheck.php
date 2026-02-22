@@ -51,4 +51,5 @@ if ($status1 == "can") {
 } else {
     $status = file_get_contents(__DIR__ . '/../../images/ex.png');
 }
+header('Content-Type: image/png');
 echo $status;
