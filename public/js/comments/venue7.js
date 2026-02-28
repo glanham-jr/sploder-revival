@@ -849,6 +849,7 @@ function us_onError(statusCode, responseText)
 function us_main()
 {
 
+    if (!us_div()) return false;
     us_div().innerHTML = '<div id="us_content"><a name="us_messages_top"></a><div id="us_content_pagination1"></div><div id="us_content_messages"></div><div id="us_content_pagination2"></div><div id="us_content_status"></div><div id="us_content_post"></div></div>';
 
     $us_content_status = document.getElementById("us_content_status");

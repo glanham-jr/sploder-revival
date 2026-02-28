@@ -218,6 +218,7 @@ $router->group('', function(Router $router) use ($app) {
 	$router->get('/php/url.php', [ PhpController::class, 'url' ]);
 	$router->get('/php/usernamecheck.php', [ PhpController::class, 'usernamecheck' ]);
 	$router->post('/php/usernamecheck.php', [ PhpController::class, 'usernamecheck' ]);
+	$router->get('/php/userstatus.php', [ PhpController::class, 'userstatus' ]);
 	$router->post('/php/userstatus.php', [ PhpController::class, 'userstatus' ]);
 	$router->post('/php/verifyscore.php', [ PhpController::class, 'verifyscore' ]);
 	$router->post('/php/vote.php', [ PhpController::class, 'vote' ]);

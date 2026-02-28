@@ -158,7 +158,7 @@ if ($totalGraphics > 0){
             <dt>Votes cast:</dt>
             <dd><?= $votes_cast ?></dd>
             <dt>Comments made:</dt>
-            <dd><?= $comments_made ?><a href="/messages/?creator=<?= $username ?>"> view &raquo;</a></dd>
+            <dd><?= $comments_made ?><a href="/messages/index.php?creator=<?= $username ?>"> view &raquo;</a></dd>
             <dt>Vote average:</dt>
             <dd style="position: relative; width: 96px; height: 24px; background-color: #666;"
                 title="Average vote this member has cast on others' games">
