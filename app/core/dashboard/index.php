@@ -80,7 +80,7 @@ $isModerator = $perms !== null && $perms !== '' && str_contains($perms, 'M');
             <?php } ?>
             <p class="note"><abbr>Level
                 <?php echo $level ?></abbr>
-              <a style="background: url(../chrome/help_icon.gif) no-repeat top left" class="tooltip">&nbsp;<span><strong>How do I level up?</strong>
+              <a style="background: url(/img/help_icon.gif) no-repeat top left" class="tooltip">&nbsp;<span><strong>How do I level up?</strong>
                   <br>You
                   level up by participating in Sploder Revival. Play games and vote on them,
                   create your own games, and make friends. As you do this, your level
@@ -194,7 +194,7 @@ $isModerator = $perms !== null && $perms !== '' && str_contains($perms, 'M');
       
       <br>
       <br style="clear: both;">
-      <img src="./pixie.gif" width="1" height="1">
+      <img src="/img/dashboard/pixie.gif" width="1" height="1">
       <div class="spacer">&nbsp;
       </div>
       <?php } ?>
