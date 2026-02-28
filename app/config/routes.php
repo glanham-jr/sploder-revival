@@ -99,6 +99,7 @@ $router->group('', function(Router $router) use ($app) {
 	$router->post('/games/moderation/admin.php', [ GamesModerationController::class, 'admin' ]);
 	$router->get('/games/moderation/banned.php', [ GamesModerationController::class, 'banned' ]);
 	$router->get('/games/moderation/ipcheck.php', [ GamesModerationController::class, 'ipcheck' ]);
+	$router->post('/games/moderation/ipcheck.php', [ GamesModerationController::class, 'ipcheck' ]);
 	$router->get('/games/moderation/logs.php', [ GamesModerationController::class, 'logs' ]);
 	$router->get('/games/moderation/pending.php', [ GamesModerationController::class, 'pending' ]);
 	$router->post('/games/moderation/php/ban.php', [ GamesModerationController::class, 'ban' ]);
