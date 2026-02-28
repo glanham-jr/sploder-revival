@@ -40,10 +40,18 @@ if (isset($_GET['game']) && $_GET['game'] == null) {
     <?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
     <script>
         function delproj(id, title) {
-            let text;
-            if (confirm(("Are you sure you want to delete " + title)) == true) {
-                location.href = ("../php/delete.php?id=" + id);
-            } else {}
+            if (confirm("Are you sure you want to delete " + title) == true) {
+                var form = document.createElement('form');
+                form.method = 'POST';
+                form.action = '../php/delete.php';
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'id';
+                input.value = id;
+                form.appendChild(input);
+                document.body.appendChild(form);
+                form.submit();
+            }
         }
     </script>
     <script type="text/javascript">window.rpcinfo = "Managing their Games";</script>

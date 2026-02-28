@@ -1,8 +1,7 @@
 <?php
 require_once __DIR__ . '/../content/initialize.php';
 session_start();
-header('Content-Type: text/xml');
-$id = (int)filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
+$id = (int)filter_var($_REQUEST['id'], FILTER_SANITIZE_NUMBER_INT);
 require_once(__DIR__ . '/../../database/connect.php');
 $db = getDatabase();
 $qs2 = "SELECT userid FROM graphics WHERE id=:id";
@@ -25,6 +24,8 @@ if ($_SESSION["userid"] == $userid) {
     unlink($file3);
     
     header('Location: ../dashboard/my-graphics.php');
+    exit();
 } else {
     header('Location: ../dashboard/my-graphics.php?err=del');
+    exit();
 }

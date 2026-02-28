@@ -37,19 +37,35 @@ $totalgames = $gameRepository->getTotalDeletedGameCount($username);
     <?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
     <script>
         function delproj(id, title) {
-            let text;
-            if (confirm(("Are you REALLY REALLY sure you want to delete " + title +
-                    "\nRemember, permanently deleted games can NEVER be recovered, not even by the developers.")) == true) {
-                location.href = ("../php/permadelete.php?id=" + id);
-            } else {}
+            if (confirm("Are you REALLY REALLY sure you want to delete " + title +
+                    "\nRemember, permanently deleted games can NEVER be recovered, not even by the developers.") == true) {
+                var form = document.createElement('form');
+                form.method = 'POST';
+                form.action = '../php/permadelete.php';
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'id';
+                input.value = id;
+                form.appendChild(input);
+                document.body.appendChild(form);
+                form.submit();
+            }
         }
     </script>
     <script>
         function resproj(id, title) {
-            let text;
-            if (confirm(("Are you sure you want to restore " + title)) == true) {
-                location.href = ("../php/restore.php?id=" + id);
-            } else {}
+            if (confirm("Are you sure you want to restore " + title) == true) {
+                var form = document.createElement('form');
+                form.method = 'POST';
+                form.action = '../php/restore.php';
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'id';
+                input.value = id;
+                form.appendChild(input);
+                document.body.appendChild(form);
+                form.submit();
+            }
         }
     </script>
     <script type="text/javascript">window.rpcinfo = "Managing their Games";</script>

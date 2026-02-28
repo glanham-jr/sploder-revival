@@ -28,10 +28,18 @@ $total_likes = $graphicRepository->getTotalGraphicLikesByUserId($_SESSION['useri
     <?php include(__DIR__ . '/../content/onlinechecker.php'); ?>
     <script>
         function delproj(id) {
-            let text;
-            if (confirm(("Are you sure you want to delete this graphic?")) == true) {
-                location.href = ("../php/delete_graphic.php?id=" + id);
-            } else {}
+            if (confirm("Are you sure you want to delete this graphic?") == true) {
+                var form = document.createElement('form');
+                form.method = 'POST';
+                form.action = '../php/delete_graphic.php';
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'id';
+                input.value = id;
+                form.appendChild(input);
+                document.body.appendChild(form);
+                form.submit();
+            }
         }
     </script>
     <script type="text/javascript">window.rpcinfo = "Managing their Graphics";</script>
