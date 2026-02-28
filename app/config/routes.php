@@ -167,7 +167,9 @@ $router->group('', function(Router $router) use ($app) {
 
 	// ==================== COMMENTS ROUTES ====================
 	$router->get('/comments/', [ CommentsController::class, 'index' ]);
+	$router->post('/comments/', [ CommentsController::class, 'index' ]);
 	$router->get('/comments/index.php', [ CommentsController::class, 'index' ]);
+	$router->post('/comments/index.php', [ CommentsController::class, 'index' ]);
 	$router->get('/comments/include.js.php', [ CommentsController::class, 'includejs' ]);
 
 	// ==================== PHP (API) ROUTES ====================
