@@ -9,7 +9,7 @@ div.award
 	margin: 0 0 10px 0;
 	color: #fff;
 	font-size: 11px;
-	background: #000 url('/awards/chrome/award_corner.gif') no-repeat bottom right;
+	background: #000 url('/img/awards/chrome/award_corner.gif') no-repeat bottom right;
 }
 div.award img
 {
@@ -21,7 +21,7 @@ div.award img
 }
 div.award_32.special_1 img
 {
-	background: url('/awards/chrome/award_shine_48.gif') no-repeat;
+	background: url('/img/awards/chrome/award_shine_48.gif') no-repeat;
 }
 div.award dt
 {
@@ -104,7 +104,7 @@ div.award_64 img
 
 div.award_64.special_1 img
 {
-	background: url('/awards/chrome/award_shine_96.gif') no-repeat;
+	background: url('/img/awards/chrome/award_shine_96.gif') no-repeat;
 }
 
 div.award_64 dl
@@ -148,7 +148,7 @@ div.award_64 dl dd.award_cite a
 div.award_64:hover dl
 {
 	display: block;
-	background-image: url('/awards/chrome/award_plaque.gif');
+	background-image: url('/img/awards/chrome/award_plaque.gif');
 }
 
 div#profile_awards {

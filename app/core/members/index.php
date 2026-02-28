@@ -66,7 +66,7 @@ $nocache = time();
                                 // If no role, set to "empty"
                                 $role = strpos($result['perms'], $key) !== false ? $role : "empty";
                                 $icon = "role_$role";
-                                echo "<img src=\"/chrome/{$icon}.gif\" width=\"24\" height=\"28\" alt=\"{$role}\" title=\"$role\" />";
+                                echo "<img src=\"/img/{$icon}.gif\" width=\"24\" height=\"28\" alt=\"{$role}\" title=\"$role\" />";
                             }
                             ?>
                         </div>

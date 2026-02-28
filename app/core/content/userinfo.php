@@ -164,7 +164,7 @@ if ($totalGraphics > 0){
                 title="Average vote this member has cast on others' games">
                 <div style="background: #ffec00; width: <?= $vote_avg_percentage ?>px; height: 24px;">&nbsp;</div>
                 <div
-                    style="width: 96px; height: 24px; position: absolute; top: 0; left: 0; z-index: 2; background-image: url('/chrome/starmask.png');">
+                    style="width: 96px; height: 24px; position: absolute; top: 0; left: 0; z-index: 2; background-image: url('/img/starmask.png');">
                     &nbsp;
                 </div>
             </dd>

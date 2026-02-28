@@ -163,7 +163,7 @@ if (count($result) > 0) {
                 <script>
                 for (i = 0; i < 3; i++) {
                     $(".layer_0" + (i + 1)).css({
-                        "background": "url(/awards/chrome/art_0" + (i + 1) + "_96.gif)"
+                        "background": "url(/img/awards/chrome/art_0" + (i + 1) + "_96.gif)"
                     });
                 }
                 </script>
@@ -305,7 +305,7 @@ if (count($result) > 0) {
 
             for (i = 0; i < 3; i++) {
                 $(".layer_0" + (i + 1)).css({
-                    "background": "url(/awards/chrome/art_0" + (i + 1) + "_96.gif)"
+                    "background": "url(/img/awards/chrome/art_0" + (i + 1) + "_96.gif)"
                 });
             }
             for (i = 3; i < 7; i++) {

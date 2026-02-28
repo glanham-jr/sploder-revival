@@ -281,7 +281,7 @@ div.award_64 img {
 }
 
 div.award_64.special_1 img {
-    background: url('/awards/chrome/award_shine_96.gif') no-repeat;
+    background: url('/img/awards/chrome/award_shine_96.gif') no-repeat;
 }
 
 div.award_64 dl {
@@ -325,7 +325,7 @@ div.award_64 dl dd.award_cite a {
 
 div.award_64:hover dl {
     display: block;
-    background-image: url('/awards/chrome/award_plaque.gif');
+    background-image: url('/img/awards/chrome/award_plaque.gif');
 }
 
 div#profile_awards {

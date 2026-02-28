@@ -178,7 +178,7 @@ function us_bbcode_add(value)
 
 var $us_docroot = us_getPathToSelf();
 var $us_namespace = "us_";
-var $us_gateway = $us_docroot;
+var $us_gateway = "/comments/";
 
 var $us_content_communicator = null;
 var $us_venue_content = null;
@@ -537,7 +537,7 @@ function us_renderPagination()
 
 function us_setStatus(msg, show_icon)
 {
-    var icon = (show_icon) ? '<img src="/chrome/loading_icon.gif" width="24" height="12" /> ' : '';
+    var icon = (show_icon) ? '<img src="/img/loading_icon.gif" width="24" height="12" /> ' : '';
     if (msg && msg.length > 0) {
         $us_content_status.innerHTML = '<p class="us_prompt">' + icon + msg + '</p>';
     } else {
