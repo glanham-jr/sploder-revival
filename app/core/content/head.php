@@ -1,4 +1,5 @@
 <title>Sploder</title>
+<link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta http-equiv="expires" content="0" />

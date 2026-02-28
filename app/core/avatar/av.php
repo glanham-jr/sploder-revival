@@ -41,14 +41,15 @@ if ($type == 'premium') {
 }
 
 $avatarSuffix = $type == 'classic' ? '' : '.1';
+$avatarDir = $_SERVER['DOCUMENT_ROOT'] . '/img/avatar/';
 $avatarFiles = [
-    'layer_01' => "avatar_01_96.png{$avatarSuffix}", // Skin
-    'layer_02' => "avatar_02_96.png{$avatarSuffix}", // Mouth
-    'layer_03' => "avatar_03_96.png{$avatarSuffix}", // Nose
-    'layer_04' => "avatar_04_96.png{$avatarSuffix}", // Eyes
-    'layer_05' => "avatar_05_96.png{$avatarSuffix}", // Hair
-    'layer_06' => "avatar_06_96.png{$avatarSuffix}", // Extras
-    'layer_07' => "avatar_07_96.png{$avatarSuffix}"  // Base/Background
+    'layer_01' => $avatarDir . "avatar_01_96.png{$avatarSuffix}", // Skin
+    'layer_02' => $avatarDir . "avatar_02_96.png{$avatarSuffix}", // Mouth
+    'layer_03' => $avatarDir . "avatar_03_96.png{$avatarSuffix}", // Nose
+    'layer_04' => $avatarDir . "avatar_04_96.png{$avatarSuffix}", // Eyes
+    'layer_05' => $avatarDir . "avatar_05_96.png{$avatarSuffix}", // Hair
+    'layer_06' => $avatarDir . "avatar_06_96.png{$avatarSuffix}", // Extras
+    'layer_07' => $avatarDir . "avatar_07_96.png{$avatarSuffix}"  // Base/Background
 ];
 
 $width = 96;
@@ -106,7 +107,7 @@ foreach ($renderOrder as $layerName) {
 }
 
 // Save the final image
-$success = imagepng($finalImage, 'a/' . $_SESSION["username"] . '.png');
+$success = imagepng($finalImage, $avatarDir . 'a/' . $_SESSION["username"] . '.png');
 imagedestroy($finalImage);
 
 if ($success) {

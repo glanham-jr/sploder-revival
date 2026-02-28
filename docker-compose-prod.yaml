@@ -12,7 +12,7 @@ services:
     volumes:
       # Production volumes - only expose specific writable directories
       - ./src/users:/var/www/html/users:rw,Z
-      - ./src/avatar/a:/var/www/html/avatar/a:rw,Z
+      - ./src/avatar/a:/var/www/html/img/avatar/a:rw,Z
       - ./src/cache:/var/www/html/cache:rw,Z
       - ./src/config/currentcontest.txt:/var/www/html/config/currentcontest.txt:rw,Z
       - ./src/database/originalmembers.db:/var/www/html/database/originalmembers.db:rw,Z

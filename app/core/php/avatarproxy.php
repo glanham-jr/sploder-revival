@@ -2,11 +2,12 @@
 require_once __DIR__ . '/../content/initialize.php';
 header('Content-Type: image/png');
 $username = $_GET['u'];
+$avatarDir = $_SERVER['DOCUMENT_ROOT'] . '/img/avatar/a/';
 // Check file exists php
-if (file_exists('../avatar/a/' . $username . '.png')) {
-    $raw = file_get_contents('../avatar/a/' . $username . '.png');
+if (file_exists($avatarDir . $username . '.png')) {
+    $raw = file_get_contents($avatarDir . $username . '.png');
 } else {
-    $raw = file_get_contents('../avatar/a/fb/noob.png');
+    $raw = file_get_contents($avatarDir . 'fb/noob.png');
 }
 
 // Allow only few sizes
