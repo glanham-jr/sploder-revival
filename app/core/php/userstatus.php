@@ -29,4 +29,5 @@ if ($result3[0]['lastlogin'] < $last) {
 } else {
     $status = "offline";
 }
-echo file_get_contents(__DIR__ . '/../../images/profile_status_' . $status . '.gif');
+header('Content-Type: image/gif');
+echo file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/img/images/profile_status_' . $status . '.gif');
