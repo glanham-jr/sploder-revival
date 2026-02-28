@@ -60,6 +60,10 @@ if(isset($_POST['choice'])) {
         if(!($challengesRepository->hasWonChallenge($s[1], $_SESSION['userid']))) {
             $_SESSION['challenge'] = $challenge_id;
             header("Location: /games/play.php?s=" . $s[0] . "_" . $s[1] . "&challenge=" . $challenge_id);
+            exit();
         }
     }
 }
+
+header("Location: /games/challenges.php");
+exit();
