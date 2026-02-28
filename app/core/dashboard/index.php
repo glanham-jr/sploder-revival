@@ -129,7 +129,7 @@ $isModerator = $perms !== null && $perms !== '' && str_contains($perms, 'M');
           </li>
           <?php
           if ($isModerator) {
-              echo '<li><a href="../games/moderation/">Moderate site content</a></li>';
+              echo '<li><a href="../games/moderation/index.php">Moderate site content</a></li>';
           }
           ?>
         </ul>

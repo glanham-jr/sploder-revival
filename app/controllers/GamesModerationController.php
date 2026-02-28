@@ -33,4 +33,29 @@ class GamesModerationController
     {
         require __DIR__ . '/../core/games/moderation/pending.php';
     }
+
+    public function ban()
+    {
+        require __DIR__ . '/../core/games/moderation/php/ban.php';
+    }
+
+    public function unban()
+    {
+        require __DIR__ . '/../core/games/moderation/php/unban.php';
+    }
+
+    public function delete()
+    {
+        require __DIR__ . '/../core/games/moderation/php/delete.php';
+    }
+
+    public function getbp()
+    {
+        require __DIR__ . '/../core/games/moderation/php/getbp.php';
+    }
+
+    public function setbp()
+    {
+        require __DIR__ . '/../core/games/moderation/php/setbp.php';
+    }
 }

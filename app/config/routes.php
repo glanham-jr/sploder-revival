@@ -101,6 +101,12 @@ $router->group('', function(Router $router) use ($app) {
 	$router->get('/games/moderation/ipcheck.php', [ GamesModerationController::class, 'ipcheck' ]);
 	$router->get('/games/moderation/logs.php', [ GamesModerationController::class, 'logs' ]);
 	$router->get('/games/moderation/pending.php', [ GamesModerationController::class, 'pending' ]);
+	$router->post('/games/moderation/php/ban.php', [ GamesModerationController::class, 'ban' ]);
+	$router->get('/games/moderation/php/unban.php', [ GamesModerationController::class, 'unban' ]);
+	$router->post('/games/moderation/php/unban.php', [ GamesModerationController::class, 'unban' ]);
+	$router->post('/games/moderation/php/delete.php', [ GamesModerationController::class, 'delete' ]);
+	$router->post('/games/moderation/php/getbp.php', [ GamesModerationController::class, 'getbp' ]);
+	$router->post('/games/moderation/php/setbp.php', [ GamesModerationController::class, 'setbp' ]);
 
 	// ==================== MAKE (GAME CREATION) ROUTES ====================
 	$router->get('/make/index.php', [ MakeController::class, 'index' ]);
