@@ -104,6 +104,7 @@ $router->group('', function(Router $router) use ($app) {
 	$router->post('/games/moderation/php/ban.php', [ GamesModerationController::class, 'ban' ]);
 	$router->get('/games/moderation/php/unban.php', [ GamesModerationController::class, 'unban' ]);
 	$router->post('/games/moderation/php/unban.php', [ GamesModerationController::class, 'unban' ]);
+	$router->get('/games/moderation/php/delete.php', [ GamesModerationController::class, 'delete' ]);
 	$router->post('/games/moderation/php/delete.php', [ GamesModerationController::class, 'delete' ]);
 	$router->post('/games/moderation/php/getbp.php', [ GamesModerationController::class, 'getbp' ]);
 	$router->post('/games/moderation/php/setbp.php', [ GamesModerationController::class, 'setbp' ]);
