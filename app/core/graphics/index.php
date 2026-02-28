@@ -40,7 +40,7 @@ $graphicListRenderService = new GraphicListRenderService($graphicsRepository);
 </head>
 <?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
-<body id="everyones" class="graphics" onload="doLoad();">
+<body id="everyones" class="graphics">
     <?php include(__DIR__ . '/../content/headernavigation.php'); ?>
     <div id="page">
     <?php include(__DIR__ . '/../content/subnav.php'); ?>

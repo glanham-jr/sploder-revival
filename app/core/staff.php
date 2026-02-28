@@ -39,7 +39,7 @@ if (isset($_SESSION['loggedin'])) {
 </head>
 <?php include(__DIR__ . '/content/addressbar.php'); ?>
 
-<body id="members" class="staff" onload="doLoad();">
+<body id="members" class="staff">
     <?php include(__DIR__ . '/content/headernavigation.php'); ?>
     <div id="page">
         <?php include(__DIR__ . '/content/subnav.php') ?>

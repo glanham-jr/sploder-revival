@@ -38,7 +38,7 @@ $total_likes = $graphicRepository->getTotalGraphicLikesByUserId($_SESSION['useri
 </head>
 <?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
-<body id="home" class="" onload="doLoad();">
+<body id="home" class="">
     <?php include(__DIR__ . '/../content/headernavigation.php'); ?>
     <div id="page">
         <?php

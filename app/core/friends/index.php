@@ -39,7 +39,7 @@ $friendsService = new FriendsListRenderService($friendsRepository);
 </head>
 <?php include(__DIR__ . '/../content/addressbar.php'); ?>
 
-<body id="friendsmanager" class="friend" onload="doLoad();">
+<body id="friendsmanager" class="friend">
     <?php include(__DIR__ . '/../content/headernavigation.php'); ?>
     <div id="page">
         <?php
