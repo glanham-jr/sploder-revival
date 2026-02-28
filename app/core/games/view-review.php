@@ -191,7 +191,7 @@ if (isset($_SESSION['loggedin'])) {
                 document.getElementsByTagName('head')[0].appendChild(n);
                 n = document.createElement('script');
                 n.type = 'text/javascript';
-                n.src = '/comments/venue7.js';
+                n.src = '/js/comments/venue7.js';
                 document.getElementsByTagName('head')[0].appendChild(n);
                 if (window.addthis) addthis.button('#btn1', addthis_ui_config, addthis_share_config);
             }
