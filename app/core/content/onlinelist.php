@@ -20,6 +20,9 @@ window.onload = function() {
     n.type = 'text/css';
     n.href = '../css/venue5.css';
     document.getElementsByTagName('head')[0].appendChild(n);
+    if (typeof us_config === 'undefined') {
+        us_config = { show_messages: false };
+    }
     n = document.createElement('script');
     n.type = 'text/javascript';
     n.src = '/js/comments/dashboard6.js';
