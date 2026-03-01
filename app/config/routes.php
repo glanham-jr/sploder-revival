@@ -201,6 +201,7 @@ $router->group('', function(Router $router) use ($app) {
 	$router->get('/php/online.php', [ PhpController::class, 'online' ]);
 	$router->post('/php/online.php', [ PhpController::class, 'online' ]);
 	$router->post('/php/permadelete.php', [ PhpController::class, 'permadelete' ]);
+	$router->get('/php/ping.php', [ PhpController::class, 'ping' ]);
 	$router->post('/php/ping.php', [ PhpController::class, 'ping' ]);
 	$router->get('/php/popgames2.php', [ PhpController::class, 'popgames2' ]);
 	$router->get('/php/popgames.php', [ PhpController::class, 'popgames' ]);
@@ -224,6 +225,7 @@ $router->group('', function(Router $router) use ($app) {
 	$router->post('/php/userstatus.php', [ PhpController::class, 'userstatus' ]);
 	$router->post('/php/verifyscore.php', [ PhpController::class, 'verifyscore' ]);
 	$router->post('/php/vote.php', [ PhpController::class, 'vote' ]);
+	$router->get('/make/php/keepalive.php', [ PhpController::class, 'keepalive' ]);
 	$router->post('/make/php/keepalive.php', [ PhpController::class, 'keepalive' ]);
 
 	// ==================== LEGAL ROUTES ====================
