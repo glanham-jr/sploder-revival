@@ -7,7 +7,7 @@
         <li><a href="/games/reviews.php">Reviews</a></li>
         <!--<li><a href="/games/reviews/">Reviews</a></li>
 					<li><a href="/games/tournaments/">Tournaments</a></li> -->
-        <li><a href="/graphics/">Graphics</a></li>
+        <li><a href="/graphics/index.php">Graphics</a></li>
         <!--
 					<li><a href="/games/favorites/">Favorites</a></li>
 					<li><a href="/games/web/">Web</a></li> -->
