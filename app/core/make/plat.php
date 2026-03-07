@@ -6,6 +6,7 @@ require(__DIR__.'/../content/disablemobile.php'); ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+    <?php require(__DIR__ . '/../content/ruffle.php'); ?>
     <?php require(__DIR__ . '/content/head.php'); ?>
 
     var attributes = {
