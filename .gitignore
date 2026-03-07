@@ -7,9 +7,14 @@ node_modules
 playgrounds
 src/users
 public/users
+public/graphics/gif
+public/graphics/png
+public/graphics/prj
 .phpunit.result.cache
 src/cache/events.lock
 src/cache/events.xml
+public/cache/events.lock
+public/cache/events.xml
 src/php/verifyscore.php
 src/avatar/a
 db/sploder-data*
