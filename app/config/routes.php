@@ -178,6 +178,7 @@ $router->group('', function(Router $router) use ($app) {
 	$router->get('/php/challenges.php', [ PhpController::class, 'challenges' ]);
 	$router->post('/php/challenges.php', [ PhpController::class, 'challenges' ]);
 	$router->get('/php/contest.php', [ PhpController::class, 'contest' ]);
+	$router->post('/php/contest.php', [ PhpController::class, 'contest' ]);
 	$router->get('/php/contestwinners.php', [ PhpController::class, 'contestwinners' ]);
 	$router->post('/php/delete_graphic.php', [ PhpController::class, 'deletegraphic' ]);
 	$router->post('/php/delete.php', [ PhpController::class, 'delete' ]);
