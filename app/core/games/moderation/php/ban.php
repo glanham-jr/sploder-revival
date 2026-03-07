@@ -19,7 +19,7 @@ $count = $db->queryFirstColumn("SELECT COUNT(*) FROM members WHERE username=:use
     ':username' => $username
 ]);
 if ($count == 0) {
-    header("Location: ../index.php?err=User does not exist");
+    header("Location: /games/moderation/index.php?err=User does not exist");
     die();
 }
 
@@ -33,7 +33,7 @@ if ($perms == "") {
     $isModerator = str_contains($perms, 'M');
 }
 if ($isModerator) {
-    header("Location: ../index.php?err=You cannot ban a moderator");
+    header("Location: /games/moderation/index.php?err=You cannot ban a moderator");
     die();
 }
 
@@ -41,7 +41,7 @@ if ($isModerator) {
 
 include(__DIR__ . '/../../../content/checkban.php');
 if (checkBan($username)) {
-    header("Location: ../index.php?err=User is already banned");
+    header("Location: /games/moderation/index.php?err=User is already banned");
     die();
 }
 
@@ -58,7 +58,9 @@ if (
 ) {
     include(__DIR__ . '/log.php');
     logModeration('banned', $username . ' for ' . $_POST['time'] . " days because of " . $reason, 3);
-    header("Location: ../index.php?msg=User banned successfully");
+    header("Location: /games/moderation/index.php?msg=User banned successfully");
+    exit();
 } else {
-    header("Location: ../index.php?err=There was an error while banning the user");
+    header("Location: /games/moderation/index.php?err=There was an error while banning the user");
+    exit();
 }

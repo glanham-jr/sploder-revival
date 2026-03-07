@@ -14,7 +14,7 @@ $count = $db->queryFirstColumn($sql, 0, [
     ':username' => $username
 ]);
 if ($count == 0) {
-    header("Location: ../index.php?err=User does not exist");
+    header("Location: /games/moderation/index.php?err=User does not exist");
     die();
 }
 
@@ -28,4 +28,5 @@ $bp = $db->queryFirstColumn("SELECT boostpoints
 // Send header with boost points
 include(__DIR__ . '/log.php');
 logModeration('checked boost points', 'of ' . $username . ' which is ' . $bp, 1);
-header("Location: ../index.php?bp=" . $bp);
+header("Location: /games/moderation/index.php?bp=" . $bp);
+exit();

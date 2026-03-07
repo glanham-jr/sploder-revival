@@ -11,7 +11,7 @@ $username = $_REQUEST['username'];
 
 include(__DIR__ . '/../../../content/checkban.php');
 if (!checkBan($username)) {
-    header("Location: ../index.php?err=User not banned");
+    header("Location: /games/moderation/index.php?err=User not banned");
     die();
 }
 
@@ -22,7 +22,9 @@ if (
 ) {
     include(__DIR__ . '/log.php');
     logModeration('unbanned', $username, 1);
-    header("Location: ../index.php?msg=User unbanned successfully");
+    header("Location: /games/moderation/index.php?msg=User unbanned successfully");
+    exit();
 } else {
-    header("Location: ../index.php?err=There was an error while unbanning the user");
+    header("Location: /games/moderation/index.php?err=There was an error while unbanning the user");
+    exit();
 }

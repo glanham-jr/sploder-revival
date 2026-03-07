@@ -44,7 +44,7 @@ if (isset($_POST['reason'])) {
     $reason = "Delete request from pending deletion page";
 }
 if ($gameId === null) {
-    header("Location: ../" . $page . "?err=Invalid game URL, " . $gameId . " " . $url);
+    header("Location: /games/moderation/" . $page . "?err=Invalid game URL, " . $gameId . " " . $url);
     die();
 }
 
@@ -53,7 +53,7 @@ $count = $db->queryFirstColumn("SELECT COUNT(*) FROM games WHERE g_id=:id", 0, [
     ':id' => $gameId
 ]);
 if ($count == 0) {
-    header("Location: ../" . $page . "?err=Game does not exist");
+    header("Location: /games/moderation/" . $page . "?err=Game does not exist");
     die();
 }
 
@@ -63,7 +63,7 @@ $deleter = $db->queryFirstColumn("SELECT deleter FROM pending_deletions WHERE g_
 ]);
 
 if ($deleter == $_SESSION['username']) {
-    header("Location: ../" . $page . "?err=You have already requested deletion of this game. Please wait for another moderator.");
+    header("Location: /games/moderation/" . $page . "?err=You have already requested deletion of this game. Please wait for another moderator.");
     die();
 }
 
@@ -105,9 +105,11 @@ if ($count >= 3) {
 
         include_once(__DIR__ . '/log.php');
         logModeration('made a delete request', 'on ' . $title . ' and deleted it because of ' . $reason, 3);
-        header("Location: ../" . $page . "?msg=Game deleted successfully");
+        header("Location: /games/moderation/" . $page . "?msg=Game deleted successfully");
+        exit();
     } catch (Exception $e) {
-        header("Location: ../" . $page . "?err=Failed to delete game");
+        header("Location: /games/moderation/" . $page . "?err=Failed to delete game");
+        exit();
     }
 } else {
     // Insert new deletion request
@@ -128,5 +130,6 @@ if ($count >= 3) {
     include_once(__DIR__ . '/log.php');
     logModeration('made a delete request', 'on ' . $title . ' because of ' . $reason, 3);
     http_response_code(204);
-    header("Location: ../" . $page . "?msg=Game deletion request submitted successfully. Total requests: " . $count . "/3");
+    header("Location: /games/moderation/" . $page . "?msg=Game deletion request submitted successfully. Total requests: " . $count . "/3");
+    exit();
 }

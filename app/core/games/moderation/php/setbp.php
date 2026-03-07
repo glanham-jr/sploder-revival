@@ -13,7 +13,7 @@ $count = $db->queryFirstColumn("SELECT COUNT(*) FROM members WHERE username=:use
     ':username' => $username
 ]);
 if ($count == 0) {
-    header("Location: ../index.php?err=User does not exist");
+    header("Location: /games/moderation/index.php?err=User does not exist");
     die();
 }
 // Get boost points
@@ -29,7 +29,9 @@ if (
 ) {
     include(__DIR__ . '/log.php');
     logModeration('set boost points', 'from ' . $oldbp . ' to ' . $_POST['bp'] . ' for ' . $username, 2);
-    header("Location: ../index.php?msg=Boost points set successfully");
+    header("Location: /games/moderation/index.php?msg=Boost points set successfully");
+    exit();
 } else {
-    header("Location: ../index.php?err=There was an error while setting the boost points");
+    header("Location: /games/moderation/index.php?err=There was an error while setting the boost points");
+    exit();
 }
