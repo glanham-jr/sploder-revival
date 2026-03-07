@@ -99,8 +99,15 @@ define backup_data
 endef
 
 define fix_dev_permissions
-	@echo "Ensuring bind-mounted directories are world-readable..."
-	chmod -R a+rX ./app ./public ./vendor 2>/dev/null || true
+	@echo "Opening directories for container access..."
+	mkdir -p ./app/log
+	chmod -R 777 ./app ./public ./vendor 2>/dev/null || true
+endef
+
+define restore_dev_permissions
+	@echo "Restoring file permissions..."
+	chmod -R 755 ./app ./public ./vendor 2>/dev/null || true
+	chown -R $$(id -u):$$(id -g) ./app ./public ./vendor 2>/dev/null || true
 endef
 
 define build_image
@@ -179,12 +186,13 @@ dev:
 	else \
 		$(call compose_up,${DEV_COMPOSE}) && ${OPEN_CMD} ${DEV_URL}; \
 	fi
+	$(call restore_dev_permissions)
 dev.hook:
 	cp .hooks/pre-commit .git/hooks/pre-commit
 	chmod u+x .git/hooks/pre-commit
 dev.watch:
 	$(call fix_dev_permissions)
-	${COMPOSE_CMD} -f docker-compose-dev.yaml up
+	${COMPOSE_CMD} -f docker-compose-dev.yaml up; $(call restore_dev_permissions)
 dev.down:
 	$(call compose_down,${DEV_COMPOSE})
 dev.bootstrap:
@@ -199,9 +207,9 @@ dev.backup.db:
 dev.fix-permissions:
 	@echo "Restoring file permissions..."
 	@if command -v sudo >/dev/null 2>&1; then \
-		sudo chown -R $$(id -u):$$(id -g) ./src ./vendor ./app ./public; \
+		sudo chown -R $$(id -u):$$(id -g) ./vendor ./app ./public; \
 	elif command -v run0 >/dev/null 2>&1; then \
-		run0 chown -R $$(id -u):$$(id -g) ./src ./vendor ./app ./public; \
+		run0 chown -R $$(id -u):$$(id -g) ./vendor ./app ./public; \
 	else \
 		echo "Error: neither sudo nor run0 found. Cannot fix permissions."; \
 		exit 1; \
