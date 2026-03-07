@@ -60,7 +60,7 @@ if ($result == $userid) {
             $image->destroy();
         }
 
-        file_put_contents("gif/" . $id . ".gif", $rawdata);
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . "/graphics/gif/" . $id . ".gif", $rawdata);
     } elseif ($type == "sprite") {
         $isprivate = $_GET['isprivate'] == "1" ? 'true' : 'false';
         $qs = "UPDATE graphics SET ispublished=true, isprivate=:isprivate, version=version+1 WHERE id=:id RETURNING version";
@@ -68,9 +68,9 @@ if ($result == $userid) {
             ':isprivate' => $isprivate,
             ':id' => $id
         ]);
-        file_put_contents("png/" . $id . "_" . $version . ".png", $rawdata);
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . "/graphics/png/" . $id . "_" . $version . ".png", $rawdata);
     } elseif ($type == "project") {
-        file_put_contents("prj/" . $id . ".prj", $rawdata);
+        file_put_contents($_SERVER['DOCUMENT_ROOT'] . "/graphics/prj/" . $id . ".prj", $rawdata);
     }
 } else {
     die('<message result="error" message="You do not own this graphic"/>');

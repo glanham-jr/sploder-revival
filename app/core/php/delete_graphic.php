@@ -13,10 +13,10 @@ if ($_SESSION["userid"] == $userid) {
     $db->execute($qs1,[':id' => $id]);
     $db->execute($qs2, [':id' => $id]);
     // Delete files
-    $file1 = '../graphics/gif/' . $id . '.gif';
-    $file2 = '../graphics/png/' . $id . '_'; // All files with this prefix
+    $file1 = $_SERVER['DOCUMENT_ROOT'] . '/graphics/gif/' . $id . '.gif';
+    $file2 = $_SERVER['DOCUMENT_ROOT'] . '/graphics/png/' . $id . '_'; // All files with this prefix
     $files = glob($file2 . '*');
-    $file3 = '../graphics/prj/' . $id . '.prj';
+    $file3 = $_SERVER['DOCUMENT_ROOT'] . '/graphics/prj/' . $id . '.prj';
     foreach ($files as $file) {
         unlink($file);
     }
