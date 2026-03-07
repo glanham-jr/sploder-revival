@@ -13,7 +13,7 @@ function saveProject(int $g_swf): int
         $ispublished = 0;
         $id = 0;
         $new_game = false;
-        include(__DIR__ . '/../database/connect.php');
+        include(__DIR__ . '/../../../database/connect.php');
         $db = getDatabase();
         if (isset($_GET['projid'])) {
             $id = (int)filter_var($_GET['projid'], FILTER_SANITIZE_NUMBER_INT);
@@ -66,10 +66,10 @@ function saveProject(int $g_swf): int
         // Save XML to $xml
         $xml = $xml2->asXML();
 
-        $project_path = "../users/user" . $_SESSION['userid'] . "/projects/proj" . $id . "/";
+        $project_path = $_SERVER['DOCUMENT_ROOT'] . "/users/user" . $_SESSION['userid'] . "/projects/proj" . $id . "/";
         if ($new_game) {
             mkdir($project_path, 0777, true);
-            mkdir("../users/user" . $_SESSION['userid'] . "/images/proj" . $id . "/", 0777, true);
+            mkdir($_SERVER['DOCUMENT_ROOT'] . "/users/user" . $_SESSION['userid'] . "/images/proj" . $id . "/", 0777, true);
         }
         file_put_contents($project_path . "unpublished.xml", $xml);
         echo '<message result="success" id="proj' . $id . '" message="Project file saved."/>';

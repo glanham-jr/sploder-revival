@@ -41,7 +41,7 @@ if (isset($_SESSION['loggedin'])) {
         $comments
     );
     
-    $project_path = "../users/user" . $_SESSION['userid'] . "/projects/proj" . $id . "/";
+    $project_path = $_SERVER['DOCUMENT_ROOT'] . "/users/user" . $_SESSION['userid'] . "/projects/proj" . $id . "/";
     file_put_contents($project_path . "game.xml", $xml);
     echo '<message result="success" id="proj' . $id . '" pubkey="' . $_SESSION['userid'] . '_' . $id . '" message="Success"/>';
 } else {

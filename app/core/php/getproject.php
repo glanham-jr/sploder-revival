@@ -6,8 +6,13 @@ if ($_GET['PHPSESSID'] != "demo") {
     session_start();
     $user_id = $_SESSION['userid'];
     $g_id = (int)filter_var($_GET['p'], FILTER_SANITIZE_NUMBER_INT);
-    $xml = file_get_contents("../users/user" . $user_id . "/projects/proj" . $g_id . "/unpublished.xml");
-    echo $xml;
+    $path = $_SERVER['DOCUMENT_ROOT'] . "/users/user" . $user_id . "/projects/proj" . $g_id . "/unpublished.xml";
+    if (file_exists($path)) {
+        echo file_get_contents($path);
+    } else {
+        http_response_code(404);
+        echo '<message result="failed" message="Project file not found."/>';
+    }
 } else {
-    header('HTTP/1.0 404 Not Found');
+    http_response_code(404);
 }

@@ -15,7 +15,7 @@ if (!$gameRepository->verifyOwnership($id, $_SESSION['username'])) {
     die('<message result="failed" message="You do not own this game!"/>');
 }
 $size = $_GET['size'];
-$image_path = "../users/user" . $_SESSION['userid'] . "/images/proj" . $id . "/";
+$image_path = $_SERVER['DOCUMENT_ROOT'] . "/users/user" . $_SESSION['userid'] . "/images/proj" . $id . "/";
 
 if (!@imagecreatefromstring($data)) {
     http_response_code(403);

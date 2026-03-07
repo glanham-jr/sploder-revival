@@ -5,7 +5,7 @@ declare(strict_types=1);
 
 function overlayOnBase(Imagick $baseImage, int $id, int $x, int $y, float $scale) : Imagick {
     // Load the overlay image from the objects directory
-    $overlayImage = new Imagick(__DIR__."/obj/{$id}.png");
+    $overlayImage = new Imagick($_SERVER['DOCUMENT_ROOT']."/img/php/thumbnails/obj/{$id}.png");
     
     // Ensure the overlay image has an alpha channel
     $overlayImage->setImageAlphaChannel(Imagick::ALPHACHANNEL_SET);

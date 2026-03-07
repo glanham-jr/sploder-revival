@@ -6,6 +6,7 @@ html.zip
 node_modules
 playgrounds
 src/users
+public/users
 .phpunit.result.cache
 src/cache/events.lock
 src/cache/events.xml
