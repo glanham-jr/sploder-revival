@@ -174,8 +174,8 @@ LIMIT 90;
 
     public function saveEvent(string $s, string $e, string $g)
     {
-        $filePath = __DIR__ . '/../cache/events.xml';
-        $lockFilePath = __DIR__ . '/../cache/events.lock';
+        $filePath = $_SERVER['DOCUMENT_ROOT'] . '/cache/events.xml';
+        $lockFilePath = $_SERVER['DOCUMENT_ROOT'] . '/cache/events.lock';
 
         $lockFile = fopen($lockFilePath, 'w');
         if (flock($lockFile, LOCK_EX)) {

@@ -74,7 +74,7 @@ div#us_content div.us_message {
 div#us_content div.us_message_mine {
     border: 1px solid #06a;
     background-color: #0b202e;
-    background-image: url('/comments/element_bkgd_mine.gif');
+    background-image: url('/img/comments/element_bkgd_mine.gif');
     box-shadow: inset 0 -1px 3px #06a;
     -moz-box-shadow: inset 0 -1px 3px #06a;
 }
