@@ -176,7 +176,7 @@ function render_treemap ($theArray, $width, $height, $depth = 0, $orientation = 
 			$styletext = "style=\" font-size: {$textsize}px; $styletext;\"";
 			
 			// make html
-			$html .= "<a class=\"textnode$classtext\"$styletext href=\"".$baseurl."members/index.php?u=$urltag\" title=\"View games by '$tag'\"><img src=\"".$baseurl."chrome/spacer.gif\" height=\"100%\" width=\"1\" border=\"0\" alt=\"\" />$tag</a>";
+			$html .= "<a class=\"textnode$classtext\"$styletext href=\"".$baseurl."members/index.php?u=$urltag\" title=\"View games by '$tag'\"><img src=\"/img/spacer.gif\" height=\"100%\" width=\"1\" border=\"0\" alt=\"\" />$tag</a>";
 			
 		}
 	
